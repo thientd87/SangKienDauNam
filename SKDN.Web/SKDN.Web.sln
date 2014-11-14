@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKDN.Web", "SKDN.Web\SKDN.Web.csproj", "{7E1CF6A6-699C-4044-B316-13098710F0B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKDN.DAL", "SKDN.DAL\SKDN.DAL.csproj", "{DBBD43CE-E002-4A27-AC9A-D7BC05F0D1CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKDN.BO", "SKDN.BO\SKDN.BO.csproj", "{A2265D04-1291-4FA7-9A59-A3DF40AB0769}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E1CF6A6-699C-4044-B316-13098710F0B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E1CF6A6-699C-4044-B316-13098710F0B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E1CF6A6-699C-4044-B316-13098710F0B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E1CF6A6-699C-4044-B316-13098710F0B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBBD43CE-E002-4A27-AC9A-D7BC05F0D1CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBBD43CE-E002-4A27-AC9A-D7BC05F0D1CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBBD43CE-E002-4A27-AC9A-D7BC05F0D1CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBBD43CE-E002-4A27-AC9A-D7BC05F0D1CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2265D04-1291-4FA7-9A59-A3DF40AB0769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2265D04-1291-4FA7-9A59-A3DF40AB0769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2265D04-1291-4FA7-9A59-A3DF40AB0769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2265D04-1291-4FA7-9A59-A3DF40AB0769}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
