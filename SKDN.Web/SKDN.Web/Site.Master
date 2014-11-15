@@ -1,73 +1,38 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SKDN.Web.SiteMaster" %>
-
 <!DOCTYPE html>
-<html lang="en">
-<head runat="server">
-    <meta charset="utf-8" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
-    <link href="~/Content/Site.css" rel="stylesheet" /> 
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <asp:PlaceHolder runat="server">        
-        <script src="<%: ResolveUrl("~/Scripts/modernizr-2.6.2.js") %>"></script>
-    </asp:PlaceHolder>
-    <meta name="viewport" content="width=device-width" />
-    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title id="title" runat="server"></title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <meta name="description" runat="server" id="description" content="vietpress" />
+    <meta name="keywords" content="" runat="server" id="keywords" />
+    <meta http-equiv="refresh" content="500" runat="server" id="metaRefesh" />
+    <meta content="INDEX,FOLLOW,NOARCHIVE" name="robots" id="robot" runat="server" />
+    <meta name="GENERATOR" content="Achilles_vn - thientd87@gmail.com" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta name="author" content="thientd87@gmail.com" />
+    <meta http-equiv="content-language" content="vi" />
+    <link href="/Styles/style.css" rel="stylesheet" />
+    <script src="/Scripts/jquery-1.8.2.js"></script>
+    
 </head>
 <body>
     <form runat="server">
-    <asp:ScriptManager runat="server">
-        <Scripts>
-            <asp:ScriptReference Name="jquery" />
-            <asp:ScriptReference Name="jquery.ui.combined" />
-        </Scripts>
-    </asp:ScriptManager>
-    <header>
-        <div class="content-wrapper">
-            <div class="float-left">
-                <p class="site-title"><a runat="server" href="~/">your logo here</a></p>
-            </div>
-            <div class="float-right">
-                <section id="login">
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul>
-                                <li><a id="registerLink" runat="server" href="~/Account/Register">Register</a></li>
-                                <li><a id="loginLink" runat="server" href="~/Account/Login">Log in</a></li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <p>
-                                Hello, <a runat="server" class="username" href="~/Account/Manage" title="Manage your account">
-                                    <asp:LoginName runat="server" CssClass="username" />
-                                </a>!
-                                <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" />
-                            </p>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
-                </section>
-                <nav>
-                    <ul id="menu">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
-                </nav>
+        <div style="width: 100%; text-align: center">
+            <div class="wrapper">
+                <header>
+                    <div class="main-menu">
+                        <a style="width: 72px;" href="/">Trang chủ</a>   |   <a style="width: 70px;" href="/gioi-thieu.htm">Giới thiệu</a>  |   <a style="width: 125px;" href="/dang-ky-tham-gia.htm">Đăng ký tham gia</a>
+                    </div>
+                    <div class="logo-header">
+                        <img  src="/Images/LogoHeader.png"/>
+                    </div>
+                    <div class="clearfix"></div>
+                </header>
+                <footer></footer>
             </div>
         </div>
-    </header>
-    <div id="body">
-        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
-        <section class="content-wrapper main-content clear-fix">
-            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
-        </section>
-    </div>
-    <footer>
-        <div class="content-wrapper">
-            <div class="float-left">
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </div>
-        </div>
-    </footer>
     </form>
 </body>
 </html>
