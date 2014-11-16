@@ -25,12 +25,19 @@
                     <div class="main-menu">
                         <a style="width: 72px;" href="/">Trang chủ</a>   |   <a style="width: 70px;" href="/gioi-thieu.htm">Giới thiệu</a>  |   <a style="width: 125px;" href="/dang-ky-tham-gia.htm">Đăng ký tham gia</a>
                     </div>
+                    
                     <div class="logo-header">
                         <img  src="/Images/LogoHeader.png"/>
                     </div>
                     <div class="clearfix"></div>
                 </header>
-                <footer></footer>
+                <div class="main-content">
+                    <asp:ContentPlaceHolder runat="server" ID="MainContent"></asp:ContentPlaceHolder>
+                </div>
+                <footer>
+                    <img src="/Images/gradientFooter.jpg"/>
+                    <img src="/Images/footer.jpg"/>
+                </footer>
             </div>
         </div>
     </form>
