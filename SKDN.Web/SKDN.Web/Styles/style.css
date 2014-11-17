@@ -56,3 +56,8 @@ border-radius: 30px;
 .btn-du-an-tham-gia{ top: 175px;right: 55px; position: absolute}
 .social-button{top: 155px;left: 40px;position: absolute; font:normal 11px Segoe UI}
 .social-button b{font-family: Segoe UI Bold}
+#divChungToi,#divNhaTaiTro,#divSuMenh{ width: 1180px;height: 360px;padding: 40px 25px; display: none}
+#divChungToi{background-color: #be1e2d}
+.arrowLeft, .arrowRight{ height: 355px;float: right;line-height: 355px; cursor: pointer}
+.arrowRight{float: left}
+.text-chung-toi{ float: left;width: 630px;color: #fff;font: normal 15px Segoe UI; padding-left:15px}
