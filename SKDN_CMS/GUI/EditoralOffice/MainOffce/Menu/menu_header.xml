@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<boxes>
+  <!--<box checkpermission="true" isvisible="true">
+    <name>Tool</name>
+    <rows>
+      <row>
+        <Permission_ID>96</Permission_ID>
+        <MenuName>Quản lý quảng cáo</MenuName>
+        <Cpmode>advmanagement</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/Advertisment/ListAll.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>99</Permission_ID>
+        <MenuName>Quản lý Vote</MenuName>
+        <Cpmode>votemngr</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/VoteEdit/VoteList.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>96</Permission_ID>
+        <MenuName>Quản lý Feedback</MenuName>
+        <Cpmode>listfeedback</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/FeedbackManagement/ListFeedback.ascx</path>
+      </row>
+    </rows>
+  </box>-->
+
+  <box checkpermission="true" isvisible="false">
+		<name>Thống kê</name>
+		<rows>
+			<!--<row>
+				<Permission_ID>14</Permission_ID>
+				<MenuName>Thống kê lượng bài viết</MenuName>
+				<Cpmode>thong_ke_bai</Cpmode>
+				<IsCount>False</IsCount>
+				<path>~/GUI/EditoralOffice/MainOffce/Thongke/ThongKeLuongBaiViet.ascx</path>
+			</row>-->
+      <row>
+        <Permission_ID>98</Permission_ID>
+        <MenuName>Thống kê tổng quan</MenuName>
+        <Cpmode>visitdetailpage</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/Analytic/VisitDetail.ascx</path>
+      </row>
+      
+      <row>
+        <Permission_ID>98</Permission_ID>
+        <MenuName>Thống kê PageView</MenuName>
+        <Cpmode>thong_ke_pageview</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/Thongke/ThongKePageView.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>98</Permission_ID>
+        <MenuName>Thống kê Comment</MenuName>
+        <Cpmode>thong_ke_comment</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/Thongke/ThongKeComment.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>98</Permission_ID>
+        <MenuName>Thống kê Bài xem nhiều nhất</MenuName>
+        <Cpmode>thong_ke_xemnhieunhat</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/Thongke/ThongKeBaiXemNhieuNhat.ascx</path>
+      </row>
+		</rows>
+	</box>
+
+  <!--<box checkpermission="true" isvisible="true">
+    <name>Nhuận bút</name>
+    <rows>
+      <row>
+        <Permission_ID>19</Permission_ID>
+        <MenuName>Thêm tác giả</MenuName>
+        <Cpmode>themtacgia</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/NhuanBut/ThemTacGia.ascx</path>
+      </row>
+    </rows>
+    <rows>
+      <row>
+        <Permission_ID>94</Permission_ID>
+        <MenuName>Bài chưa chấm nhuận bút</MenuName>
+        <Cpmode>bai_chua_cham</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/Modules/RoyaltyWeb_S/NewsListRoyalty.ascx</path>
+      </row>
+    </rows>
+	<rows>
+      <row>
+        <Permission_ID>94</Permission_ID>
+        <MenuName>Thống kê nhuận bút</MenuName>
+        <Cpmode>thong_ke_nhuan_but</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/Modules/RoyaltyWeb_S/TacGiaBaiVietReport.ascx</path>
+      </row>
+    </rows>
+    --><!--<rows>
+      <row>
+        <Permission_ID>94</Permission_ID>
+        <MenuName>Thống kê nhuận bút chi tiết</MenuName>
+        <Cpmode>thong_ke_nhuan_but_chi_tiet</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/Modules/RoyaltyWeb_S/NhuanButByTacGia.ascx</path>
+      </row>
+    </rows>--><!--
+  </box>-->
+
+</boxes>

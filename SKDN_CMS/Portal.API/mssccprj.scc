@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[Portal.API.csproj]
+SCC_Aux_Path = "\\192.168.1.245\Vistip"
+SCC_Project_Name = "$/CMS/Portal.root/Portal/Portal/Portal.API", KDFAAAAA
+
+[DFISYS.API.csproj]
+SCC_Aux_Path = "\\192.168.1.245\nccms"
+SCC_Project_Name = "$/DFISYS_NEWS/DFISYS_NEWS/Portal.API", FKBAAAAA

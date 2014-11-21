@@ -1,0 +1,99 @@
+@define
+{
+	TopGroup;
+	MenuGroup;
+	TopMenuItem;
+	TopMenuItemHover;
+	MenuItem;
+	MenuItemHover;
+	MenuItemHover_Span;
+	ChildMenuItem;
+	ChildMenuItemHover;
+	MenuBreak;
+	SelectedItem;
+	SelectedItemHover;
+	SelectedChildMenuItem;
+	SelectedChildMenuItemHover;
+	PopChildItem;
+	PopChildItemHover;
+}
+
+.TopGroup
+{
+	@TopGroup;
+}
+
+.MenuGroup
+{ 
+	@MenuGroup;
+}
+
+.TopMenuItem
+{  
+	@TopMenuItem;
+}
+
+.TopMenuItemHover 
+{  
+	@TopMenuItemHover;
+}
+
+.MenuItem
+{
+	@MenuItem;	
+}
+
+.MenuItemHover
+{  
+	@MenuItemHover;
+}
+
+.ChildMenuItem
+{
+	@ChildMenuItem;	
+}
+
+.ChildMenuItemHover
+{  
+	@ChildMenuItemHover;
+}
+
+.SelectedChildMenuItem
+{
+	@SelectedChildMenuItem;	
+}
+
+.SelectedChildMenuItemHover
+{  
+	@SelectedChildMenuItemHover;
+}
+
+.MenuItemHover Span
+{
+	@MenuItemHover_Span;
+}
+
+.MenuBreak
+{
+	@MenuBreak;
+}
+
+.SelectedItem
+{
+	@SelectedItem;
+}
+
+.SelectedItemHover
+{
+	@SelectedItemHover;
+}
+
+.PopChildItem
+{
+	@PopChildItem;
+}
+
+.PopChildItemHover
+{
+	@PopChildItemHover;
+}

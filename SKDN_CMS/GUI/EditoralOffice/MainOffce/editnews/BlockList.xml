@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<modules>
+
+	<!--<file path="~/GUI/EditoralOffice/MainOffce/NewsEditModules/vote2"></file>-->
+	<!--<file path="~/GUI/EditoralOffice/MainOffce/NewsEditModules/FamilyVote"></file>
+	<file path="~/GUI/EditoralOffice/MainOffce/NewsEditModules/slideshow5"></file>
+	<file path="~/GUI/EditoralOffice/MainOffce/NewsEditModules/slideshow4"></file>-->
+	<file path="~/GUI/EditoralOffice/MainOffce/NewsEditModules/CacTinLienQuan"></file>
+	<file path="~/GUI/EditoralOffice/MainOffce/NewsEditModules/SimpleVideo"></file>
+	<file path="~/GUI/EditoralOffice/MainOffce/NewsEditModules/SimpleImage"></file>
+	<file path="~/GUI/EditoralOffice/MainOffce/NewsEditModules/Flash"></file>
+	
+</modules>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List>
+  <default>
+	40
+  </default>
+	<Category>
+		<NumberWord>40</NumberWord>
+		<CatID>40</CatID>
+	</Category>
+  	<Category>
+		<NumberWord>40</NumberWord>
+		<CatID>82</CatID>
+	</Category>
+</List>

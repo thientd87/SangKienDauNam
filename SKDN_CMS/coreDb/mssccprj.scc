@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[Db.csproj]
+SCC_Aux_Path = "\\192.168.1.245\Vistip"
+SCC_Project_Name = "$/CMS/Portal.root/Portal/Portal/coreDb", TKDAAAAA
+
+[DFISYS.Db.csproj]
+SCC_Aux_Path = "\\192.168.1.245\nccms"
+SCC_Project_Name = "$/DFISYS_NEWS/DFISYS_NEWS/coreDb", WFAAAAAA

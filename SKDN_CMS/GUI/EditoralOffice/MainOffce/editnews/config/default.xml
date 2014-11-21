@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<news>
+	<block>
+		<object>
+			<reference></reference>
+			<type></type>
+			<presentation>
+				<margin></margin>
+				<padding></padding>
+				<border></border>
+				<height></height>
+				<width></width>
+				<extension></extension>
+			</presentation>
+		</object>
+		<innerhtml></innerhtml>
+		<presentation>
+			<margin></margin>
+			<padding></padding>
+			<border></border>
+			<height></height>
+			<width></width>
+			<extension></extension>
+		</presentation>
+	</block>
+</news>

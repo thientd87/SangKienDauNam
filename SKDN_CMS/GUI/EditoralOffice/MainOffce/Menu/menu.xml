@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<boxes>
+  
+  <box checkpermission="true" isvisible="true">
+    <name>Quản lý tin bài</name>
+    <id>05a7773b</id>
+    <rows>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Danh mục tin tức</MenuName>
+        <Cpmode>listnewscategory</Cpmode>
+        <IsCount>False</IsCount>
+        <HeadCpmode>add</HeadCpmode>
+        <path>~/GUI/EditoralOffice/MainOffce/NewsCategoryManager/ListNewsCategory.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Quản lý nổi bật trang chủ</MenuName>
+        <Cpmode>quanlytopnew</Cpmode>
+        <IsCount>False</IsCount>
+        <HeadCpmode>add</HeadCpmode>
+        <path>~/GUI/EditoralOffice/MainOffce/QuanLyBaiNoiBat/quanlytopnew2.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Thêm bài viết</MenuName>
+        <Cpmode>add</Cpmode>
+        <IsCount>False</IsCount>
+        <HeadCpmode>add</HeadCpmode>
+        <path>~/GUI/EditoralOffice/MainOffce/editnews/editnews3.ascx</path>
+      </row>
+      <!--<row>
+				<Permission_ID>19</Permission_ID>
+				<MenuName>Danh sách bài nhận duyệt</MenuName>
+				<Cpmode>approvinglist</Cpmode>
+				<IsCount>false</IsCount>
+				<path>~/GUI/EditoralOffice/MainOffce/Newslist/Newslist2.ascx</path>
+				<ShortCutKey>Ctrl+Shift+A</ShortCutKey>
+			</row>
+			<row>
+				<Permission_ID>19</Permission_ID>
+				<MenuName>Danh sách bài chờ duyệt</MenuName>
+				<Cpmode>approvalwaitlist</Cpmode>
+				<IsCount>false</IsCount>
+				<path>~/GUI/EditoralOffice/MainOffce/Newslist/Newslist2.ascx</path>
+				<ShortCutKey>Ctrl+Shift+D</ShortCutKey>
+			</row>
+      	<row>
+				<Permission_ID>17</Permission_ID>
+				<MenuName>Danh sách bài đã gửi chờ duyệt</MenuName>
+				<Cpmode>sendapprovallist</Cpmode>
+				<IsCount>false</IsCount>
+				<path>~/GUI/EditoralOffice/MainOffce/Newslist/Newslist2.ascx</path>
+			</row>-->
+      <row>
+        <Permission_ID>20</Permission_ID>
+        <MenuName>Danh sách bài đã xuất bản</MenuName>
+        <Cpmode>publishedlist</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/Newslist/Newslist2.ascx</path>
+        <ShortCutKey>Ctrl+Shift+P</ShortCutKey>
+      </row>
+      <row>
+        <Permission_ID>16</Permission_ID>
+        <MenuName>Danh sách bài lưu tạm</MenuName>
+        <Cpmode>templist</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/Newslist/Newslist2.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Quản lý album</MenuName>
+        <Cpmode>albumlist</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/Album/ListGallery.ascx</path>
+      </row>
+
+
+    </rows>
+  </box>
+	
+  <box checkpermission="true" isvisible="true">
+    <name>Tiện ích khác</name>
+    <id>05a7773b</id>
+    <rows>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Add banner</MenuName>
+        <Cpmode>addbanner</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/Advertisment/AddBanner.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Danh sách banner</MenuName>
+        <Cpmode>bannerlist</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/Advertisment/ListAll.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Quản lý bình chọn</MenuName>
+        <Cpmode>votelist</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/Votes/VoteList.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Khách hàng liên hệ</MenuName>
+        <Cpmode>feedbacklist</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/Feedback/FeedbackManger.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Đăng ký quà tặng</MenuName>
+        <Cpmode>giftregistionlist</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/DangKyQuaTang.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Hỗ trợ online</MenuName>
+        <Cpmode>supportlist</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/SupportOnline/ListSupportOnine.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Thông tin website</MenuName>
+        <Cpmode>siteinformation</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/SiteInfomationManager/SiteInformationManger.ascx</path>
+      </row>
+    </rows>
+  </box>
+  <box checkpermission="true" isvisible="true">
+    <name>Quản lý shopping</name>
+    <id>05a7773b</id>
+    <rows>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Danh mục gian hàng</MenuName>
+        <Cpmode>productcategorymanager</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/Product_Category/ListCategory2.ascx</path>
+      </row>
+      <!--<row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Danh sách loại quà tặng</MenuName>
+        <Cpmode>gifttypemanager</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/ProductGiftManager/List.ascx</path>
+      </row>-->
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Thêm sản phẩm</MenuName>
+        <Cpmode>addproduct</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/ProductManager/AddProduct.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Danh sách sản phẩm</MenuName>
+        <Cpmode>productlist</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/ProductManager/ListProduct.ascx</path>
+      </row>
+      <!--<row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Quản lý layout</MenuName>
+        <Cpmode>layoutproductlist</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/ProductManager/LayoutListProduct.ascx</path>
+      </row>-->
+    </rows>
+  </box>
+	<box checkpermission="true" isvisible="false">
+		<name></name>
+		<rows>
+      <row >
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Add banner</MenuName>
+        <Cpmode>addbanner</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/Advertisment/AddBanner.ascx</path>
+      </row>
+      <row ownerCpMode="albumlist">
+        <Permission_ID>96</Permission_ID>
+        <MenuName>Add Gallery</MenuName>
+        <Cpmode>addgallery</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/Album/Gallery1.ascx</path>
+      </row>
+
+      <row ownerCpMode="albumlist">
+        <Permission_ID>96</Permission_ID>
+        <MenuName>GalleryMng</MenuName>
+        <Cpmode>gallerymng</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/Album/GalleryMng.aspx</path>
+      </row>
+      
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Bài viết mới</MenuName>
+        <Cpmode>editpublist</Cpmode>
+        <IsCount>False</IsCount>       
+        <path>~/GUI/EditoralOffice/MainOffce/editnews/EditPublishedNews.ascx</path>
+      </row>
+			<row>
+				<Permission_ID>14</Permission_ID>
+				<Cpmode>wap-edit</Cpmode>
+				<path>~/GUI/EditoralOffice/MainOffce/WAP/Edit.ascx</path>
+			</row>
+			<row>
+				<Permission_ID>14</Permission_ID>
+				<Cpmode>newsletter-statistic</Cpmode>
+				<path>~/GUI/EditoralOffice/MainOffce/UserStatistic/UserStatistic.ascx</path>
+			</row>			
+			<row ownerCpMode="votelist">
+				<Permission_ID>70</Permission_ID>
+				<Cpmode>voteadd</Cpmode>
+				<path>~/GUI/EditoralOffice/MainOffce/Votes/VoteEdit.ascx</path>
+			</row>
+			<row ownerCpMode="votelist">
+				<Permission_ID>70</Permission_ID>
+				<Cpmode>voteitem</Cpmode>
+				<path>~/GUI/EditoralOffice/MainOffce/Votes/VoteItem.ascx</path>
+			</row>				
+			<row>
+				<Permission_ID>14</Permission_ID>
+				<Cpmode>profile</Cpmode>
+				<path>~/GUI/EditoralOffice/MainOffce/AccountProfile/profile.ascx</path>
+			</row>
+
+      <row>
+        <Permission_ID>120</Permission_ID>
+        <MenuName>Chỉnh sửa nội dung</MenuName>
+        <Cpmode>giao_luu_edite</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/GiaoLuu/EditeCourse.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>121</Permission_ID>
+        <MenuName>Chỉnh sửa nội dung duyệt</MenuName>
+        <Cpmode>giao_luu_editepublic</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/GiaoLuu/EditePublicTraLoi.ascx</path>
+      </row>
+
+      <row>
+        <Permission_ID>121</Permission_ID>
+        <MenuName>Duyệt nội dung</MenuName>
+        <Cpmode>giao_luu_duyet</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/GiaoLuu/DuyetNoiDung.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>123</Permission_ID>
+        <MenuName>Trả lời câu hỏi</MenuName>
+        <Cpmode>giao_luu_traloi</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/GiaoLuu/TraLoi.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>121</Permission_ID>
+        <MenuName>trả lời một câu hỏi</MenuName>
+        <Cpmode>giao_luu_traloiduyet</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/GiaoLuu/EditeTraLoi.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>121</Permission_ID>
+        <MenuName>Điều phối câu hỏi</MenuName>
+        <Cpmode>giao_luu_dieuphoi</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/GiaoLuu/DieuPhoiCauHoi.ascx</path>
+      </row>
+		</rows>
+	</box>
+  
+  <box checkpermission="true" isvisible="false">
+    <name>Quản lý đơn hàng</name>
+    <id>05a7773b</id>
+    <rows>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Đơn hàng vừa gửi</MenuName>
+        <Cpmode>listorder</Cpmode>
+        <IsCount>False</IsCount>
+        <HeadCpmode>add</HeadCpmode>
+        <path>~/GUI/EditoralOffice/MainOffce/OrderManager/ListOrders.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Đơn hàng đang chờ thanh toán</MenuName>
+        <Cpmode>listorderindate</Cpmode>
+        <IsCount>False</IsCount>
+        <HeadCpmode>add</HeadCpmode>
+        <path>~/GUI/EditoralOffice/MainOffce/OrderManager/ListOrderInDate.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>20</Permission_ID>
+        <MenuName>Đơn hàng đang quá hạn</MenuName>
+        <Cpmode>listorderoverdate</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/OrderManager/ListOrderOverDate.ascx</path>
+        <ShortCutKey>Ctrl+Shift+P</ShortCutKey>
+      </row>
+      <row >
+        <Permission_ID>20</Permission_ID>
+        <MenuName>Đơn hàng đã thanh toán</MenuName>
+        <Cpmode>listorderispaid</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/OrderManager/ListOrderIsPaid.ascx</path>
+        <ShortCutKey>Ctrl+Shift+P</ShortCutKey>
+      </row>
+      <row isvisible="false">
+        <Permission_ID>16</Permission_ID>
+        <MenuName>Danh sách bài lưu tạm</MenuName>
+        <Cpmode>orderdetail</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/OrderManager/OrderDetails.ascx</path>
+      </row>
+      <row isvisible="false">
+        <Permission_ID>16</Permission_ID>
+        <MenuName>Danh sách bài lưu tạm</MenuName>
+        <Cpmode>orderdetailispaid</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/OrderManager/OrderDetailIsPaid.ascx</path>
+      </row>
+
+    </rows>
+  </box>
+</boxes>

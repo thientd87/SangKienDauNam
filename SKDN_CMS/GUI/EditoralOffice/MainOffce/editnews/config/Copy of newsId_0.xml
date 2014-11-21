@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<news>
+	<block>
+		<object>
+			<reference>b3c9db82-a1c3-4cfc-a5de-25973cef3c10</reference>
+			<type>EditoralOffice/MainOffce/editnews/controls/image</type>
+			<presentation>
+				<margin>0px</margin>
+				<padding>0px</padding>
+				<border></border>
+				<height></height>
+				<width></width>
+				<extension></extension>
+			</presentation>
+		</object>
+		<innerhtml>But there is little dispute that the general practice of medicine is under strain at a time when there is bipartisan consensus that better prevention and chronic disease management would not only improve health but also help control costs. With its population aging, the country will need 40 percent more primary care doctors by 2020, according to the American College of Physicians, which represents 125,000 internists, and the 94,000-member American Academy of Family Physicians. Community health centers, bolstered by increases in federal financing during the Bush years, are having particular difficulty finding doctors.</innerhtml>
+		<presentation>
+			<margin>0px</margin>
+			<padding>0px</padding>
+			<border></border>
+			<height></height>
+			<width></width>
+			<extension></extension>
+		</presentation>
+	</block>
+</news>

@@ -1,0 +1,37 @@
+#contextmenu { position:absolute; display:none; margin:0px; padding:1px; background-color:#ffffcc; border:solid 1px #696969; list-style-type:none; width:183px;}
+
+#contextmenu li {margin:0px; padding:0px; display:none; float:left;}
+#contextmenu li a { float:left; padding:5px 5px 5px 26px; background-repeat:no-repeat; background-position:5px center; clear:both; text-decoration:none; width:150px; font-family:Tahoma; font-size:11px; border:solid 1px #ffffcc; height:13px;}
+#contextmenu li a:hover { border:solid 1px #696969; background-color:White;}
+#contextmenu li a.xemtruoc { background-image:url(/images/newitem.gif)}
+#contextmenu li a.xemnhanxet { background-image:url(/images/approval.gif)}
+#contextmenu li a.suanoidung { background-image:url(/images/edititem.gif)}
+#contextmenu li a.gobo { background-image:url(/images/whitearrow.gif)}
+#contextmenu li a.xoatam { background-image:url(/images/delete.gif)}
+#contextmenu li a.xemthongtinbandocgui { background-image:url(/images/newitem.gif)}
+#contextmenu li a.guilen { background-image:url(/images/REPORTUP.gif)}
+#contextmenu li a.trave { background-image:url(/images/DOWNLOAD.gif)}
+#contextmenu li a.xuatban { background-image:url(/images/CheckNames.gif)}
+
+div#loginForm { position:absolute; display:none;}
+
+div#tab_ctl16_ctl02_panel{ clear:both; margin-top:10px;}
+
+
+input.calendar { font-family: Tahoma; font-size: 10pt;}
+
+/*tooltip Thong ke theo gio cua ContentView*/
+.toppre{
+	background:url(/Images/ToolTip/toppre.gif) transparent no-repeat;
+	line-height:26px;
+}
+.cafefbg{
+	background:url(/Images/ToolTip/cafef_bg.gif) repeat-y;
+}
+.cafefoot{
+	background:url(/Images/ToolTip/cafe_foot.gif) transparent no-repeat;
+	line-height:22px;
+}
+.cafecont{
+	padding:0px 15px 5px 15px;
+}

@@ -1,0 +1,73 @@
+
+.NewsFilter_Table
+{
+	/*FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#F1F1F1', endColorStr='#FFFFFF', gradientType='1');*/
+	background-color:#F1F1F1;
+	padding:3 0 3 0;
+}
+
+.NewsFilter_Title
+{
+	font : bold 11px Verdana;
+	padding : 5 5 5 10;
+}
+
+.NewsFilter_List
+{
+	font : 11px Arial;
+}
+
+.NewsFilter_Button
+{
+	font : 11px Verdana;
+}
+
+
+.FilterResult_Table
+{
+	width : 100%;
+	background-color : #EEEEEE;
+	border-top : solid 1px #666666;
+}
+
+.FilterResult_Cell
+{
+	font : 12px Arial;
+	color : #980000;
+	padding : 5 10 5 10;
+	border : none;
+}
+
+.FilterResult_Header
+{
+	font :  bold 17px Arial;
+	color : #980000;
+	padding : 5 10 5 10;
+	border : none;
+}
+
+.FilterResult_Date
+{
+	font : 17px Arial;
+	font-style : italic;
+}
+
+.FilterResult_PagerCell
+{
+	font : bold 12px Arial;
+	padding : 5 10 5 10;
+	text-align : right;
+	color : #980000;
+}
+
+.FilterResult_PagerCell a
+{
+	font-weight : normal;
+	color : #980000;
+}
+.fileter_text
+{
+	width:50%;
+	/*border:1px solid #CCCCCC;*/
+	height:17;
+}

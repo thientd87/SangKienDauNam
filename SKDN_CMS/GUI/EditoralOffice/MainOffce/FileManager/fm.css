@@ -1,0 +1,57 @@
+body { margin: 0px; padding: 0px; }
+
+table.gridItems { width: 100%; font-family: Tahoma; font-size: 11px; color: #303030; }
+table.gridItems a { background-image: url(/Images/FileManager/default.bmp); background-position: 5px center; background-repeat: no-repeat; padding: 5px 5px 5px 26px; text-decoration: none; color: #303030; display: block; }
+table.gridItems a:hover { text-decoration: none; background-color: #d3ac89; }
+table.gridItems a.folder { background-image: url(/Images/FileManager/folder.bmp); }
+table.gridItems a.gif { background-image: url(/Images/FileManager/gif.bmp); }
+table.gridItems a.png { background-image: url(/Images/FileManager/gif.bmp); }
+table.gridItems a.jpeg { background-image: url(/Images/FileManager/jpeg.bmp); }
+table.gridItems a.jpg { background-image: url(/Images/FileManager/jpeg.bmp); }
+table.gridItems a.zip { background-image: url(/Images/FileManager/zip.bmp); }
+table.gridItems a.rar { background-image: url(/Images/FileManager/zip.bmp); }
+table.gridItems a.htm { background-image: url(/Images/FileManager/htm.bmp); }
+table.gridItems a.html { background-image: url(/Images/FileManager/html.bmp); }
+table.gridItems a.flv { background-image: url(/Images/FileManager/flv.bmp); }
+table.gridItems a.js { background-image: url(/Images/FileManager/js.bmp); }
+table.gridItems a.css { background-image: url(/Images/FileManager/css.bmp); }
+table.gridItems a.swf { background-image: url(/Images/FileManager/swf.bmp); }
+
+table.gridItems a.mp3 { background-image: url(/Images/FileManager/mp3.bmp); }
+table.gridItems a.wmv { background-image: url(/Images/FileManager/mp3.bmp); }
+table.gridItems a.wma { background-image: url(/Images/FileManager/mp3.bmp); }
+
+td.active, tr.active, tr.active2 { background-color: #dec1a6; }
+tr.inactive { background-color: #e0e0e0; }
+
+table.gridItems a.ok { background-image: url(/Images/Icons/ok.gif); background-position: 5px center; padding-left: 23px; margin-right: 0px; padding-right: 0px; }
+table.gridItems a.cancel { background-image: url(/Images/Icons/cancel.gif); background-position: 5px center; padding-left: 23px; }
+
+
+ul.treeview { list-style-type: none; clear: both; }
+ul.treeview * { float: left; display: inline; }
+ul.treeview li { clear: both; width:200px;}
+ul.treeview .folderTreeView { background-image: url(/Images/FileManager/folder.bmp); background-position: 5px center; background-repeat: no-repeat; padding: 5px 5px 5px 26px; text-decoration: none; color: #666666; font-weight: bold; font-family: Tahoma; font-size: 11px; }
+ul.treeview .folderTreeView:hover { text-decoration: none; background-color: #ffdab9; }
+
+#UpdateProgress1 { width: 400px; background-color: #FFC080; position: absolute; padding: 10px; z-index: 3; }
+
+
+.button a { background-position: 5px center; background-repeat: no-repeat; padding: 5px 5px 5px 26px; text-decoration: none; color: #303030; margin-top: 5px; margin-bottom: 5px; float: left; border: dotted 1px #303030; margin: 5px; }
+.button a.copy { background-image: url(/Images/Icons/copy.gif); }
+.button a.paste { background-image: url(/Images/Icons/paste_plain.png); }
+a#a_selectMultiFile { background-image: url(/Images/Icons/new.gif); }
+a.closewindow { background-image: url(/Images/Icons/window_sidebar.png); }
+a.upload { background-image: url(/Images/Icons/up1.gif); }
+a#a_grid_deleteMultiFile { background-image: url(/Images/Icons/delete.gif); }
+
+div.paging { background-color: #d0d0d0; margin: 5px 0px 2px 0px; border-bottom: solid 1px #c0c0c0; border-top: solid 1px #c0c0c0; padding: 5px; font-family: Tahoma; font-size: 11px; }
+div.paging span { background-color: #e0e0e0; padding: 5px 5px 2px 5px; border-top: solid 1px white; border-left: solid 1px #c0c0c0; border-right: solid 1px #c0c0c0; border-bottom: solid 1px #c0c0c0; }
+div.paging a { font-family: Tahoma; font-size: 11px; font-weight: bold; background-image: url(/Images/Icons/document.gif); background-position: center center; background-repeat: no-repeat; padding: 5px 6px 6px 5px; text-decoration: none; color: #303030; }
+
+.td_folderlist { background-color: #e0e0e0; border: solid 1px #c0c0c0; height: 675px; width: 240px; }
+.td_folderlist .c1 { overflow: auto; height: 675px; width: 240px; }
+.td_folderlist .c1 .c2 { background-color: #d0d0d0; padding: 5px; font-family: Tahoma; font-size: 11px; font-weight: bold; }
+.td_folderContent { background-color: #e0e0e0; border: solid 1px #c0c0c0; }
+.searchBox { float: left; border: dotted 1px #303030; margin: 5px; }
+.tong_icon { width: 19px; height: 20px; }

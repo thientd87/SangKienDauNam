@@ -1,0 +1,549 @@
+﻿/*
+common
+*/
+.form
+{
+	display : inline;
+}
+.p
+{
+	display : inline;
+}
+.span
+{
+	display : inline;
+}
+.div
+{
+	display : inline;
+}
+.font
+{
+	display : inline;
+}
+.ul
+{
+	display : inline;
+}
+.li
+{
+	display : inline;
+}
+/*conmm*/
+.Table_shadow
+{
+	FILTER: progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=3);
+}
+.Table_Whites_shadow
+{
+	/*FILTER: progid:DXImageTransform.Microsoft.Shadow(color=#F1F1F1, Direction=135, Strength=3);*/
+}
+.NaviGadient
+{
+	height:45;
+	border-top:3px solid #CCCCCC;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#36689B', endColorStr='#79A4D2', gradientType=0);
+}
+.HGadien
+{
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#962505', endColorStr='#431508', gradientType=1);
+}
+.Head_Gadien
+{
+	height:25;
+	/*FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#36689B', endColorStr='#79A4D2', gradientType=0);*/
+	background-image:url('../images/bgbar.gif');
+	background-repeat:repeat-x;
+	text-align:center;
+	vertical-align:middle;
+	font:11px Arial;
+	font-weight:bold;
+	color:#000000;
+}
+.HYGadient
+{
+	border-top:3px solid #CCCCCC;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#FFFFFF', endColorStr='#FBF5DF', gradientType=0);
+}
+.GrGadient
+{
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#FBFCEC', endColorStr='#FBF1BE', gradientType=0);
+}
+/* End of common */
+.left_table
+{
+	/*border:1px solid #F1F1F1;*/
+}
+.Main_cell
+{
+	background-color:#F1F1F1;
+	font:11px verdana;
+	color:#000000;
+	padding:5 5 5 5;
+	font-weight:bold;
+}
+.Function_cell
+{
+	padding:8 5 8 3;
+}
+.Function_link a
+{
+	font:11px verdana;
+	color:#666666;
+	text-decoration:none;
+}
+.Function_link a:hover
+{
+	font:11px verdana;
+	color:red;
+	text-decoration:underline;
+}
+/*form */
+.Form_lable_cell
+{
+	padding:2 5 8 5;
+	font:11px verdana;
+	color:#666666;
+	font-weight:bold;
+}
+.SimpleButton
+{
+	font:11px verdana;
+	border:1px solid #CCCCCC;
+}
+.SimpleText
+{
+	border:1px solid #CCCCCC;
+	width:95%;
+}
+.SimpleCombo
+{
+	width:98%;
+	font:13px Arial;
+	color:#333333;
+}
+.gridHover
+{
+    background-color: #E2E5EE;
+    padding:2 0 2 0;
+	font: 11px Arial;
+	color:Black;
+	/*border:1px solid #99BBE0;*/
+	text-align:center;
+	height:20px;
+}
+
+.Grid
+{
+	border: solid 1px #CCCCCC;
+	width:100%;
+}
+
+.GridContainer
+{
+	width: 100%;
+}
+
+.GridHeader td
+{
+	/*thiết lập cho Header*/
+	/*FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#36689B', endColorStr='#79A4D2', gradientType=0);*/
+	background-image:url('../images/bgbar.gif');
+	/*background-color:#36689B;*/
+	font:11px Arial;
+	padding:2 0 2 0;
+	color: #000000;
+	/*border-bottom:2px solid #D6D2C2;*/
+	border:1px solid #F1F1F1;
+	text-align:center;
+	height:25px;
+}
+.GridHeader a
+{
+	text-decoration: none;
+	background-color:#EBEADB;
+	border-bottom:1px solid #D6D2C2;
+}
+GridFooter a
+{
+	color:#FFFFFF;
+}
+GridFooter span
+{
+	color:#FFFFFF;
+}
+.GridItem td
+{
+	/*thiết lập cho từng row*/
+	padding:2 0 2 0;
+	font: 11px Arial;
+	color:Black;
+	border: 1px solid #F1F1F1;
+	background-color: White;
+	text-align:left;
+	padding-left:8px;
+	height:20px;
+}
+
+.GridAltItem td
+{
+	/*thiết lập cho row xen kẽ*/
+	padding:2 0 2 0;
+	font: 11px Arial;
+	color:Black;
+	background-color: #E2E5EE;
+	border:1px solid #F1F1F1;
+	text-align:left;
+	padding-left:8px;
+	height:20px;
+}
+
+.GridPager
+{
+	/*thiết lập cho phân trang*/
+	font-size:   small;
+	color: #FFFFFF;
+}
+/*grid footer*/
+.grid_footerlable_cell
+{
+	font:11px verdana;
+	color:#000000;
+	padding:3 5 3 5;
+}
+.commentHeader
+{
+	color:#993300;
+	font: 11px Verdana ;
+	font-weight:bold;
+	background-color:#F1F1F1;
+	padding:8 5 5 5;
+}
+.commentVisible
+{
+	display :none;
+	visibility :visible;	
+}
+.comentHidden
+{
+	display:none;
+    visibility:hidden ;
+    /*position:absolute;*/
+}
+.Hidde
+{
+	display:none;
+    visibility:hidden ;
+}
+.Show
+{
+	display :block;
+	visibility :visible;	
+}
+.Version_cell
+{
+	padding:3 5 3 5;
+}
+.Version_cell a
+{
+	font:11px verdana;
+	color:#00407F;
+}
+.Version_cell a: hover
+{
+	font:11px verdana;
+	color:red;
+}
+/*For news previe*/
+.newsTitle_cell
+{
+	padding:3 5 8 5;
+	font:15px verdana;
+	color:#993300;
+	border-bottom:1px solid #F1F1F1;
+	font-weight:bold;
+}
+.Image_cell
+{
+	padding:3 3 3 3;
+	background-color:#F1F1F1;
+}
+.newsContent_cell
+{
+	padding:5 5 5 5;
+	font:12px Arial;
+	color:#111111;
+	line-height:120%;
+}
+.newsContent_cell td, .newsContent_cell span, .newsContent_cell td span
+{
+	font:12px Arial;
+	color:#111111;
+}
+.newsContent_cell font
+{
+	font:11px verdana;
+	color:#111111;
+	line-height:150%;
+}
+.newsSource_cell 
+{
+	padding:3 8 3  5;
+	font:11px verdana;
+	color:#990000;
+	text-align:right;
+	font-weight:bold;
+}
+.CalendarImg
+{
+Z-INDEX: 1;
+WIDTH: 24px;
+POSITION: absolute;
+HEIGHT: 24px;
+}
+/*PhotoRpt*/
+.Columnbackground
+{
+  padding-top :4;
+  padding-bottom:2;
+  background-color:#F1F1F1;
+  border-top-style:solid;
+  border-top-width:thin;
+  border-bottom-style :solid ;
+}
+.NormalText
+{
+	width:73%;
+	border:1px solid #CCCCCC;
+}
+.simpleCombo
+{
+	width:100%;
+}
+.News_title_cell
+{
+	padding:5 5 3 5;
+	font:12px Arial;
+	color:#8B1D07;
+}
+.Main_content
+{
+	padding:25 0 10 0;
+}
+.HiddenListCat
+{
+	visibility :hidden  ;
+	display :none;
+	position :absolute  ; 
+}
+.ShowListCat
+{
+	visibility:visible ;
+/* display:none ;*/
+	position:absolute ; 
+}
+.SimpleLable
+{
+	font:11px verdana;
+	padding-top:5px;
+	padding-bottom:3px;
+	color:#000000;
+	font-weight:500;
+}
+/*Account*/
+.Account_form_area
+{
+	border:1px solid #55acee;
+}
+.FormHeader
+{
+	background-color:#F1F1F1;
+	padding:5 0 5 0;
+	font:11px verdana;
+	font-weight:bold;
+	color:#000000;
+	border-bottom:1px solid #55acee;
+}
+.FormAccount_item
+{
+	padding: 5 6 3 0;
+	text-align:right;
+	font:12px Arial;
+	color:#000000;
+}
+.ThirdText
+{
+	width:35%;
+	border:1px solid CCCCCC;
+}
+.FormAccount_control
+{
+	padding: 5 4 3 0;
+	font:12px Arial;
+	color:#000000;
+}
+.Full_editor
+{
+	width:100%;
+	border:1px solid #CCCCCC;
+}
+/*y kien*/
+.ToolBar_lable_cell
+{
+	font:11px verdana;
+	color:#000000;
+	padding-left:2px;
+	padding-right:2px;
+}
+.Foot_tool
+{
+	padding:5 12 10 0;
+}
+.Feeback_blok
+{
+	padding:5 5 5 5;
+	overflow:auto;
+	height:300;
+	padding-right:3px;
+	font:12px Arial;
+	color:#000000;
+}
+.CustomInfo, .CustomInfo span
+{
+	padding-right:3px;
+	font:12px Arial;
+	color:#666666;
+	font-style:italic;
+}
+.Control_cell
+{
+	text-align:center;
+	border-top:1px solid #55acee;
+	padding-top:6px;
+}
+.dv_Content
+{
+	padding:5 5 5 5;
+	overflow:auto;
+	height:300;
+	font:12px Arial;
+	color:#000000;
+	border:1px solid #F1F1F1;
+}
+.Report_Title, Report_Title span
+{
+	font:12px Arial;
+	font-weight:bold;
+	color:#980000;
+}
+.Live_cell
+{
+	padding:8 3 5 3;
+}
+.Live_cell a
+{
+	font:11px Arial;
+	color:#000000;
+}
+.Live_cell a: hover
+{
+	font:11px Arial;
+	color:#980000;
+}
+/*thống kê */
+.Report_lable
+{
+	font:11px verdana;
+	color:#000000;
+}
+.ReportPage
+{
+	font:11px verdana;
+	color:#980000;
+	font-weight:bold;
+	padding-right:8px;
+}
+.ReportPage a
+{
+	font:11px verdana;
+	color:#000000;
+	text-decoration:none;
+}
+.ReportPage a:hover
+{
+	font:11px verdana;
+	color:#980000;
+	text-decoration:underline;
+}
+.News_Initial_cell
+{
+	font:12px Arial;
+	font-weight:bold;
+}
+.OtherQuizz_Table
+{
+	border-bottom: #3399ff 1px dashed;
+}
+.OtherQuizz_Title
+{
+	font-family:Arial;
+	font-size:12px;
+	color:#136eae;
+}
+.OtherQuizz_XemTiep a
+{
+	text-decoration:none;
+	font-family:Arial;
+	font-size:12px;
+	color:#b70000;
+}
+.xemtiep a
+{
+	font-family:Arial;
+	font-size:11px;
+	text-decoration:none;
+	color:#1d7fe1;
+	font-weight:bold;
+}
+.Quizz_Question
+{
+	color:#154188;
+	font-family:Arial;
+	font-size:12px;	
+}
+.Quizz_Name
+{
+	color:#174189;
+	font-family:Arial;
+	font-size:19px;	
+	font-weight:bold;
+}
+.counter
+{
+	 color:	#52a5e7;
+	 font-family:Verdana;
+	 font-size:11px;
+	 font-weight:bold;
+}
+.AnsQuestion
+{
+	border-top:solid 1px #ffffff;
+	color:#154188;
+	font-family:Arial;
+	font-size:12px;		
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.ChuKetQua
+{
+	color:#174189;
+	font-family:Arial;
+	font-size:17px;	
+	font-weight:bold;	
+}
+.Resutl
+{
+	color:#154188;
+	font-family:Arial;
+	font-size:12px;	
+}

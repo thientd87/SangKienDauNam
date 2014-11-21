@@ -59,5 +59,106 @@ border-radius: 30px;
 #divChungToi,#divNhaTaiTro,#divSuMenh{ width: 1180px;height: 360px;padding: 40px 25px; display: none}
 #divChungToi{background-color: #be1e2d}
 .arrowLeft, .arrowRight{ height: 355px;float: right;line-height: 355px; cursor: pointer}
-.arrowRight{float: left}
+.arrowRight{ float: left; padding-right: 20px}
 .text-chung-toi{ float: left;width: 630px;color: #fff;font: normal 15px Segoe UI; padding-left:15px}
+
+#divNhaTaiTro{background-color: #155c95}
+#divSuMenh{background-color: #796041}
+
+.dang-ky-tham-gia-wrapper{ padding: 15px 30px;}
+.form-dang-ky{ width: 700px; float: left}
+.quy-dinh-tham-gia{ width: 460px; float: right}
+.content-quy-dinh-tham-gia{ width: 450px;height: 250px;font: normal 15px Segoe UI;color: #808285;margin-top: 20px; overflow: hidden}
+.scrollpanel .sp-scrollbar {
+  width: 3px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+.scrollpanel .sp-scrollbar .sp-thumb {
+  background-color: #aaa;
+  transition: height 0.2s ease-in-out;
+ 
+}
+.scrollpanel .sp-scrollbar.active .sp-thumb {
+  background-color: #999;
+}
+
+.no4 .sp-scrollbar {
+  margin: 4px;
+}
+
+
+.no4 .sp-scrollbar {
+  border-radius: 5px;overflow: initial !important;
+}
+
+.no4 .sp-scrollbar .sp-thumb {
+  border-radius: 5px;width: 300% !important;left: -3px !important
+
+}
+label {
+  width: 200px;
+    background-color: #e7e8e9;
+    border: 1px solid #D1D3D4;color: #808285;font: normal 15px Segoe UI;
+}
+
+/* hide input */
+input.checkbox:empty {
+	display: none
+}
+
+/* style label */
+input.checkbox:empty ~ label {
+	position: relative;
+	float: left;
+	line-height: 30px;
+	text-indent: 3.25em;
+	margin-top: 2em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input.checkbox:empty ~ label:before {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 2.5em;
+	background: #D1D3D4;
+
+}
+
+/* toggle hover */
+input.checkbox:hover:not(:checked) ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: #C2C2C2;
+}
+
+input.checkbox:hover:not(:checked) ~ label {
+	color: #888;
+}
+
+/* toggle on */
+input.checkbox:checked ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: #9CE2AE;
+	background-color: #4DCB6D;
+}
+
+input.checkbox:checked ~ label {
+	color: #777;
+}
+
+/* radio focus */
+input.checkbox:focus ~ label:before {
+	box-shadow: 0 0 0 3px #999;
+}
+
+.btn-nopbai{ width: 130px;height: 30px;display: inline-block;margin-top: 2em;background-color: #bcbec0;color: #414042;font: normal 15px Segoe UI;text-transform: uppercase;text-align: center;line-height: 30px; float: right}

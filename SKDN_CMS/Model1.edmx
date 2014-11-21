@@ -1,0 +1,2069 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DollyLensModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="DollyLensModelStoreContainer">
+          <EntitySet Name="Action" EntityType="DollyLensModel.Store.Action" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Adv_Page_Position" EntityType="DollyLensModel.Store.Adv_Page_Position" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Adv_Position" EntityType="DollyLensModel.Store.Adv_Position" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Advertisments" EntityType="DollyLensModel.Store.Advertisments" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AspNet_SqlCacheTablesForChangeNotification" EntityType="DollyLensModel.Store.AspNet_SqlCacheTablesForChangeNotification" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CacheMonitor_News" EntityType="DollyLensModel.Store.CacheMonitor_News" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Category" EntityType="DollyLensModel.Store.Category" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Channel" EntityType="DollyLensModel.Store.Channel" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Channel_User" EntityType="DollyLensModel.Store.Channel_User" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Channel_User_Role" EntityType="DollyLensModel.Store.Channel_User_Role" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ChannelResponse" EntityType="DollyLensModel.Store.ChannelResponse" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Comment" EntityType="DollyLensModel.Store.Comment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EditionType" EntityType="DollyLensModel.Store.EditionType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FeedBack" EntityType="DollyLensModel.Store.FeedBack" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Gallery" EntityType="DollyLensModel.Store.Gallery" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MediaObject" EntityType="DollyLensModel.Store.MediaObject" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="News" EntityType="DollyLensModel.Store.News" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="News_Extension" EntityType="DollyLensModel.Store.News_Extension" store:Type="Tables" store:Schema="dbo" store:Name="News_Extension">
+            <DefiningQuery>SELECT 
+      [News_Extension].[News_ID] AS [News_ID], 
+      [News_Extension].[Cat_ID] AS [Cat_ID], 
+      [News_Extension].[News_Title] AS [News_Title], 
+      [News_Extension].[News_Subtitle] AS [News_Subtitle], 
+      [News_Extension].[News_Image] AS [News_Image], 
+      [News_Extension].[News_ImageNote] AS [News_ImageNote], 
+      [News_Extension].[News_Source] AS [News_Source], 
+      [News_Extension].[News_InitialContent] AS [News_InitialContent], 
+      [News_Extension].[News_Content] AS [News_Content], 
+      [News_Extension].[News_Author] AS [News_Author], 
+      [News_Extension].[News_CurrEditor] AS [News_CurrEditor], 
+      [News_Extension].[News_Approver] AS [News_Approver], 
+      [News_Extension].[News_Status] AS [News_Status], 
+      [News_Extension].[News_SwitchTime] AS [News_SwitchTime], 
+      [News_Extension].[News_PublishDate] AS [News_PublishDate], 
+      [News_Extension].[News_isFocus] AS [News_isFocus], 
+      [News_Extension].[News_Mode] AS [News_Mode], 
+      [News_Extension].[News_ViewNum] AS [News_ViewNum], 
+      [News_Extension].[News_CreateDate] AS [News_CreateDate], 
+      [News_Extension].[News_ModifiedDate] AS [News_ModifiedDate], 
+      [News_Extension].[News_Relation] AS [News_Relation], 
+      [News_Extension].[News_Rate] AS [News_Rate], 
+      [News_Extension].[News_OtherCat] AS [News_OtherCat], 
+      [News_Extension].[isComment] AS [isComment], 
+      [News_Extension].[isUserRate] AS [isUserRate], 
+      [News_Extension].[Template] AS [Template], 
+      [News_Extension].[Icon] AS [Icon], 
+      [News_Extension].[WordCount] AS [WordCount], 
+      [News_Extension].[ViewCount] AS [ViewCount], 
+      [News_Extension].[Extension1] AS [Extension1], 
+      [News_Extension].[Extension2] AS [Extension2], 
+      [News_Extension].[Extension3] AS [Extension3], 
+      [News_Extension].[Extension4] AS [Extension4], 
+      [News_Extension].[News_Source1] AS [News_Source1]
+      FROM [dbo].[News_Extension] AS [News_Extension]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="News_Media" EntityType="DollyLensModel.Store.News_Media" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="NewsPublished" EntityType="DollyLensModel.Store.NewsPublished" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="NewsThread" EntityType="DollyLensModel.Store.NewsThread" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="NewsType" EntityType="DollyLensModel.Store.NewsType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Permission" EntityType="DollyLensModel.Store.Permission" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Product_Category" EntityType="DollyLensModel.Store.Product_Category" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Provinces" EntityType="DollyLensModel.Store.Provinces" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Role" EntityType="DollyLensModel.Store.Role" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Role_Permission" EntityType="DollyLensModel.Store.Role_Permission" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SupportOnline" EntityType="DollyLensModel.Store.SupportOnline" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="sysdiagrams" EntityType="DollyLensModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TacGiaBaiViet" EntityType="DollyLensModel.Store.TacGiaBaiViet" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Tags" EntityType="DollyLensModel.Store.Tags" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ThreadDetail" EntityType="DollyLensModel.Store.ThreadDetail" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="User" EntityType="DollyLensModel.Store.User" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="User_Category" EntityType="DollyLensModel.Store.User_Category" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="User_History" EntityType="DollyLensModel.Store.User_History" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="User_Permission" EntityType="DollyLensModel.Store.User_Permission" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UserDetails" EntityType="DollyLensModel.Store.UserDetails" store:Type="Tables" store:Schema="dbo" store:Name="UserDetails">
+            <DefiningQuery>SELECT 
+      [UserDetails].[ID] AS [ID], 
+      [UserDetails].[UserID] AS [UserID], 
+      [UserDetails].[NickName] AS [NickName], 
+      [UserDetails].[Avartar1] AS [Avartar1], 
+      [UserDetails].[Avartar2] AS [Avartar2], 
+      [UserDetails].[Avartar3] AS [Avartar3], 
+      [UserDetails].[Avartar4] AS [Avartar4], 
+      [UserDetails].[Blast] AS [Blast], 
+      [UserDetails].[FullName] AS [FullName], 
+      [UserDetails].[Age] AS [Age], 
+      [UserDetails].[AboutMe] AS [AboutMe], 
+      [UserDetails].[YM] AS [YM], 
+      [UserDetails].[HomePage] AS [HomePage]
+      FROM [dbo].[UserDetails] AS [UserDetails]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_Channel_User_Channel" Association="DollyLensModel.Store.FK_Channel_User_Channel">
+            <End Role="Channel" EntitySet="Channel" />
+            <End Role="Channel_User" EntitySet="Channel_User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Channel_User_Role_Channel_User" Association="DollyLensModel.Store.FK_Channel_User_Role_Channel_User">
+            <End Role="Channel_User" EntitySet="Channel_User" />
+            <End Role="Channel_User_Role" EntitySet="Channel_User_Role" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Channel_User_Role_Roles" Association="DollyLensModel.Store.FK_Channel_User_Role_Roles">
+            <End Role="Role" EntitySet="Role" />
+            <End Role="Channel_User_Role" EntitySet="Channel_User_Role" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Channel_User_Users" Association="DollyLensModel.Store.FK_Channel_User_Users">
+            <End Role="User" EntitySet="User" />
+            <End Role="Channel_User" EntitySet="Channel_User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Role_Permission_Role" Association="DollyLensModel.Store.FK_Role_Permission_Role">
+            <End Role="Role" EntitySet="Role" />
+            <End Role="Role_Permission" EntitySet="Role_Permission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Category_User_Permission" Association="DollyLensModel.Store.FK_User_Category_User_Permission">
+            <End Role="User_Permission" EntitySet="User_Permission" />
+            <End Role="User_Category" EntitySet="User_Category" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Permission_Channel_User_Role" Association="DollyLensModel.Store.FK_User_Permission_Channel_User_Role">
+            <End Role="Channel_User_Role" EntitySet="Channel_User_Role" />
+            <End Role="User_Permission" EntitySet="User_Permission" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Action">
+          <Key>
+            <PropertyRef Name="Comment_ID" />
+          </Key>
+          <Property Name="Comment_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="News_ID" Type="bigint" Nullable="false" />
+          <Property Name="Sender_ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Comment_Title" Type="nvarchar" MaxLength="500" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="Content" Type="ntext" />
+          <Property Name="ActionType" Type="int" />
+          <Property Name="Reciver_ID" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Adv_Page_Position">
+          <Key>
+            <PropertyRef Name="AdvID" />
+            <PropertyRef Name="CatID" />
+            <PropertyRef Name="PosID" />
+          </Key>
+          <Property Name="AdvID" Type="int" Nullable="false" />
+          <Property Name="CatID" Type="int" Nullable="false" />
+          <Property Name="PosID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Adv_Position">
+          <Key>
+            <PropertyRef Name="PosID" />
+          </Key>
+          <Property Name="PosID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PosName" Type="nvarchar" MaxLength="200" />
+          <Property Name="Width" Type="int" />
+          <Property Name="Height" Type="int" />
+          <Property Name="ClassName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Advertisments">
+          <Key>
+            <PropertyRef Name="AdvID" />
+          </Key>
+          <Property Name="AdvID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" MaxLength="500" />
+          <Property Name="FilePath" Type="nvarchar" MaxLength="500" />
+          <Property Name="StartDate" Type="datetime" Nullable="false" />
+          <Property Name="EndDate" Type="datetime" />
+          <Property Name="Embed" Type="ntext" />
+          <Property Name="Description" Type="nvarchar" MaxLength="500" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="IsRotate" Type="bit" />
+          <Property Name="Link" Type="nvarchar" MaxLength="2000" />
+          <Property Name="Order" Type="int" />
+          <Property Name="Type" Type="int" />
+          <Property Name="ViewCount" Type="int" />
+          <Property Name="Width" Type="int" />
+          <Property Name="Height" Type="int" />
+        </EntityType>
+        <EntityType Name="AspNet_SqlCacheTablesForChangeNotification">
+          <Key>
+            <PropertyRef Name="tableName" />
+          </Key>
+          <Property Name="tableName" Type="nvarchar" Nullable="false" MaxLength="450" />
+          <Property Name="notificationCreated" Type="datetime" Nullable="false" />
+          <Property Name="changeId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CacheMonitor_News">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IsProcessed" Type="bit" Nullable="false" />
+          <Property Name="News_ID" Type="bigint" />
+          <Property Name="Cat_ID" Type="int" />
+          <Property Name="Cat_ParentID" Type="int" />
+          <Property Name="News_PublishDate" Type="datetime" />
+          <Property Name="News_Relation" Type="nvarchar" MaxLength="1000" />
+          <Property Name="News_OtherCat" Type="nvarchar" MaxLength="50" />
+          <Property Name="NewRowIndex" Type="bigint" />
+          <Property Name="News_Mode" Type="int" />
+          <Property Name="IsFocus" Type="bit" />
+          <Property Name="IsChangeTitle" Type="bit" />
+          <Property Name="IsChangeImage" Type="bit" />
+          <Property Name="IsChangeSource" Type="bit" />
+          <Property Name="IsChangeInitContent" Type="bit" />
+          <Property Name="IsChangeStatus" Type="bit" />
+          <Property Name="IsChangePublishDate" Type="bit" />
+          <Property Name="IsChangeNewsRelation" Type="bit" />
+          <Property Name="IsChangeCat" Type="bit" />
+          <Property Name="IsChangeOtherCat" Type="bit" />
+          <Property Name="IsChangeNewsMode" Type="bit" />
+          <Property Name="IsBonBaiNoiBat" Type="bit" />
+          <Property Name="IsBaiXemNhieuNhat" Type="bit" />
+          <Property Name="DateTime_UpdateData" Type="datetime" />
+          <Property Name="DateTime_UpdateCache" Type="datetime" />
+          <Property Name="IsChangeContent" Type="bit" />
+          <Property Name="IsChangeTopComment" Type="bit" />
+          <Property Name="Extension1" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="Cat_ID" />
+          </Key>
+          <Property Name="Cat_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Cat_Name" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="Cat_Description" Type="ntext" />
+          <Property Name="Cat_DisplayURL" Type="nvarchar" MaxLength="500" />
+          <Property Name="Cat_ParentID" Type="int" />
+          <Property Name="Cat_isColumn" Type="bit" />
+          <Property Name="Cat_isHidden" Type="bit" />
+          <Property Name="Cat_ViewNum" Type="int" />
+          <Property Name="EditionType_ID" Type="int" />
+          <Property Name="Cat_Icon" Type="nvarchar" MaxLength="100" />
+          <Property Name="Cat_Order" Type="int" />
+          <Property Name="Channel_ID" Type="int" />
+          <Property Name="Cat_KeyWords" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Channel">
+          <Key>
+            <PropertyRef Name="Channel_ID" />
+          </Key>
+          <Property Name="Channel_ID" Type="int" Nullable="false" />
+          <Property Name="Channel_Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Channel_Description" Type="ntext" />
+        </EntityType>
+        <EntityType Name="Channel_User">
+          <Key>
+            <PropertyRef Name="CU_ID" />
+          </Key>
+          <Property Name="CU_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="User_ID" Type="nvarchar" MaxLength="200" />
+          <Property Name="Channel_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="Channel_User_Role">
+          <Key>
+            <PropertyRef Name="CUR_ID" />
+          </Key>
+          <Property Name="CUR_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CU_ID" Type="int" />
+          <Property Name="Role_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="ChannelResponse">
+          <Key>
+            <PropertyRef Name="ChannelResponse_ID" />
+          </Key>
+          <Property Name="ChannelResponse_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Sourse_ID" Type="int" />
+          <Property Name="UserID" Type="nvarchar" MaxLength="200" />
+          <Property Name="ChannelResponse_NameManager" Type="nvarchar" MaxLength="200" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="Comment">
+          <Key>
+            <PropertyRef Name="Comment_ID" />
+          </Key>
+          <Property Name="Comment_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="News_ID" Type="bigint" />
+          <Property Name="Avartar" Type="nvarchar" MaxLength="200" />
+          <Property Name="Comment_User" Type="nvarchar" MaxLength="100" />
+          <Property Name="Comment_Content" Type="ntext" />
+          <Property Name="Comment_Date" Type="datetime" />
+          <Property Name="Comment_Approved" Type="int" />
+          <Property Name="Comment_Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="Approver" Type="varchar" MaxLength="50" />
+          <Property Name="Comment_Type" Type="int" />
+          <Property Name="Comment_Approved_Date" Type="datetime" />
+        </EntityType>
+        <EntityType Name="EditionType">
+          <Key>
+            <PropertyRef Name="EditionType_ID" />
+          </Key>
+          <Property Name="EditionType_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EditionName" Type="nvarchar" MaxLength="500" />
+          <Property Name="EditionDescription" Type="nvarchar" MaxLength="1000" />
+          <Property Name="EditionDisplayURL" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="FeedBack">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" MaxLength="500" />
+          <Property Name="GioiTinh" Type="nvarchar" MaxLength="50" />
+          <Property Name="Tel" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Address" Type="nvarchar" MaxLength="500" />
+          <Property Name="Title" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Content" Type="nvarchar(max)" />
+          <Property Name="Createdate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Gallery">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="MediaObject">
+          <Key>
+            <PropertyRef Name="Object_ID" />
+          </Key>
+          <Property Name="Object_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Object_Type" Type="int" />
+          <Property Name="Object_Value" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Object_Url" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Object_Note" Type="ntext" />
+          <Property Name="UserID" Type="nvarchar" MaxLength="200" />
+          <Property Name="Stt" Type="int" />
+          <Property Name="News_ID" Type="bigint" />
+          <Property Name="GalleryID" Type="int" />
+        </EntityType>
+        <EntityType Name="News">
+          <Key>
+            <PropertyRef Name="News_ID" />
+          </Key>
+          <Property Name="News_ID" Type="bigint" Nullable="false" />
+          <Property Name="Cat_ID" Type="int" />
+          <Property Name="News_Title" Type="nvarchar" MaxLength="500" />
+          <Property Name="News_Subtitle" Type="nvarchar" MaxLength="500" />
+          <Property Name="News_Image" Type="nvarchar" MaxLength="200" />
+          <Property Name="News_ImageNote" Type="ntext" />
+          <Property Name="News_Source" Type="nvarchar" MaxLength="500" />
+          <Property Name="News_InitialContent" Type="nvarchar(max)" />
+          <Property Name="News_Content" Type="ntext" />
+          <Property Name="News_Author" Type="nvarchar" MaxLength="200" />
+          <Property Name="News_CurrEditor" Type="nvarchar" MaxLength="200" />
+          <Property Name="News_Approver" Type="nvarchar" MaxLength="200" />
+          <Property Name="News_Status" Type="int" />
+          <Property Name="News_SwitchTime" Type="datetime" />
+          <Property Name="News_PublishDate" Type="datetime" />
+          <Property Name="News_isFocus" Type="bit" />
+          <Property Name="News_Mode" Type="int" />
+          <Property Name="News_ViewNum" Type="int" />
+          <Property Name="News_CreateDate" Type="datetime" />
+          <Property Name="News_ModifiedDate" Type="datetime" />
+          <Property Name="News_Relation" Type="nvarchar" MaxLength="1000" />
+          <Property Name="News_Rate" Type="decimal" />
+          <Property Name="News_OtherCat" Type="nvarchar" MaxLength="50" />
+          <Property Name="isComment" Type="bit" />
+          <Property Name="isUserRate" Type="bit" />
+          <Property Name="Template" Type="int" />
+          <Property Name="Icon" Type="nvarchar" MaxLength="200" />
+          <Property Name="WordCount" Type="int" Nullable="false" />
+          <Property Name="ViewCount" Type="bigint" />
+          <Property Name="Extension1" Type="nvarchar" MaxLength="200" />
+          <Property Name="Extension2" Type="nvarchar" MaxLength="200" />
+          <Property Name="Extension3" Type="nvarchar" MaxLength="500" />
+          <Property Name="Extension4" Type="int" />
+          <Property Name="News_Source1" Type="nvarchar" MaxLength="100" />
+          <Property Name="EditionType_ID" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'DollyLens.dbo.News_Extension' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="News_Extension">
+          <Key>
+            <PropertyRef Name="News_ID" />
+            <PropertyRef Name="WordCount" />
+          </Key>
+          <Property Name="News_ID" Type="bigint" Nullable="false" />
+          <Property Name="Cat_ID" Type="int" />
+          <Property Name="News_Title" Type="nvarchar" MaxLength="500" />
+          <Property Name="News_Subtitle" Type="nvarchar" MaxLength="500" />
+          <Property Name="News_Image" Type="nvarchar" MaxLength="200" />
+          <Property Name="News_ImageNote" Type="ntext" />
+          <Property Name="News_Source" Type="nvarchar" MaxLength="500" />
+          <Property Name="News_InitialContent" Type="nvarchar(max)" />
+          <Property Name="News_Content" Type="ntext" />
+          <Property Name="News_Author" Type="nvarchar" MaxLength="200" />
+          <Property Name="News_CurrEditor" Type="nvarchar" MaxLength="200" />
+          <Property Name="News_Approver" Type="nvarchar" MaxLength="200" />
+          <Property Name="News_Status" Type="int" />
+          <Property Name="News_SwitchTime" Type="datetime" />
+          <Property Name="News_PublishDate" Type="datetime" />
+          <Property Name="News_isFocus" Type="bit" />
+          <Property Name="News_Mode" Type="int" />
+          <Property Name="News_ViewNum" Type="int" />
+          <Property Name="News_CreateDate" Type="datetime" />
+          <Property Name="News_ModifiedDate" Type="datetime" />
+          <Property Name="News_Relation" Type="nvarchar" MaxLength="1000" />
+          <Property Name="News_Rate" Type="decimal" />
+          <Property Name="News_OtherCat" Type="nvarchar" MaxLength="50" />
+          <Property Name="isComment" Type="bit" />
+          <Property Name="isUserRate" Type="bit" />
+          <Property Name="Template" Type="int" />
+          <Property Name="Icon" Type="nvarchar" MaxLength="200" />
+          <Property Name="WordCount" Type="int" Nullable="false" />
+          <Property Name="ViewCount" Type="bigint" />
+          <Property Name="Extension1" Type="nvarchar" MaxLength="200" />
+          <Property Name="Extension2" Type="nvarchar" MaxLength="200" />
+          <Property Name="Extension3" Type="nvarchar" MaxLength="500" />
+          <Property Name="Extension4" Type="int" />
+          <Property Name="News_Source1" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="News_Media">
+          <Key>
+            <PropertyRef Name="NM_ID" />
+          </Key>
+          <Property Name="NM_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="News_ID" Type="bigint" />
+          <Property Name="Object_ID" Type="int" />
+          <Property Name="UseAvatar" Type="nvarchar" MaxLength="200" />
+          <Property Name="Use_Note" Type="ntext" />
+          <Property Name="Film_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="NewsPublished">
+          <Key>
+            <PropertyRef Name="News_ID" />
+          </Key>
+          <Property Name="News_ID" Type="bigint" Nullable="false" />
+          <Property Name="Cat_ID" Type="int" />
+          <Property Name="News_Title" Type="nvarchar" MaxLength="500" />
+          <Property Name="News_Subtitle" Type="nvarchar" MaxLength="500" />
+          <Property Name="News_Image" Type="nvarchar" MaxLength="200" />
+          <Property Name="News_ImageNote" Type="ntext" />
+          <Property Name="News_Source" Type="nvarchar" MaxLength="200" />
+          <Property Name="News_InitContent" Type="nvarchar(max)" />
+          <Property Name="News_Content" Type="ntext" />
+          <Property Name="News_Athor" Type="nvarchar" MaxLength="200" />
+          <Property Name="News_Approver" Type="nvarchar" MaxLength="200" />
+          <Property Name="News_Status" Type="int" />
+          <Property Name="News_PublishDate" Type="datetime" />
+          <Property Name="News_isFocus" Type="bit" />
+          <Property Name="News_Mode" Type="int" />
+          <Property Name="News_Relation" Type="nvarchar" MaxLength="1000" />
+          <Property Name="News_Rate" Type="float" />
+          <Property Name="News_ModifedDate" Type="datetime" />
+          <Property Name="News_OtherCat" Type="nvarchar" MaxLength="50" />
+          <Property Name="isComment" Type="bit" />
+          <Property Name="isUserRate" Type="bit" />
+          <Property Name="Template" Type="int" />
+          <Property Name="Icon" Type="nvarchar" MaxLength="200" />
+          <Property Name="WordCount" Type="int" Nullable="false" />
+          <Property Name="Extension1" Type="nvarchar" MaxLength="200" />
+          <Property Name="Extension2" Type="nvarchar" MaxLength="200" />
+          <Property Name="Extension3" Type="nvarchar" MaxLength="500" />
+          <Property Name="Extension4" Type="int" />
+          <Property Name="URLIndex" Type="varchar" MaxLength="500" />
+          <Property Name="EditionType_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="NewsThread">
+          <Key>
+            <PropertyRef Name="Thread_ID" />
+          </Key>
+          <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="Thread_isForcus" Type="bit" />
+          <Property Name="Thread_Logo" Type="nvarchar" MaxLength="500" />
+          <Property Name="Thread_RT" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Thread_RC" Type="int" />
+          <Property Name="Thread_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Thread_Order" Type="int" />
+          <Property Name="Status" Type="int" />
+        </EntityType>
+        <EntityType Name="NewsType">
+          <Key>
+            <PropertyRef Name="News_ID" />
+            <PropertyRef Name="Type" />
+          </Key>
+          <Property Name="News_ID" Type="bigint" Nullable="false" />
+          <Property Name="Type" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Permission">
+          <Key>
+            <PropertyRef Name="Permission_ID" />
+          </Key>
+          <Property Name="Permission_ID" Type="int" Nullable="false" />
+          <Property Name="Permission_Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="KeyValue" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="Product_Category">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Product_Category_Name" Type="nvarchar" MaxLength="500" />
+          <Property Name="Product_Category_Name_En" Type="nvarchar" MaxLength="500" />
+          <Property Name="Product_Category_Desc" Type="nvarchar(max)" />
+          <Property Name="Product_Category_Desc_En" Type="nvarchar(max)" />
+          <Property Name="Product_Category_CatParent_ID" Type="int" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="MenuType" Type="int" />
+          <Property Name="Product_Category_Image" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Provinces">
+          <Key>
+            <PropertyRef Name="ProvinceID" />
+          </Key>
+          <Property Name="ProvinceID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProvinceName" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="Role_ID" />
+          </Key>
+          <Property Name="Role_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Role_Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Role_Description" Type="nvarchar" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="Role_Permission">
+          <Key>
+            <PropertyRef Name="Role_ID" />
+            <PropertyRef Name="Permission_ID" />
+          </Key>
+          <Property Name="Role_ID" Type="int" Nullable="false" />
+          <Property Name="Permission_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SupportOnline">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Yahoo" Type="nvarchar" MaxLength="500" />
+          <Property Name="Skype" Type="nvarchar" MaxLength="500" />
+          <Property Name="FullName" Type="nvarchar" MaxLength="500" />
+          <Property Name="isActive" Type="bit" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="Mobile" Type="nvarchar" MaxLength="50" />
+          <Property Name="GroupName" Type="nvarchar" MaxLength="50" />
+          <Property Name="STT" Type="int" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="TacGiaBaiViet">
+          <Key>
+            <PropertyRef Name="TacGia_ID" />
+          </Key>
+          <Property Name="TacGia_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TenTacGia" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="Tags">
+          <Key>
+            <PropertyRef Name="NewsID" />
+          </Key>
+          <Property Name="NewsID" Type="bigint" Nullable="false" />
+          <Property Name="Tags" Type="nvarchar" MaxLength="3000" />
+          <Property Name="News_Title" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="ThreadDetail">
+          <Key>
+            <PropertyRef Name="Threaddetails_ID" />
+          </Key>
+          <Property Name="Threaddetails_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="News_ID" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="Thread_ID" Type="int" Nullable="false" />
+          <Property Name="Cat_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="User_ID" />
+          </Key>
+          <Property Name="User_ID" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="User_Name" Type="nvarchar" MaxLength="1000" />
+          <Property Name="User_Pwd" Type="nvarchar" MaxLength="50" />
+          <Property Name="User_Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="User_Address" Type="nvarchar" MaxLength="50" />
+          <Property Name="User_PhoneNum" Type="nvarchar" MaxLength="50" />
+          <Property Name="User_Im" Type="nvarchar" MaxLength="500" />
+          <Property Name="User_Website" Type="nvarchar" MaxLength="50" />
+          <Property Name="User_isActive" Type="bit" />
+          <Property Name="User_CreatedDate" Type="datetime" />
+          <Property Name="User_ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="User_Category">
+          <Key>
+            <PropertyRef Name="UC_ID" />
+          </Key>
+          <Property Name="UC_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UP_ID" Type="int" />
+          <Property Name="Cat_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="User_History">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="nvarchar" MaxLength="200" />
+          <Property Name="PassOld" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastAccessTime" Type="datetime" />
+          <Property Name="LastChanged" Type="datetime" />
+        </EntityType>
+        <EntityType Name="User_Permission">
+          <Key>
+            <PropertyRef Name="UP_ID" />
+          </Key>
+          <Property Name="UP_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CUR_ID" Type="int" />
+          <Property Name="Permission_ID" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'DollyLens.dbo.UserDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="UserDetails">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="nvarchar" MaxLength="200" />
+          <Property Name="NickName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Avartar1" Type="nvarchar" MaxLength="250" />
+          <Property Name="Avartar2" Type="nvarchar" MaxLength="250" />
+          <Property Name="Avartar3" Type="nvarchar" MaxLength="250" />
+          <Property Name="Avartar4" Type="nvarchar" MaxLength="250" />
+          <Property Name="Blast" Type="nvarchar" MaxLength="1000" />
+          <Property Name="FullName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Age" Type="datetime" />
+          <Property Name="AboutMe" Type="nvarchar" MaxLength="1500" />
+          <Property Name="YM" Type="nvarchar" MaxLength="50" />
+          <Property Name="HomePage" Type="nchar" MaxLength="200" />
+        </EntityType>
+        <Association Name="FK_Channel_User_Channel">
+          <End Role="Channel" Type="DollyLensModel.Store.Channel" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Channel_User" Type="DollyLensModel.Store.Channel_User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Channel">
+              <PropertyRef Name="Channel_ID" />
+            </Principal>
+            <Dependent Role="Channel_User">
+              <PropertyRef Name="Channel_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Channel_User_Role_Channel_User">
+          <End Role="Channel_User" Type="DollyLensModel.Store.Channel_User" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Channel_User_Role" Type="DollyLensModel.Store.Channel_User_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Channel_User">
+              <PropertyRef Name="CU_ID" />
+            </Principal>
+            <Dependent Role="Channel_User_Role">
+              <PropertyRef Name="CU_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Channel_User_Role_Roles">
+          <End Role="Role" Type="DollyLensModel.Store.Role" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Channel_User_Role" Type="DollyLensModel.Store.Channel_User_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="Role_ID" />
+            </Principal>
+            <Dependent Role="Channel_User_Role">
+              <PropertyRef Name="Role_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Channel_User_Users">
+          <End Role="User" Type="DollyLensModel.Store.User" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Channel_User" Type="DollyLensModel.Store.Channel_User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="User_ID" />
+            </Principal>
+            <Dependent Role="Channel_User">
+              <PropertyRef Name="User_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Role_Permission_Role">
+          <End Role="Role" Type="DollyLensModel.Store.Role" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Role_Permission" Type="DollyLensModel.Store.Role_Permission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="Role_ID" />
+            </Principal>
+            <Dependent Role="Role_Permission">
+              <PropertyRef Name="Role_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Category_User_Permission">
+          <End Role="User_Permission" Type="DollyLensModel.Store.User_Permission" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="User_Category" Type="DollyLensModel.Store.User_Category" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User_Permission">
+              <PropertyRef Name="UP_ID" />
+            </Principal>
+            <Dependent Role="User_Category">
+              <PropertyRef Name="UP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Permission_Channel_User_Role">
+          <End Role="Channel_User_Role" Type="DollyLensModel.Store.Channel_User_Role" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="User_Permission" Type="DollyLensModel.Store.User_Permission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Channel_User_Role">
+              <PropertyRef Name="CUR_ID" />
+            </Principal>
+            <Dependent Role="User_Permission">
+              <PropertyRef Name="CUR_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DollyLensModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="DollyLensEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Actions" EntityType="DollyLensModel.Action" />
+          <EntitySet Name="Adv_Page_Position" EntityType="DollyLensModel.Adv_Page_Position" />
+          <EntitySet Name="Adv_Position" EntityType="DollyLensModel.Adv_Position" />
+          <EntitySet Name="Advertisments" EntityType="DollyLensModel.Advertisment" />
+          <EntitySet Name="AspNet_SqlCacheTablesForChangeNotification" EntityType="DollyLensModel.AspNet_SqlCacheTablesForChangeNotification" />
+          <EntitySet Name="CacheMonitor_News" EntityType="DollyLensModel.CacheMonitor_News" />
+          <EntitySet Name="Categories" EntityType="DollyLensModel.Category" />
+          <EntitySet Name="Channels" EntityType="DollyLensModel.Channel" />
+          <EntitySet Name="Channel_User" EntityType="DollyLensModel.Channel_User" />
+          <EntitySet Name="Channel_User_Role" EntityType="DollyLensModel.Channel_User_Role" />
+          <EntitySet Name="ChannelResponses" EntityType="DollyLensModel.ChannelResponse" />
+          <EntitySet Name="Comments" EntityType="DollyLensModel.Comment" />
+          <EntitySet Name="EditionTypes" EntityType="DollyLensModel.EditionType" />
+          <EntitySet Name="FeedBacks" EntityType="DollyLensModel.FeedBack" />
+          <EntitySet Name="Galleries" EntityType="DollyLensModel.Gallery" />
+          <EntitySet Name="MediaObjects" EntityType="DollyLensModel.MediaObject" />
+          <EntitySet Name="News" EntityType="DollyLensModel.News" />
+          <EntitySet Name="News_Extension" EntityType="DollyLensModel.News_Extension" />
+          <EntitySet Name="News_Media" EntityType="DollyLensModel.News_Media" />
+          <EntitySet Name="NewsPublisheds" EntityType="DollyLensModel.NewsPublished" />
+          <EntitySet Name="NewsThreads" EntityType="DollyLensModel.NewsThread" />
+          <EntitySet Name="NewsTypes" EntityType="DollyLensModel.NewsType" />
+          <EntitySet Name="Permissions" EntityType="DollyLensModel.Permission" />
+          <EntitySet Name="Product_Category" EntityType="DollyLensModel.Product_Category" />
+          <EntitySet Name="Provinces" EntityType="DollyLensModel.Province" />
+          <EntitySet Name="Roles" EntityType="DollyLensModel.Role" />
+          <EntitySet Name="Role_Permission" EntityType="DollyLensModel.Role_Permission" />
+          <EntitySet Name="SupportOnlines" EntityType="DollyLensModel.SupportOnline" />
+          <EntitySet Name="sysdiagrams" EntityType="DollyLensModel.sysdiagram" />
+          <EntitySet Name="TacGiaBaiViets" EntityType="DollyLensModel.TacGiaBaiViet" />
+          <EntitySet Name="Tags" EntityType="DollyLensModel.Tag" />
+          <EntitySet Name="ThreadDetails" EntityType="DollyLensModel.ThreadDetail" />
+          <EntitySet Name="Users" EntityType="DollyLensModel.User" />
+          <EntitySet Name="User_Category" EntityType="DollyLensModel.User_Category" />
+          <EntitySet Name="User_History" EntityType="DollyLensModel.User_History" />
+          <EntitySet Name="User_Permission" EntityType="DollyLensModel.User_Permission" />
+          <EntitySet Name="UserDetails" EntityType="DollyLensModel.UserDetail" />
+          <AssociationSet Name="FK_Channel_User_Channel" Association="DollyLensModel.FK_Channel_User_Channel">
+            <End Role="Channel" EntitySet="Channels" />
+            <End Role="Channel_User" EntitySet="Channel_User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Channel_User_Role_Channel_User" Association="DollyLensModel.FK_Channel_User_Role_Channel_User">
+            <End Role="Channel_User" EntitySet="Channel_User" />
+            <End Role="Channel_User_Role" EntitySet="Channel_User_Role" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Channel_User_Users" Association="DollyLensModel.FK_Channel_User_Users">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Channel_User" EntitySet="Channel_User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Channel_User_Role_Roles" Association="DollyLensModel.FK_Channel_User_Role_Roles">
+            <End Role="Role" EntitySet="Roles" />
+            <End Role="Channel_User_Role" EntitySet="Channel_User_Role" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Permission_Channel_User_Role" Association="DollyLensModel.FK_User_Permission_Channel_User_Role">
+            <End Role="Channel_User_Role" EntitySet="Channel_User_Role" />
+            <End Role="User_Permission" EntitySet="User_Permission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Role_Permission_Role" Association="DollyLensModel.FK_Role_Permission_Role">
+            <End Role="Role" EntitySet="Roles" />
+            <End Role="Role_Permission" EntitySet="Role_Permission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Category_User_Permission" Association="DollyLensModel.FK_User_Category_User_Permission">
+            <End Role="User_Permission" EntitySet="User_Permission" />
+            <End Role="User_Category" EntitySet="User_Category" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Action">
+          <Key>
+            <PropertyRef Name="Comment_ID" />
+          </Key>
+          <Property Name="Comment_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="News_ID" Type="Int64" Nullable="false" />
+          <Property Name="Sender_ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Comment_Title" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="CreateDate" Type="DateTime" />
+          <Property Name="Content" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ActionType" Type="Int32" />
+          <Property Name="Reciver_ID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Adv_Page_Position">
+          <Key>
+            <PropertyRef Name="AdvID" />
+            <PropertyRef Name="CatID" />
+            <PropertyRef Name="PosID" />
+          </Key>
+          <Property Name="AdvID" Type="Int32" Nullable="false" />
+          <Property Name="CatID" Type="Int32" Nullable="false" />
+          <Property Name="PosID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Adv_Position">
+          <Key>
+            <PropertyRef Name="PosID" />
+          </Key>
+          <Property Name="PosID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PosName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Width" Type="Int32" />
+          <Property Name="Height" Type="Int32" />
+          <Property Name="ClassName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Advertisment">
+          <Key>
+            <PropertyRef Name="AdvID" />
+          </Key>
+          <Property Name="AdvID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="FilePath" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="StartDate" Type="DateTime" Nullable="false" />
+          <Property Name="EndDate" Type="DateTime" />
+          <Property Name="Embed" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="IsRotate" Type="Boolean" />
+          <Property Name="Link" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+          <Property Name="Order" Type="Int32" />
+          <Property Name="Type" Type="Int32" />
+          <Property Name="ViewCount" Type="Int32" />
+          <Property Name="Width" Type="Int32" />
+          <Property Name="Height" Type="Int32" />
+        </EntityType>
+        <EntityType Name="AspNet_SqlCacheTablesForChangeNotification">
+          <Key>
+            <PropertyRef Name="tableName" />
+          </Key>
+          <Property Name="tableName" Type="String" Nullable="false" MaxLength="450" Unicode="true" FixedLength="false" />
+          <Property Name="notificationCreated" Type="DateTime" Nullable="false" />
+          <Property Name="changeId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CacheMonitor_News">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IsProcessed" Type="Boolean" Nullable="false" />
+          <Property Name="News_ID" Type="Int64" />
+          <Property Name="Cat_ID" Type="Int32" />
+          <Property Name="Cat_ParentID" Type="Int32" />
+          <Property Name="News_PublishDate" Type="DateTime" />
+          <Property Name="News_Relation" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="News_OtherCat" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NewRowIndex" Type="Int64" />
+          <Property Name="News_Mode" Type="Int32" />
+          <Property Name="IsFocus" Type="Boolean" />
+          <Property Name="IsChangeTitle" Type="Boolean" />
+          <Property Name="IsChangeImage" Type="Boolean" />
+          <Property Name="IsChangeSource" Type="Boolean" />
+          <Property Name="IsChangeInitContent" Type="Boolean" />
+          <Property Name="IsChangeStatus" Type="Boolean" />
+          <Property Name="IsChangePublishDate" Type="Boolean" />
+          <Property Name="IsChangeNewsRelation" Type="Boolean" />
+          <Property Name="IsChangeCat" Type="Boolean" />
+          <Property Name="IsChangeOtherCat" Type="Boolean" />
+          <Property Name="IsChangeNewsMode" Type="Boolean" />
+          <Property Name="IsBonBaiNoiBat" Type="Boolean" />
+          <Property Name="IsBaiXemNhieuNhat" Type="Boolean" />
+          <Property Name="DateTime_UpdateData" Type="DateTime" />
+          <Property Name="DateTime_UpdateCache" Type="DateTime" />
+          <Property Name="IsChangeContent" Type="Boolean" />
+          <Property Name="IsChangeTopComment" Type="Boolean" />
+          <Property Name="Extension1" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="Cat_ID" />
+          </Key>
+          <Property Name="Cat_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Cat_Name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Cat_Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Cat_DisplayURL" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Cat_ParentID" Type="Int32" />
+          <Property Name="Cat_isColumn" Type="Boolean" />
+          <Property Name="Cat_isHidden" Type="Boolean" />
+          <Property Name="Cat_ViewNum" Type="Int32" />
+          <Property Name="EditionType_ID" Type="Int32" />
+          <Property Name="Cat_Icon" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Cat_Order" Type="Int32" />
+          <Property Name="Channel_ID" Type="Int32" />
+          <Property Name="Cat_KeyWords" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Channel">
+          <Key>
+            <PropertyRef Name="Channel_ID" />
+          </Key>
+          <Property Name="Channel_ID" Type="Int32" Nullable="false" />
+          <Property Name="Channel_Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Channel_Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Channel_User" Relationship="DollyLensModel.FK_Channel_User_Channel" FromRole="Channel" ToRole="Channel_User" />
+        </EntityType>
+        <EntityType Name="Channel_User">
+          <Key>
+            <PropertyRef Name="CU_ID" />
+          </Key>
+          <Property Name="CU_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="User_ID" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Channel_ID" Type="Int32" />
+          <NavigationProperty Name="Channel" Relationship="DollyLensModel.FK_Channel_User_Channel" FromRole="Channel_User" ToRole="Channel" />
+          <NavigationProperty Name="Channel_User_Role" Relationship="DollyLensModel.FK_Channel_User_Role_Channel_User" FromRole="Channel_User" ToRole="Channel_User_Role" />
+          <NavigationProperty Name="User" Relationship="DollyLensModel.FK_Channel_User_Users" FromRole="Channel_User" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Channel_User_Role">
+          <Key>
+            <PropertyRef Name="CUR_ID" />
+          </Key>
+          <Property Name="CUR_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CU_ID" Type="Int32" />
+          <Property Name="Role_ID" Type="Int32" />
+          <NavigationProperty Name="Channel_User" Relationship="DollyLensModel.FK_Channel_User_Role_Channel_User" FromRole="Channel_User_Role" ToRole="Channel_User" />
+          <NavigationProperty Name="Role" Relationship="DollyLensModel.FK_Channel_User_Role_Roles" FromRole="Channel_User_Role" ToRole="Role" />
+          <NavigationProperty Name="User_Permission" Relationship="DollyLensModel.FK_User_Permission_Channel_User_Role" FromRole="Channel_User_Role" ToRole="User_Permission" />
+        </EntityType>
+        <EntityType Name="ChannelResponse">
+          <Key>
+            <PropertyRef Name="ChannelResponse_ID" />
+          </Key>
+          <Property Name="ChannelResponse_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Sourse_ID" Type="Int32" />
+          <Property Name="UserID" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ChannelResponse_NameManager" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="IsActive" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Comment">
+          <Key>
+            <PropertyRef Name="Comment_ID" />
+          </Key>
+          <Property Name="Comment_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="News_ID" Type="Int64" />
+          <Property Name="Avartar" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Comment_User" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Comment_Content" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Comment_Date" Type="DateTime" />
+          <Property Name="Comment_Approved" Type="Int32" />
+          <Property Name="Comment_Email" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Approver" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Comment_Type" Type="Int32" />
+          <Property Name="Comment_Approved_Date" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="EditionType">
+          <Key>
+            <PropertyRef Name="EditionType_ID" />
+          </Key>
+          <Property Name="EditionType_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EditionName" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="EditionDescription" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="EditionDisplayURL" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="FeedBack">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="GioiTinh" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Tel" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Address" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Title" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="Content" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Createdate" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="Gallery">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="MediaObject">
+          <Key>
+            <PropertyRef Name="Object_ID" />
+          </Key>
+          <Property Name="Object_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Object_Type" Type="Int32" />
+          <Property Name="Object_Value" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="Object_Url" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="Object_Note" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="UserID" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Stt" Type="Int32" />
+          <Property Name="News_ID" Type="Int64" />
+          <Property Name="GalleryID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="News">
+          <Key>
+            <PropertyRef Name="News_ID" />
+          </Key>
+          <Property Name="News_ID" Type="Int64" Nullable="false" />
+          <Property Name="Cat_ID" Type="Int32" />
+          <Property Name="News_Title" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="News_Subtitle" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="News_Image" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="News_ImageNote" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="News_Source" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="News_InitialContent" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="News_Content" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="News_Author" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="News_CurrEditor" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="News_Approver" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="News_Status" Type="Int32" />
+          <Property Name="News_SwitchTime" Type="DateTime" />
+          <Property Name="News_PublishDate" Type="DateTime" />
+          <Property Name="News_isFocus" Type="Boolean" />
+          <Property Name="News_Mode" Type="Int32" />
+          <Property Name="News_ViewNum" Type="Int32" />
+          <Property Name="News_CreateDate" Type="DateTime" />
+          <Property Name="News_ModifiedDate" Type="DateTime" />
+          <Property Name="News_Relation" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="News_Rate" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="News_OtherCat" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="isComment" Type="Boolean" />
+          <Property Name="isUserRate" Type="Boolean" />
+          <Property Name="Template" Type="Int32" />
+          <Property Name="Icon" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="WordCount" Type="Int32" Nullable="false" />
+          <Property Name="ViewCount" Type="Int64" />
+          <Property Name="Extension1" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Extension2" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Extension3" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Extension4" Type="Int32" />
+          <Property Name="News_Source1" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="EditionType_ID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="News_Extension">
+          <Key>
+            <PropertyRef Name="News_ID" />
+            <PropertyRef Name="WordCount" />
+          </Key>
+          <Property Name="News_ID" Type="Int64" Nullable="false" />
+          <Property Name="Cat_ID" Type="Int32" />
+          <Property Name="News_Title" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="News_Subtitle" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="News_Image" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="News_ImageNote" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="News_Source" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="News_InitialContent" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="News_Content" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="News_Author" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="News_CurrEditor" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="News_Approver" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="News_Status" Type="Int32" />
+          <Property Name="News_SwitchTime" Type="DateTime" />
+          <Property Name="News_PublishDate" Type="DateTime" />
+          <Property Name="News_isFocus" Type="Boolean" />
+          <Property Name="News_Mode" Type="Int32" />
+          <Property Name="News_ViewNum" Type="Int32" />
+          <Property Name="News_CreateDate" Type="DateTime" />
+          <Property Name="News_ModifiedDate" Type="DateTime" />
+          <Property Name="News_Relation" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="News_Rate" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="News_OtherCat" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="isComment" Type="Boolean" />
+          <Property Name="isUserRate" Type="Boolean" />
+          <Property Name="Template" Type="Int32" />
+          <Property Name="Icon" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="WordCount" Type="Int32" Nullable="false" />
+          <Property Name="ViewCount" Type="Int64" />
+          <Property Name="Extension1" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Extension2" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Extension3" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Extension4" Type="Int32" />
+          <Property Name="News_Source1" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="News_Media">
+          <Key>
+            <PropertyRef Name="NM_ID" />
+          </Key>
+          <Property Name="NM_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="News_ID" Type="Int64" />
+          <Property Name="Object_ID" Type="Int32" />
+          <Property Name="UseAvatar" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Use_Note" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Film_ID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="NewsPublished">
+          <Key>
+            <PropertyRef Name="News_ID" />
+          </Key>
+          <Property Name="News_ID" Type="Int64" Nullable="false" />
+          <Property Name="Cat_ID" Type="Int32" />
+          <Property Name="News_Title" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="News_Subtitle" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="News_Image" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="News_ImageNote" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="News_Source" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="News_InitContent" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="News_Content" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="News_Athor" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="News_Approver" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="News_Status" Type="Int32" />
+          <Property Name="News_PublishDate" Type="DateTime" />
+          <Property Name="News_isFocus" Type="Boolean" />
+          <Property Name="News_Mode" Type="Int32" />
+          <Property Name="News_Relation" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="News_Rate" Type="Double" />
+          <Property Name="News_ModifedDate" Type="DateTime" />
+          <Property Name="News_OtherCat" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="isComment" Type="Boolean" />
+          <Property Name="isUserRate" Type="Boolean" />
+          <Property Name="Template" Type="Int32" />
+          <Property Name="Icon" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="WordCount" Type="Int32" Nullable="false" />
+          <Property Name="Extension1" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Extension2" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Extension3" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Extension4" Type="Int32" />
+          <Property Name="URLIndex" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="EditionType_ID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="NewsThread">
+          <Key>
+            <PropertyRef Name="Thread_ID" />
+          </Key>
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Thread_isForcus" Type="Boolean" />
+          <Property Name="Thread_Logo" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Thread_RT" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="Thread_RC" Type="Int32" />
+          <Property Name="Thread_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Thread_Order" Type="Int32" />
+          <Property Name="Status" Type="Int32" />
+        </EntityType>
+        <EntityType Name="NewsType">
+          <Key>
+            <PropertyRef Name="News_ID" />
+            <PropertyRef Name="Type" />
+          </Key>
+          <Property Name="News_ID" Type="Int64" Nullable="false" />
+          <Property Name="Type" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Permission">
+          <Key>
+            <PropertyRef Name="Permission_ID" />
+          </Key>
+          <Property Name="Permission_ID" Type="Int32" Nullable="false" />
+          <Property Name="Permission_Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="KeyValue" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Product_Category">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Product_Category_Name" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Product_Category_Name_En" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Product_Category_Desc" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Product_Category_Desc_En" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Product_Category_CatParent_ID" Type="Int32" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="MenuType" Type="Int32" />
+          <Property Name="Product_Category_Image" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Province">
+          <Key>
+            <PropertyRef Name="ProvinceID" />
+          </Key>
+          <Property Name="ProvinceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProvinceName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="Role_ID" />
+          </Key>
+          <Property Name="Role_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Role_Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Role_Description" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Channel_User_Role" Relationship="DollyLensModel.FK_Channel_User_Role_Roles" FromRole="Role" ToRole="Channel_User_Role" />
+          <NavigationProperty Name="Role_Permission" Relationship="DollyLensModel.FK_Role_Permission_Role" FromRole="Role" ToRole="Role_Permission" />
+        </EntityType>
+        <EntityType Name="Role_Permission">
+          <Key>
+            <PropertyRef Name="Role_ID" />
+            <PropertyRef Name="Permission_ID" />
+          </Key>
+          <Property Name="Role_ID" Type="Int32" Nullable="false" />
+          <Property Name="Permission_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Role" Relationship="DollyLensModel.FK_Role_Permission_Role" FromRole="Role_Permission" ToRole="Role" />
+        </EntityType>
+        <EntityType Name="SupportOnline">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Yahoo" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Skype" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="FullName" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="isActive" Type="Boolean" />
+          <Property Name="CreateDate" Type="DateTime" />
+          <Property Name="Mobile" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="GroupName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="STT" Type="Int32" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TacGiaBaiViet">
+          <Key>
+            <PropertyRef Name="TacGia_ID" />
+          </Key>
+          <Property Name="TacGia_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenTacGia" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Tag">
+          <Key>
+            <PropertyRef Name="NewsID" />
+          </Key>
+          <Property Name="NewsID" Type="Int64" Nullable="false" />
+          <Property Name="Tags" Type="String" MaxLength="3000" Unicode="true" FixedLength="false" />
+          <Property Name="News_Title" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="ThreadDetail">
+          <Key>
+            <PropertyRef Name="Threaddetails_ID" />
+          </Key>
+          <Property Name="Threaddetails_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="News_ID" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Thread_ID" Type="Int32" Nullable="false" />
+          <Property Name="Cat_ID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="User_ID" />
+          </Key>
+          <Property Name="User_ID" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="User_Name" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="User_Pwd" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="User_Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="User_Address" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="User_PhoneNum" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="User_Im" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="User_Website" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="User_isActive" Type="Boolean" />
+          <Property Name="User_CreatedDate" Type="DateTime" />
+          <Property Name="User_ModifiedDate" Type="DateTime" />
+          <NavigationProperty Name="Channel_User" Relationship="DollyLensModel.FK_Channel_User_Users" FromRole="User" ToRole="Channel_User" />
+        </EntityType>
+        <EntityType Name="User_Category">
+          <Key>
+            <PropertyRef Name="UC_ID" />
+          </Key>
+          <Property Name="UC_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UP_ID" Type="Int32" />
+          <Property Name="Cat_ID" Type="Int32" />
+          <NavigationProperty Name="User_Permission" Relationship="DollyLensModel.FK_User_Category_User_Permission" FromRole="User_Category" ToRole="User_Permission" />
+        </EntityType>
+        <EntityType Name="User_History">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="PassOld" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="LastAccessTime" Type="DateTime" />
+          <Property Name="LastChanged" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="User_Permission">
+          <Key>
+            <PropertyRef Name="UP_ID" />
+          </Key>
+          <Property Name="UP_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CUR_ID" Type="Int32" />
+          <Property Name="Permission_ID" Type="Int32" />
+          <NavigationProperty Name="Channel_User_Role" Relationship="DollyLensModel.FK_User_Permission_Channel_User_Role" FromRole="User_Permission" ToRole="Channel_User_Role" />
+          <NavigationProperty Name="User_Category" Relationship="DollyLensModel.FK_User_Category_User_Permission" FromRole="User_Permission" ToRole="User_Category" />
+        </EntityType>
+        <EntityType Name="UserDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="NickName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Avartar1" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Avartar2" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Avartar3" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Avartar4" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Blast" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="FullName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Age" Type="DateTime" />
+          <Property Name="AboutMe" Type="String" MaxLength="1500" Unicode="true" FixedLength="false" />
+          <Property Name="YM" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="HomePage" Type="String" MaxLength="200" Unicode="true" FixedLength="true" />
+        </EntityType>
+        <Association Name="FK_Channel_User_Channel">
+          <End Role="Channel" Type="DollyLensModel.Channel" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Channel_User" Type="DollyLensModel.Channel_User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Channel">
+              <PropertyRef Name="Channel_ID" />
+            </Principal>
+            <Dependent Role="Channel_User">
+              <PropertyRef Name="Channel_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Channel_User_Role_Channel_User">
+          <End Role="Channel_User" Type="DollyLensModel.Channel_User" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Channel_User_Role" Type="DollyLensModel.Channel_User_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Channel_User">
+              <PropertyRef Name="CU_ID" />
+            </Principal>
+            <Dependent Role="Channel_User_Role">
+              <PropertyRef Name="CU_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Channel_User_Users">
+          <End Role="User" Type="DollyLensModel.User" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Channel_User" Type="DollyLensModel.Channel_User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="User_ID" />
+            </Principal>
+            <Dependent Role="Channel_User">
+              <PropertyRef Name="User_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Channel_User_Role_Roles">
+          <End Role="Role" Type="DollyLensModel.Role" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Channel_User_Role" Type="DollyLensModel.Channel_User_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="Role_ID" />
+            </Principal>
+            <Dependent Role="Channel_User_Role">
+              <PropertyRef Name="Role_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Permission_Channel_User_Role">
+          <End Role="Channel_User_Role" Type="DollyLensModel.Channel_User_Role" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="User_Permission" Type="DollyLensModel.User_Permission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Channel_User_Role">
+              <PropertyRef Name="CUR_ID" />
+            </Principal>
+            <Dependent Role="User_Permission">
+              <PropertyRef Name="CUR_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Role_Permission_Role">
+          <End Role="Role" Type="DollyLensModel.Role" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Role_Permission" Type="DollyLensModel.Role_Permission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="Role_ID" />
+            </Principal>
+            <Dependent Role="Role_Permission">
+              <PropertyRef Name="Role_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Category_User_Permission">
+          <End Role="User_Permission" Type="DollyLensModel.User_Permission" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="User_Category" Type="DollyLensModel.User_Category" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User_Permission">
+              <PropertyRef Name="UP_ID" />
+            </Principal>
+            <Dependent Role="User_Category">
+              <PropertyRef Name="UP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DollyLensModelStoreContainer" CdmEntityContainer="DollyLensEntities">
+          <EntitySetMapping Name="Actions">
+            <EntityTypeMapping TypeName="DollyLensModel.Action">
+              <MappingFragment StoreEntitySet="Action">
+                <ScalarProperty Name="Comment_ID" ColumnName="Comment_ID" />
+                <ScalarProperty Name="News_ID" ColumnName="News_ID" />
+                <ScalarProperty Name="Sender_ID" ColumnName="Sender_ID" />
+                <ScalarProperty Name="Comment_Title" ColumnName="Comment_Title" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="ActionType" ColumnName="ActionType" />
+                <ScalarProperty Name="Reciver_ID" ColumnName="Reciver_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Adv_Page_Position">
+            <EntityTypeMapping TypeName="DollyLensModel.Adv_Page_Position">
+              <MappingFragment StoreEntitySet="Adv_Page_Position">
+                <ScalarProperty Name="AdvID" ColumnName="AdvID" />
+                <ScalarProperty Name="CatID" ColumnName="CatID" />
+                <ScalarProperty Name="PosID" ColumnName="PosID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Adv_Position">
+            <EntityTypeMapping TypeName="DollyLensModel.Adv_Position">
+              <MappingFragment StoreEntitySet="Adv_Position">
+                <ScalarProperty Name="PosID" ColumnName="PosID" />
+                <ScalarProperty Name="PosName" ColumnName="PosName" />
+                <ScalarProperty Name="Width" ColumnName="Width" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Advertisments">
+            <EntityTypeMapping TypeName="DollyLensModel.Advertisment">
+              <MappingFragment StoreEntitySet="Advertisments">
+                <ScalarProperty Name="AdvID" ColumnName="AdvID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="Embed" ColumnName="Embed" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsRotate" ColumnName="IsRotate" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="Order" ColumnName="Order" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+                <ScalarProperty Name="Width" ColumnName="Width" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AspNet_SqlCacheTablesForChangeNotification">
+            <EntityTypeMapping TypeName="DollyLensModel.AspNet_SqlCacheTablesForChangeNotification">
+              <MappingFragment StoreEntitySet="AspNet_SqlCacheTablesForChangeNotification">
+                <ScalarProperty Name="tableName" ColumnName="tableName" />
+                <ScalarProperty Name="notificationCreated" ColumnName="notificationCreated" />
+                <ScalarProperty Name="changeId" ColumnName="changeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CacheMonitor_News">
+            <EntityTypeMapping TypeName="DollyLensModel.CacheMonitor_News">
+              <MappingFragment StoreEntitySet="CacheMonitor_News">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="IsProcessed" ColumnName="IsProcessed" />
+                <ScalarProperty Name="News_ID" ColumnName="News_ID" />
+                <ScalarProperty Name="Cat_ID" ColumnName="Cat_ID" />
+                <ScalarProperty Name="Cat_ParentID" ColumnName="Cat_ParentID" />
+                <ScalarProperty Name="News_PublishDate" ColumnName="News_PublishDate" />
+                <ScalarProperty Name="News_Relation" ColumnName="News_Relation" />
+                <ScalarProperty Name="News_OtherCat" ColumnName="News_OtherCat" />
+                <ScalarProperty Name="NewRowIndex" ColumnName="NewRowIndex" />
+                <ScalarProperty Name="News_Mode" ColumnName="News_Mode" />
+                <ScalarProperty Name="IsFocus" ColumnName="IsFocus" />
+                <ScalarProperty Name="IsChangeTitle" ColumnName="IsChangeTitle" />
+                <ScalarProperty Name="IsChangeImage" ColumnName="IsChangeImage" />
+                <ScalarProperty Name="IsChangeSource" ColumnName="IsChangeSource" />
+                <ScalarProperty Name="IsChangeInitContent" ColumnName="IsChangeInitContent" />
+                <ScalarProperty Name="IsChangeStatus" ColumnName="IsChangeStatus" />
+                <ScalarProperty Name="IsChangePublishDate" ColumnName="IsChangePublishDate" />
+                <ScalarProperty Name="IsChangeNewsRelation" ColumnName="IsChangeNewsRelation" />
+                <ScalarProperty Name="IsChangeCat" ColumnName="IsChangeCat" />
+                <ScalarProperty Name="IsChangeOtherCat" ColumnName="IsChangeOtherCat" />
+                <ScalarProperty Name="IsChangeNewsMode" ColumnName="IsChangeNewsMode" />
+                <ScalarProperty Name="IsBonBaiNoiBat" ColumnName="IsBonBaiNoiBat" />
+                <ScalarProperty Name="IsBaiXemNhieuNhat" ColumnName="IsBaiXemNhieuNhat" />
+                <ScalarProperty Name="DateTime_UpdateData" ColumnName="DateTime_UpdateData" />
+                <ScalarProperty Name="DateTime_UpdateCache" ColumnName="DateTime_UpdateCache" />
+                <ScalarProperty Name="IsChangeContent" ColumnName="IsChangeContent" />
+                <ScalarProperty Name="IsChangeTopComment" ColumnName="IsChangeTopComment" />
+                <ScalarProperty Name="Extension1" ColumnName="Extension1" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="DollyLensModel.Category">
+              <MappingFragment StoreEntitySet="Category">
+                <ScalarProperty Name="Cat_ID" ColumnName="Cat_ID" />
+                <ScalarProperty Name="Cat_Name" ColumnName="Cat_Name" />
+                <ScalarProperty Name="Cat_Description" ColumnName="Cat_Description" />
+                <ScalarProperty Name="Cat_DisplayURL" ColumnName="Cat_DisplayURL" />
+                <ScalarProperty Name="Cat_ParentID" ColumnName="Cat_ParentID" />
+                <ScalarProperty Name="Cat_isColumn" ColumnName="Cat_isColumn" />
+                <ScalarProperty Name="Cat_isHidden" ColumnName="Cat_isHidden" />
+                <ScalarProperty Name="Cat_ViewNum" ColumnName="Cat_ViewNum" />
+                <ScalarProperty Name="EditionType_ID" ColumnName="EditionType_ID" />
+                <ScalarProperty Name="Cat_Icon" ColumnName="Cat_Icon" />
+                <ScalarProperty Name="Cat_Order" ColumnName="Cat_Order" />
+                <ScalarProperty Name="Channel_ID" ColumnName="Channel_ID" />
+                <ScalarProperty Name="Cat_KeyWords" ColumnName="Cat_KeyWords" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Channels">
+            <EntityTypeMapping TypeName="DollyLensModel.Channel">
+              <MappingFragment StoreEntitySet="Channel">
+                <ScalarProperty Name="Channel_ID" ColumnName="Channel_ID" />
+                <ScalarProperty Name="Channel_Name" ColumnName="Channel_Name" />
+                <ScalarProperty Name="Channel_Description" ColumnName="Channel_Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Channel_User">
+            <EntityTypeMapping TypeName="DollyLensModel.Channel_User">
+              <MappingFragment StoreEntitySet="Channel_User">
+                <ScalarProperty Name="CU_ID" ColumnName="CU_ID" />
+                <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+                <ScalarProperty Name="Channel_ID" ColumnName="Channel_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Channel_User_Role">
+            <EntityTypeMapping TypeName="DollyLensModel.Channel_User_Role">
+              <MappingFragment StoreEntitySet="Channel_User_Role">
+                <ScalarProperty Name="CUR_ID" ColumnName="CUR_ID" />
+                <ScalarProperty Name="CU_ID" ColumnName="CU_ID" />
+                <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ChannelResponses">
+            <EntityTypeMapping TypeName="DollyLensModel.ChannelResponse">
+              <MappingFragment StoreEntitySet="ChannelResponse">
+                <ScalarProperty Name="ChannelResponse_ID" ColumnName="ChannelResponse_ID" />
+                <ScalarProperty Name="Sourse_ID" ColumnName="Sourse_ID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="ChannelResponse_NameManager" ColumnName="ChannelResponse_NameManager" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Comments">
+            <EntityTypeMapping TypeName="DollyLensModel.Comment">
+              <MappingFragment StoreEntitySet="Comment">
+                <ScalarProperty Name="Comment_ID" ColumnName="Comment_ID" />
+                <ScalarProperty Name="News_ID" ColumnName="News_ID" />
+                <ScalarProperty Name="Avartar" ColumnName="Avartar" />
+                <ScalarProperty Name="Comment_User" ColumnName="Comment_User" />
+                <ScalarProperty Name="Comment_Content" ColumnName="Comment_Content" />
+                <ScalarProperty Name="Comment_Date" ColumnName="Comment_Date" />
+                <ScalarProperty Name="Comment_Approved" ColumnName="Comment_Approved" />
+                <ScalarProperty Name="Comment_Email" ColumnName="Comment_Email" />
+                <ScalarProperty Name="Approver" ColumnName="Approver" />
+                <ScalarProperty Name="Comment_Type" ColumnName="Comment_Type" />
+                <ScalarProperty Name="Comment_Approved_Date" ColumnName="Comment_Approved_Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EditionTypes">
+            <EntityTypeMapping TypeName="DollyLensModel.EditionType">
+              <MappingFragment StoreEntitySet="EditionType">
+                <ScalarProperty Name="EditionType_ID" ColumnName="EditionType_ID" />
+                <ScalarProperty Name="EditionName" ColumnName="EditionName" />
+                <ScalarProperty Name="EditionDescription" ColumnName="EditionDescription" />
+                <ScalarProperty Name="EditionDisplayURL" ColumnName="EditionDisplayURL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FeedBacks">
+            <EntityTypeMapping TypeName="DollyLensModel.FeedBack">
+              <MappingFragment StoreEntitySet="FeedBack">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+                <ScalarProperty Name="Tel" ColumnName="Tel" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Galleries">
+            <EntityTypeMapping TypeName="DollyLensModel.Gallery">
+              <MappingFragment StoreEntitySet="Gallery">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MediaObjects">
+            <EntityTypeMapping TypeName="DollyLensModel.MediaObject">
+              <MappingFragment StoreEntitySet="MediaObject">
+                <ScalarProperty Name="Object_ID" ColumnName="Object_ID" />
+                <ScalarProperty Name="Object_Type" ColumnName="Object_Type" />
+                <ScalarProperty Name="Object_Value" ColumnName="Object_Value" />
+                <ScalarProperty Name="Object_Url" ColumnName="Object_Url" />
+                <ScalarProperty Name="Object_Note" ColumnName="Object_Note" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Stt" ColumnName="Stt" />
+                <ScalarProperty Name="News_ID" ColumnName="News_ID" />
+                <ScalarProperty Name="GalleryID" ColumnName="GalleryID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="News">
+            <EntityTypeMapping TypeName="DollyLensModel.News">
+              <MappingFragment StoreEntitySet="News">
+                <ScalarProperty Name="News_ID" ColumnName="News_ID" />
+                <ScalarProperty Name="Cat_ID" ColumnName="Cat_ID" />
+                <ScalarProperty Name="News_Title" ColumnName="News_Title" />
+                <ScalarProperty Name="News_Subtitle" ColumnName="News_Subtitle" />
+                <ScalarProperty Name="News_Image" ColumnName="News_Image" />
+                <ScalarProperty Name="News_ImageNote" ColumnName="News_ImageNote" />
+                <ScalarProperty Name="News_Source" ColumnName="News_Source" />
+                <ScalarProperty Name="News_InitialContent" ColumnName="News_InitialContent" />
+                <ScalarProperty Name="News_Content" ColumnName="News_Content" />
+                <ScalarProperty Name="News_Author" ColumnName="News_Author" />
+                <ScalarProperty Name="News_CurrEditor" ColumnName="News_CurrEditor" />
+                <ScalarProperty Name="News_Approver" ColumnName="News_Approver" />
+                <ScalarProperty Name="News_Status" ColumnName="News_Status" />
+                <ScalarProperty Name="News_SwitchTime" ColumnName="News_SwitchTime" />
+                <ScalarProperty Name="News_PublishDate" ColumnName="News_PublishDate" />
+                <ScalarProperty Name="News_isFocus" ColumnName="News_isFocus" />
+                <ScalarProperty Name="News_Mode" ColumnName="News_Mode" />
+                <ScalarProperty Name="News_ViewNum" ColumnName="News_ViewNum" />
+                <ScalarProperty Name="News_CreateDate" ColumnName="News_CreateDate" />
+                <ScalarProperty Name="News_ModifiedDate" ColumnName="News_ModifiedDate" />
+                <ScalarProperty Name="News_Relation" ColumnName="News_Relation" />
+                <ScalarProperty Name="News_Rate" ColumnName="News_Rate" />
+                <ScalarProperty Name="News_OtherCat" ColumnName="News_OtherCat" />
+                <ScalarProperty Name="isComment" ColumnName="isComment" />
+                <ScalarProperty Name="isUserRate" ColumnName="isUserRate" />
+                <ScalarProperty Name="Template" ColumnName="Template" />
+                <ScalarProperty Name="Icon" ColumnName="Icon" />
+                <ScalarProperty Name="WordCount" ColumnName="WordCount" />
+                <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+                <ScalarProperty Name="Extension1" ColumnName="Extension1" />
+                <ScalarProperty Name="Extension2" ColumnName="Extension2" />
+                <ScalarProperty Name="Extension3" ColumnName="Extension3" />
+                <ScalarProperty Name="Extension4" ColumnName="Extension4" />
+                <ScalarProperty Name="News_Source1" ColumnName="News_Source1" />
+                <ScalarProperty Name="EditionType_ID" ColumnName="EditionType_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="News_Extension">
+            <EntityTypeMapping TypeName="DollyLensModel.News_Extension">
+              <MappingFragment StoreEntitySet="News_Extension">
+                <ScalarProperty Name="News_ID" ColumnName="News_ID" />
+                <ScalarProperty Name="Cat_ID" ColumnName="Cat_ID" />
+                <ScalarProperty Name="News_Title" ColumnName="News_Title" />
+                <ScalarProperty Name="News_Subtitle" ColumnName="News_Subtitle" />
+                <ScalarProperty Name="News_Image" ColumnName="News_Image" />
+                <ScalarProperty Name="News_ImageNote" ColumnName="News_ImageNote" />
+                <ScalarProperty Name="News_Source" ColumnName="News_Source" />
+                <ScalarProperty Name="News_InitialContent" ColumnName="News_InitialContent" />
+                <ScalarProperty Name="News_Content" ColumnName="News_Content" />
+                <ScalarProperty Name="News_Author" ColumnName="News_Author" />
+                <ScalarProperty Name="News_CurrEditor" ColumnName="News_CurrEditor" />
+                <ScalarProperty Name="News_Approver" ColumnName="News_Approver" />
+                <ScalarProperty Name="News_Status" ColumnName="News_Status" />
+                <ScalarProperty Name="News_SwitchTime" ColumnName="News_SwitchTime" />
+                <ScalarProperty Name="News_PublishDate" ColumnName="News_PublishDate" />
+                <ScalarProperty Name="News_isFocus" ColumnName="News_isFocus" />
+                <ScalarProperty Name="News_Mode" ColumnName="News_Mode" />
+                <ScalarProperty Name="News_ViewNum" ColumnName="News_ViewNum" />
+                <ScalarProperty Name="News_CreateDate" ColumnName="News_CreateDate" />
+                <ScalarProperty Name="News_ModifiedDate" ColumnName="News_ModifiedDate" />
+                <ScalarProperty Name="News_Relation" ColumnName="News_Relation" />
+                <ScalarProperty Name="News_Rate" ColumnName="News_Rate" />
+                <ScalarProperty Name="News_OtherCat" ColumnName="News_OtherCat" />
+                <ScalarProperty Name="isComment" ColumnName="isComment" />
+                <ScalarProperty Name="isUserRate" ColumnName="isUserRate" />
+                <ScalarProperty Name="Template" ColumnName="Template" />
+                <ScalarProperty Name="Icon" ColumnName="Icon" />
+                <ScalarProperty Name="WordCount" ColumnName="WordCount" />
+                <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+                <ScalarProperty Name="Extension1" ColumnName="Extension1" />
+                <ScalarProperty Name="Extension2" ColumnName="Extension2" />
+                <ScalarProperty Name="Extension3" ColumnName="Extension3" />
+                <ScalarProperty Name="Extension4" ColumnName="Extension4" />
+                <ScalarProperty Name="News_Source1" ColumnName="News_Source1" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="News_Media">
+            <EntityTypeMapping TypeName="DollyLensModel.News_Media">
+              <MappingFragment StoreEntitySet="News_Media">
+                <ScalarProperty Name="NM_ID" ColumnName="NM_ID" />
+                <ScalarProperty Name="News_ID" ColumnName="News_ID" />
+                <ScalarProperty Name="Object_ID" ColumnName="Object_ID" />
+                <ScalarProperty Name="UseAvatar" ColumnName="UseAvatar" />
+                <ScalarProperty Name="Use_Note" ColumnName="Use_Note" />
+                <ScalarProperty Name="Film_ID" ColumnName="Film_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NewsPublisheds">
+            <EntityTypeMapping TypeName="DollyLensModel.NewsPublished">
+              <MappingFragment StoreEntitySet="NewsPublished">
+                <ScalarProperty Name="News_ID" ColumnName="News_ID" />
+                <ScalarProperty Name="Cat_ID" ColumnName="Cat_ID" />
+                <ScalarProperty Name="News_Title" ColumnName="News_Title" />
+                <ScalarProperty Name="News_Subtitle" ColumnName="News_Subtitle" />
+                <ScalarProperty Name="News_Image" ColumnName="News_Image" />
+                <ScalarProperty Name="News_ImageNote" ColumnName="News_ImageNote" />
+                <ScalarProperty Name="News_Source" ColumnName="News_Source" />
+                <ScalarProperty Name="News_InitContent" ColumnName="News_InitContent" />
+                <ScalarProperty Name="News_Content" ColumnName="News_Content" />
+                <ScalarProperty Name="News_Athor" ColumnName="News_Athor" />
+                <ScalarProperty Name="News_Approver" ColumnName="News_Approver" />
+                <ScalarProperty Name="News_Status" ColumnName="News_Status" />
+                <ScalarProperty Name="News_PublishDate" ColumnName="News_PublishDate" />
+                <ScalarProperty Name="News_isFocus" ColumnName="News_isFocus" />
+                <ScalarProperty Name="News_Mode" ColumnName="News_Mode" />
+                <ScalarProperty Name="News_Relation" ColumnName="News_Relation" />
+                <ScalarProperty Name="News_Rate" ColumnName="News_Rate" />
+                <ScalarProperty Name="News_ModifedDate" ColumnName="News_ModifedDate" />
+                <ScalarProperty Name="News_OtherCat" ColumnName="News_OtherCat" />
+                <ScalarProperty Name="isComment" ColumnName="isComment" />
+                <ScalarProperty Name="isUserRate" ColumnName="isUserRate" />
+                <ScalarProperty Name="Template" ColumnName="Template" />
+                <ScalarProperty Name="Icon" ColumnName="Icon" />
+                <ScalarProperty Name="WordCount" ColumnName="WordCount" />
+                <ScalarProperty Name="Extension1" ColumnName="Extension1" />
+                <ScalarProperty Name="Extension2" ColumnName="Extension2" />
+                <ScalarProperty Name="Extension3" ColumnName="Extension3" />
+                <ScalarProperty Name="Extension4" ColumnName="Extension4" />
+                <ScalarProperty Name="URLIndex" ColumnName="URLIndex" />
+                <ScalarProperty Name="EditionType_ID" ColumnName="EditionType_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NewsThreads">
+            <EntityTypeMapping TypeName="DollyLensModel.NewsThread">
+              <MappingFragment StoreEntitySet="NewsThread">
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Thread_isForcus" ColumnName="Thread_isForcus" />
+                <ScalarProperty Name="Thread_Logo" ColumnName="Thread_Logo" />
+                <ScalarProperty Name="Thread_RT" ColumnName="Thread_RT" />
+                <ScalarProperty Name="Thread_RC" ColumnName="Thread_RC" />
+                <ScalarProperty Name="Thread_ID" ColumnName="Thread_ID" />
+                <ScalarProperty Name="Thread_Order" ColumnName="Thread_Order" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NewsTypes">
+            <EntityTypeMapping TypeName="DollyLensModel.NewsType">
+              <MappingFragment StoreEntitySet="NewsType">
+                <ScalarProperty Name="News_ID" ColumnName="News_ID" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Permissions">
+            <EntityTypeMapping TypeName="DollyLensModel.Permission">
+              <MappingFragment StoreEntitySet="Permission">
+                <ScalarProperty Name="Permission_ID" ColumnName="Permission_ID" />
+                <ScalarProperty Name="Permission_Name" ColumnName="Permission_Name" />
+                <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Product_Category">
+            <EntityTypeMapping TypeName="DollyLensModel.Product_Category">
+              <MappingFragment StoreEntitySet="Product_Category">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Product_Category_Name" ColumnName="Product_Category_Name" />
+                <ScalarProperty Name="Product_Category_Name_En" ColumnName="Product_Category_Name_En" />
+                <ScalarProperty Name="Product_Category_Desc" ColumnName="Product_Category_Desc" />
+                <ScalarProperty Name="Product_Category_Desc_En" ColumnName="Product_Category_Desc_En" />
+                <ScalarProperty Name="Product_Category_CatParent_ID" ColumnName="Product_Category_CatParent_ID" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="MenuType" ColumnName="MenuType" />
+                <ScalarProperty Name="Product_Category_Image" ColumnName="Product_Category_Image" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Provinces">
+            <EntityTypeMapping TypeName="DollyLensModel.Province">
+              <MappingFragment StoreEntitySet="Provinces">
+                <ScalarProperty Name="ProvinceID" ColumnName="ProvinceID" />
+                <ScalarProperty Name="ProvinceName" ColumnName="ProvinceName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Roles">
+            <EntityTypeMapping TypeName="DollyLensModel.Role">
+              <MappingFragment StoreEntitySet="Role">
+                <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+                <ScalarProperty Name="Role_Name" ColumnName="Role_Name" />
+                <ScalarProperty Name="Role_Description" ColumnName="Role_Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Role_Permission">
+            <EntityTypeMapping TypeName="DollyLensModel.Role_Permission">
+              <MappingFragment StoreEntitySet="Role_Permission">
+                <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+                <ScalarProperty Name="Permission_ID" ColumnName="Permission_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SupportOnlines">
+            <EntityTypeMapping TypeName="DollyLensModel.SupportOnline">
+              <MappingFragment StoreEntitySet="SupportOnline">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Yahoo" ColumnName="Yahoo" />
+                <ScalarProperty Name="Skype" ColumnName="Skype" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="isActive" ColumnName="isActive" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+                <ScalarProperty Name="STT" ColumnName="STT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="DollyLensModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TacGiaBaiViets">
+            <EntityTypeMapping TypeName="DollyLensModel.TacGiaBaiViet">
+              <MappingFragment StoreEntitySet="TacGiaBaiViet">
+                <ScalarProperty Name="TacGia_ID" ColumnName="TacGia_ID" />
+                <ScalarProperty Name="TenTacGia" ColumnName="TenTacGia" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tags">
+            <EntityTypeMapping TypeName="DollyLensModel.Tag">
+              <MappingFragment StoreEntitySet="Tags">
+                <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+                <ScalarProperty Name="Tags" ColumnName="Tags" />
+                <ScalarProperty Name="News_Title" ColumnName="News_Title" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ThreadDetails">
+            <EntityTypeMapping TypeName="DollyLensModel.ThreadDetail">
+              <MappingFragment StoreEntitySet="ThreadDetail">
+                <ScalarProperty Name="Threaddetails_ID" ColumnName="Threaddetails_ID" />
+                <ScalarProperty Name="News_ID" ColumnName="News_ID" />
+                <ScalarProperty Name="Thread_ID" ColumnName="Thread_ID" />
+                <ScalarProperty Name="Cat_ID" ColumnName="Cat_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="DollyLensModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+                <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+                <ScalarProperty Name="User_Pwd" ColumnName="User_Pwd" />
+                <ScalarProperty Name="User_Email" ColumnName="User_Email" />
+                <ScalarProperty Name="User_Address" ColumnName="User_Address" />
+                <ScalarProperty Name="User_PhoneNum" ColumnName="User_PhoneNum" />
+                <ScalarProperty Name="User_Im" ColumnName="User_Im" />
+                <ScalarProperty Name="User_Website" ColumnName="User_Website" />
+                <ScalarProperty Name="User_isActive" ColumnName="User_isActive" />
+                <ScalarProperty Name="User_CreatedDate" ColumnName="User_CreatedDate" />
+                <ScalarProperty Name="User_ModifiedDate" ColumnName="User_ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User_Category">
+            <EntityTypeMapping TypeName="DollyLensModel.User_Category">
+              <MappingFragment StoreEntitySet="User_Category">
+                <ScalarProperty Name="UC_ID" ColumnName="UC_ID" />
+                <ScalarProperty Name="UP_ID" ColumnName="UP_ID" />
+                <ScalarProperty Name="Cat_ID" ColumnName="Cat_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User_History">
+            <EntityTypeMapping TypeName="DollyLensModel.User_History">
+              <MappingFragment StoreEntitySet="User_History">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="PassOld" ColumnName="PassOld" />
+                <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+                <ScalarProperty Name="LastChanged" ColumnName="LastChanged" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User_Permission">
+            <EntityTypeMapping TypeName="DollyLensModel.User_Permission">
+              <MappingFragment StoreEntitySet="User_Permission">
+                <ScalarProperty Name="UP_ID" ColumnName="UP_ID" />
+                <ScalarProperty Name="CUR_ID" ColumnName="CUR_ID" />
+                <ScalarProperty Name="Permission_ID" ColumnName="Permission_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserDetails">
+            <EntityTypeMapping TypeName="DollyLensModel.UserDetail">
+              <MappingFragment StoreEntitySet="UserDetails">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="NickName" ColumnName="NickName" />
+                <ScalarProperty Name="Avartar1" ColumnName="Avartar1" />
+                <ScalarProperty Name="Avartar2" ColumnName="Avartar2" />
+                <ScalarProperty Name="Avartar3" ColumnName="Avartar3" />
+                <ScalarProperty Name="Avartar4" ColumnName="Avartar4" />
+                <ScalarProperty Name="Blast" ColumnName="Blast" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="AboutMe" ColumnName="AboutMe" />
+                <ScalarProperty Name="YM" ColumnName="YM" />
+                <ScalarProperty Name="HomePage" ColumnName="HomePage" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1">
+        <EntityTypeShape EntityType="DollyLensModel.Action" Width="1.5" PointX="5.75" PointY="5.75" Height="2.5571907552083335" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.Adv_Page_Position" Width="1.5" PointX="7.75" PointY="5.75" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.Adv_Position" Width="1.5" PointX="7.75" PointY="8.75" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.Advertisment" Width="1.5" PointX="9.75" PointY="0.75" Height="3.9033007812499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.AspNet_SqlCacheTablesForChangeNotification" Width="1.5" PointX="2.75" PointY="8.75" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.CacheMonitor_News" Width="1.5" PointX="4.75" PointY="9.75" Height="6.4032194010416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.Category" Width="1.5" PointX="9.75" PointY="5.75" Height="3.5186979166666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.Channel" Width="1.5" PointX="1.5" PointY="11.25" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.Channel_User" Width="1.5" PointX="0.75" PointY="8.125" Height="2.1725878906249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.Channel_User_Role" Width="1.5" PointX="3" PointY="2.25" Height="2.1725878906249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.ChannelResponse" Width="1.5" PointX="9.75" PointY="10.75" Height="1.9802864583333353" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.Comment" Width="1.5" PointX="11.75" PointY="0.75" Height="3.1340950520833317" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.EditionType" Width="1.5" PointX="11.75" PointY="4.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.FeedBack" Width="1.5" PointX="6.75" PointY="11.75" Height="2.7494921875000031" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.Gallery" Width="1.5" PointX="11.75" PointY="7.75" Height="1.4033821614583388" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.MediaObject" Width="1.5" PointX="11.75" PointY="10.75" Height="2.7494921875000031" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.News" Width="1.5" PointX="13.75" PointY="0.75" Height="7.7493294270833388" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.News_Extension" Width="1.5" PointX="8.75" PointY="13.75" Height="7.5570279947916674" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.News_Media" Width="1.5" PointX="13.75" PointY="9.75" Height="2.1725878906250031" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.NewsPublished" Width="1.5" PointX="13.75" PointY="12.75" Height="6.7878222656250031" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.NewsThread" Width="1.5" PointX="10.75" PointY="14.75" Height="2.5571907552083317" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.NewsType" Width="1.5" PointX="15.75" PointY="0.75" Height="1.4033821614583282" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.Permission" Width="1.5" PointX="15.75" PointY="3.75" Height="1.5956835937500102" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.Product_Category" Width="1.5" PointX="15.75" PointY="6.75" Height="2.7494921875000102" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.Province" Width="1.5" PointX="15.75" PointY="10.75" Height="1.4033821614583246" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.Role" Width="1.5" PointX="0.75" PointY="2.375" Height="1.9802864583333393" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.Role_Permission" Width="1.5" PointX="3" PointY="5.375" Height="1.595683593749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.SupportOnline" Width="1.5" PointX="15.75" PointY="13.75" Height="2.7494921875000102" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.sysdiagram" Width="1.5" PointX="17.75" PointY="0.75" Height="1.9802864583333246" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.TacGiaBaiViet" Width="1.5" PointX="17.75" PointY="3.75" Height="1.4033821614583246" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.Tag" Width="1.5" PointX="3.75" PointY="17.75" Height="1.5956835937500102" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.ThreadDetail" Width="1.5" PointX="5.75" PointY="17.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.User" Width="1.5" PointX="1.5" PointY="13.75" Height="3.3263964843749942" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.User_Category" Width="1.5" PointX="7.5" PointY="2.375" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.User_History" Width="1.5" PointX="17.75" PointY="6.75" Height="1.9802864583333246" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.User_Permission" Width="1.5" PointX="5.25" PointY="2.375" Height="1.9802864583333388" IsExpanded="true" />
+        <EntityTypeShape EntityType="DollyLensModel.UserDetail" Width="1.5" PointX="17.75" PointY="9.75" Height="3.5186979166666674" IsExpanded="true" />
+        <AssociationConnector Association="DollyLensModel.FK_Channel_User_Channel" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.875" PointY="11.25" />
+          <ConnectorPoint PointX="1.875" PointY="10.297587890625" />
+        </AssociationConnector>
+        <AssociationConnector Association="DollyLensModel.FK_Channel_User_Role_Channel_User" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="8.1261528461538468" />
+          <ConnectorPoint PointX="2.625" PointY="7.7511528461538468" />
+          <ConnectorPoint PointX="2.625" PointY="3.3362939453125" />
+          <ConnectorPoint PointX="3" PointY="3.3362939453125" />
+        </AssociationConnector>
+        <AssociationConnector Association="DollyLensModel.FK_Channel_User_Users" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="15.413198242187498" />
+          <ConnectorPoint PointX="1.1249995" PointY="15.413198242187498" />
+          <ConnectorPoint PointX="1.1249995" PointY="10.297587890625" />
+        </AssociationConnector>
+        <AssociationConnector Association="DollyLensModel.FK_Channel_User_Role_Roles" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="3.9082902018229193" />
+          <ConnectorPoint PointX="2.5416666666666665" PointY="3.9082902018229189" />
+          <ConnectorPoint PointX="2.7083333333333335" PointY="3.9082902018229193" />
+          <ConnectorPoint PointX="3" PointY="3.9082902018229193" />
+        </AssociationConnector>
+        <AssociationConnector Association="DollyLensModel.FK_User_Permission_Channel_User_Role" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="3.3651432291666694" />
+          <ConnectorPoint PointX="5.25" PointY="3.3651432291666694" />
+        </AssociationConnector>
+        <AssociationConnector Association="DollyLensModel.FK_Role_Permission_Role" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="4.3552864583333388" />
+          <ConnectorPoint PointX="1.5" PointY="6.172841796874998" />
+          <ConnectorPoint PointX="2.5416666666666665" PointY="6.1728417968749971" />
+          <ConnectorPoint PointX="2.7083333333333335" PointY="6.172841796874998" />
+          <ConnectorPoint PointX="3" PointY="6.172841796874998" />
+        </AssociationConnector>
+        <AssociationConnector Association="DollyLensModel.FK_User_Category_User_Permission" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="3.2689925130208337" />
+          <ConnectorPoint PointX="7.5" PointY="3.2689925130208337" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

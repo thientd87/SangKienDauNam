@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC2F43C2-CEDF-415D-961E-7369CEBB9832}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>DFISYS.User.Db</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <RootNamespace>DFISYS.User.Db</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.XML">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Box_Permission.cs" />
+    <Compile Include="Box_Permission_Base.cs" />
+    <Compile Include="CategoryCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CategoryCollection_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CategoryRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CategoryRow_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChannelCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChannelCollection_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChannelRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChannelRow_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Channel_UserCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Channel_UserCollection_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Channel_UserRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Channel_UserRow_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Channel_User_RoleCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Channel_User_RoleCollection_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Channel_User_RoleRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Channel_User_RoleRow_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainDB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainDB_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PermissionCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PermissionCollection_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PermissionRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PermissionRow_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RoleCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RoleCollection_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RoleRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RoleRow_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Role_PermissionCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Role_PermissionCollection_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Role_PermissionRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Role_PermissionRow_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoreProcedure.cs" />
+    <Compile Include="UserCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserCollection_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserRow_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="User_CategoryCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="User_CategoryCollection_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="User_CategoryRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="User_CategoryRow_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="User_PermissionCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="User_PermissionCollection_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="User_PermissionRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="User_PermissionRow_Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

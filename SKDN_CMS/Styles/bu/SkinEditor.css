@@ -1,0 +1,133 @@
+.CssPropertyFieldSet
+{
+	padding : 10 10 10 10;
+}
+.CssPropertyFieldSet TD
+{
+	font-family : Verdana;
+	font-size : 11px;
+}
+
+.CssPropertyLegend
+{
+	font : 11px Verdana;
+	font-weight : bold;
+}
+
+.ClassList_Header
+{
+	font : bold 12px Arial;
+	padding : 5 5 5 10px;
+}
+.ClassAlias_Header
+{
+	font : bold 12px Arial;
+}
+.ClassAlias
+{
+	width : 100%;
+	font : 11px Verdana;
+}
+.ClassContent
+{
+	height : 100%;
+	width : 100%;
+	margin : 0 0 0 0;
+	font : 11px Verdana;
+}
+
+.ClassItemValue
+{
+	font : 11px Verdana;
+}
+
+.ClassContent_Header
+{
+	font : bold 12px Arial;
+	height : 24px;
+	padding : 5 5 5 5;
+	text-align : right;
+}
+
+.SkinList_Caption
+{
+	text-align : center;
+	font : bold 12px Arial;
+	text-transform : uppercase;
+	padding : 5px;
+	background-color : #F1F1F1;		
+	border-bottom : solid 1px #DDDDDD;
+}
+
+.SkinList_Table
+{
+	border : solid 1px #DDDDDD;
+	background-color : #F7F7F7;
+}
+
+.SkinList_Header
+{
+	font : bold 12px Arial;
+	height : 24px;
+	padding : 10px;
+	width : 150px;
+}
+
+.SaveClassContent_Button
+{
+	font : 11px Verdana;
+}
+
+.SkinList_Footer
+{
+	padding : 5 5 5 5;
+	text-align : right;
+}
+
+.NewSkinCaption
+{
+	font : bold 12px Arial;
+	text-transform : uppercase;
+	background-color : #F1F1F1;
+	padding : 4 4 4 4;
+	text-align : center;
+	border-bottom : solid 1px #CCCCCC;
+}
+
+.NewSkinTable
+{
+	width : 500px;
+	background-color : #F7F7F7;
+	border : solid 1px #CCCCCC;
+}
+
+.NewSkin_Legend
+{
+	font : bold 12px Arial;
+	width : 150px;
+	padding : 5px;
+}
+
+.NewSkin_Name
+{
+	font : 11px Verdana;
+	width : 95%;
+}
+
+.BaseSkin
+{
+	font : 11px Verdana;
+	width : 95%;
+}
+
+.NewSkin_Recursive
+{
+	font : bold 12px Arial;
+	padding-right : 15px;
+	text-align : right;
+}
+
+.SkinApplyCustomTab
+{
+	font : bold 12px Arial;
+}

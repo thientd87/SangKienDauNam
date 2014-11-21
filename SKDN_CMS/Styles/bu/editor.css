@@ -1,0 +1,47 @@
+/*body{font:8pt tahoma,arial,sans-serif;margin:0;background:#E9E8F2;color:#444444}
+.dialogFooter{background-color:#E2E2ED;border-top:#CFCFCF 1px solid;}
+td{font-size:8pt}
+input {font:8pt tahoma,arial,sans-serif}
+select {font:8pt tahoma,arial,sans-serif}
+textarea {font:12px arial}
+.inpSel {font:8pt tahoma,arial,sans-serif}
+.inpTxt {font:8pt tahoma,arial,sans-serif;} 
+.inpChk {width:13;height:13;margin-right:3;margin-bottom:1}
+.inpRdo {width:13;height:13;margin-right:3;margin-bottom:1}
+.inpBtn {font:8pt tahoma,arial,sans-serif;}
+.inpBtnOver {}
+.inpBtnOut {}
+.lable_cell
+{
+	font:12px Arial;
+}
+*/
+
+img { border: none; padding: 0px; margin: 0px; }
+
+table.cactinlienquan img { margin: 0px; padding: 0px; border: none; }
+td.cactinlienquan_content { text-align: left; background-image: url(/images/blockeditor/cactinlienquan/Untitled-2.gif); background-repeat: repeat-y; }
+td.cactinlienquan_content a, td.cactinlienquan_content a:link, td.cactinlienquan_content a:visited, td.cactinlienquan_content a:active { color: #333333; float: left; padding: 5px 0px 5px 26px; background-image: url(/images/blockeditor/cactinlienquan/dotted.gif); background-repeat: no-repeat; background-position: 17px 12px; color: #606060; width: 230px; }
+td.cactinlienquan_content a em { color: #909090; font-style: normal; }
+
+div.block { padding: 10px 0px 10px 0px; clear: both; float: none; }
+
+div#slideShow2_imgPreview img { }
+
+
+.filter { opacity: 0.55; filter: alpha(opacity=55); zoom: 1; }
+
+/***vote module****/
+div.vote { margin: 2px 2px 5px 2px; width: 200px; color: #303030; }
+
+div.vote div.header { font-family: Arial; font-size: 14px; font-weight: bold; height: 15px; padding: 5px; background: url(/images/blockeditor/vote/bg_ev07_v3.gif); color: White; }
+div.vote div.question { font-weight: bold; padding-top: 5px; padding-left: 10px; text-align: left; }
+div.vote div.button { text-align: center; padding-bottom: 5px; }
+div.vote input { border: solid 1px #303030; margin: 2px; }
+div.vote label { font-size: 12px; }
+div.vote div.answer { text-align: left; padding-left: 10px; }
+div.vote div.answer input { border: none; }
+
+
+ body{ font-family:Times New Roman; font-size:12px; color:Black; text-align:justify; text-decoration:none;}
+ a, a:visited, a:link, a:active { color:Blue; text-decoration:underline;}
