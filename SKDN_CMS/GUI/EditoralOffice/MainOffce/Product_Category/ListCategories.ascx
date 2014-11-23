@@ -21,7 +21,7 @@
 		<div class="span12">
 						
 			<h3 class="page-title">
-		        Product categories manager <small> Quản lý loại sản phẩm</small>
+		        Project subject manager <small> Quản lý chủ đề</small>
 		        </h3>
 						
 		</div>
@@ -50,7 +50,7 @@
                 <div class="portlet-title">
 				<div class="caption">
 					<i class="icon-reorder"></i>
-					<span class="hidden-480">Product category detail</span>
+					<span class="hidden-480">Project subject detail</span>
 				</div>
 			</div>
             <div class="portlet-body form">
@@ -61,42 +61,42 @@
 						</div>
 					</div>
 				    <div class="control-group">
-				        <label class="control-label">Tên Tiếng Việt</label>
+				        <label class="control-label">Tên chủ đề</label>
                         <div class="controls">
-							<input ID="txt_cat_name" runat="server" type="text" class="m-wrap large" placeholder="Vietnamese name" />
+							<input ID="txt_cat_name" runat="server" type="text" class="m-wrap large" placeholder="Tên chủ đề" />
 					    </div>
 				    </div>
-                    <div class="control-group">
+                    <div class="control-group hidden">
 				        <label class="control-label">Tên Tiếng Anh</label>
                         <div class="controls">
 							<input ID="txt_cat_name_en" class="m-wrap large" runat="server" placeholder="English name"></input>
 					    </div>
 				    </div>
-                    <div class="control-group">
+                    <div class="control-group  hidden">
 				        <label class="control-label">Mô tả</label>
                         <div class="controls">
 							<textarea ID="txt_cat_desc" class="m-wrap large" rows="5" runat="server" placeholder="Vietnamese description"></textarea>
 					    </div>
 				    </div>
-                    <div class="control-group">
+                    <div class="control-group  hidden">
 				        <label class="control-label">Mô tả Tiếng Anh</label>
                         <div class="controls">
 							<textarea ID="txt_cat_desc_en" class="m-wrap large" rows="5" runat="server" placeholder="English description"></textarea>
 					    </div>
 				    </div>
-                    <div class="control-group">
+                    <div class="control-group  hidden">
 				        <label class="control-label">Là chuyên mục cha</label>
                         <div class="controls">
 							<asp:CheckBox runat="server" ID="cbIsParent" OnCheckedChanged="cbIsParent_CheckedChanged" AutoPostBack="true" />
 					    </div>
 				    </div> 
-                    <div class="control-group" id="trLSP" runat="server">
+                    <div class="control-group  hidden" id="trLSP" runat="server">
 				        <label class="control-label">Chọn chuyên mục cha</label>
                         <div class="controls">
 							<asp:DropDownList runat="server" ID="cb_P_catID" AutoPostBack="false"  CssClass="ms-long"></asp:DropDownList>
 					    </div>
 				    </div>
-                    <div class="control-group">
+                    <div class="control-group  hidden">
 				        <label class="control-label">Ảnh</label>
                         <div class="controls">
 							<input ID="txtSelectedFile" runat="server" class="m-wrap" placeholder="Logo"></input>&nbsp;
