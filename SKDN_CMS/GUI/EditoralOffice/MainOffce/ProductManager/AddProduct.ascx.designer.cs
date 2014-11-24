@@ -31,33 +31,6 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txt_Name_En;
         
         /// <summary>
-        /// txt_Cost control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txt_Cost;
-        
-        /// <summary>
-        /// txt_Summary control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea txt_Summary;
-        
-        /// <summary>
-        /// productType control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList productType;
-        
-        /// <summary>
         /// ddlCategory control.
         /// </summary>
         /// <remarks>
@@ -76,13 +49,13 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtSelectedFile;
         
         /// <summary>
-        /// txt_tags control.
+        /// productType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txt_tags;
+        protected global::System.Web.UI.WebControls.RadioButtonList productType;
         
         /// <summary>
         /// cb_IsActive control.
@@ -94,13 +67,31 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager {
         protected global::System.Web.UI.WebControls.CheckBox cb_IsActive;
         
         /// <summary>
-        /// txt_Video control.
+        /// txt_tags control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::CKEditor.NET.CKEditorControl txt_Video;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txt_tags;
+        
+        /// <summary>
+        /// txt_Cost control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txt_Cost;
+        
+        /// <summary>
+        /// txt_Summary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea txt_Summary;
         
         /// <summary>
         /// NewsContent control.
@@ -110,6 +101,15 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::CKEditor.NET.CKEditorControl NewsContent;
+        
+        /// <summary>
+        /// txt_Video control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::CKEditor.NET.CKEditorControl txt_Video;
         
         /// <summary>
         /// NewsContent_En control.

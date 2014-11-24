@@ -16,7 +16,7 @@
 				<div class="row-fluid">
 					<div class="span12">
 						<h3 class="page-title">
-							Product Manager <small>Quản lý sản phẩm</small>
+							Project manager <small>Quản lý dự án</small>
 						</h3>
 					</div>
 				</div>
@@ -29,74 +29,47 @@
 							<div class="portlet-title">
 								<div class="caption">
 									<i class="icon-reorder"></i>
-									<span class="hidden-480">Product detail</span>
+									<span class="hidden-480">Project detail</span>
 								</div>
 							</div>
 							<div class="portlet-body form">
 								<div class="tabbable portlet-tabs">
 									<div class="tab-content">
 										<div class="tab-pane active form-horizontal">
-										    <div class="span6">
+										    <div class="span12">
 										        <div class="control-group">
-													<label class="control-label">Tên sản phẩm</label>
+													<label class="control-label">Tên dự án</label>
 													<div class="controls">
-													    <input runat="server" id="txt_Name" type="text"  class="m-wrap large" />
+													    <input runat="server" id="txt_Name" type="text"  class="m-wrap larger" />
 													</div>
 												</div>
 												<div class="control-group">
-													<label class="control-label">Mã sản phẩm</label>
+													<label class="control-label">Mã dự án</label>
 													<div class="controls">
 													    <input runat="server" id="txt_Name_En" type="text"  class="m-wrap large" />
 													</div>
 												</div>
                                                 <div class="control-group">
-													<label class="control-label">Giá sản phẩm</label>
-                                                    <div class="controls">
-                                                        <div class="input-prepend">
-													    <span class="add-on">VND</span><input runat="server" id="txt_Cost" type="text" class="m-wrap medium" />
-													</div>
-                                                    </div>
-													
-												</div>
-												<div class="control-group">
-													<label class="control-label">Hot line</label>
-													<div class="controls">
-														<textarea runat="server" id="txt_Summary" class="large m-wrap" rows="1"></textarea>
-													</div>
-												</div>
-
-                                                 <div class="control-group">
-													<label class="control-label">Loại sản phẩm</label>
-													<div class="controls">
-														<asp:RadioButtonList Width="100%" CssClass="radioProductType"  ID="productType" runat="server" RepeatDirection="Horizontal" RepeatColumns="3">
-														    <asp:ListItem Value="0" Selected="True">Thông thường</asp:ListItem>
-                                                            <asp:ListItem Value="1">Nổi bật mục</asp:ListItem>
-														</asp:RadioButtonList>
-													</div>
-												</div>
-												
-                                               
-                                              
-										    </div>
-                                            <div class="span6">
-                                                <div class="control-group">
-													<label class="control-label">Gian hàng</label>
+													<label class="control-label">Chủ đề</label>
 													<div class="controls">
 													    <asp:DropDownList runat="server" ID="ddlCategory" CssClass="medium m-wrap"></asp:DropDownList>
 													</div>
 												</div>
                                                   <div class="control-group">
-													<label class="control-label">Avatar</label>
+													<label class="control-label">Ảnh đại diện</label>
 													<div class="controls">
-														<input ID="txtSelectedFile" runat="server" class="m-wrap large"></input>&nbsp;
+														<input ID="txtSelectedFile" runat="server" class="m-wrap larger"></input>&nbsp;
                                                         <img src="/images/icons/folder.gif" onclick="openInfo('/FileManager/index.html?field_name=<%=txtSelectedFile.ClientID %>',900,700)" style="cursor: pointer; padding: 0px 3px" />
                                                         
 													</div>
 												</div>
-                                                <div class="control-group">
-													<label class="control-label">Tags</label>
+                                                <div class="control-group hidden">
+													<label class="control-label">Loại dự án</label>
 													<div class="controls">
-														<input type="text" runat="server" id="txt_tags" class="large m-wrap"/>
+														<asp:RadioButtonList Width="100%" CssClass="radioProductType"  ID="productType" runat="server" RepeatDirection="Horizontal" RepeatColumns="3">
+														    <asp:ListItem Value="0" Selected="True">Thông thường</asp:ListItem>
+                                                            <asp:ListItem Value="1">Tiêu biểu</asp:ListItem>
+														</asp:RadioButtonList>
 													</div>
 												</div>
                                                 <div class="control-group">
@@ -105,11 +78,41 @@
 														 <asp:CheckBox ID="cb_IsActive"  runat="server" Checked="true" />
 													</div>
 												</div>
+                                                <div class="control-group hidden">
+													<label class="control-label">Tags</label>
+													<div class="controls">
+														<input type="text" runat="server" id="txt_tags" class="large m-wrap"/>
+													</div>
+												</div>
+                                                <div class="control-group hidden">
+													<label class="control-label">Giá sản phẩm</label>
+                                                    <div class="controls">
+                                                        <div class="input-prepend">
+													    <span class="add-on">VND</span><input runat="server" id="txt_Cost" type="text" class="m-wrap medium" />
+													</div>
+                                                    </div>
+													
+												</div>
+												<div class="control-group hidden">
+													<label class="control-label">Hot line</label>
+													<div class="controls">
+														<textarea runat="server" id="txt_Summary" class="large m-wrap" rows="1"></textarea>
+													</div>
+												</div>
                                                 
-                                                  
-                                            </div>
+                                               
+                                              
+										    </div>
+                                            
 											<div class="span12" style="margin-left: 0">
 											    <div class="control-group">
+													<label class="control-label">Mô tả dự án</label>
+													<div class="controls">
+                                                        <CKEditor:CKEditorControl FilebrowserBrowseUrl="/FileManager/index.html" BasePath="/ckeditor/" runat="server" Width="800px"   Height="800px" ID="NewsContent"
+                                                            runat="server" />
+                                                        </div>
+													</div>
+											    <div class="control-group hidden">
 													<label class="control-label">Mô tả</label>
 													<div class="controls">
 														
@@ -117,14 +120,8 @@
                                                             runat="server" />
 													</div>
 												</div>
-											    <div class="control-group">
-													<label class="control-label">Hướng dẫn sử dụng</label>
-													<div class="controls">
-                                                        <CKEditor:CKEditorControl FilebrowserBrowseUrl="/FileManager/index.html" BasePath="/ckeditor/" runat="server" Width="800px" ID="NewsContent"
-                                                            runat="server" />
-                                                        </div>
-													</div>
-                                                    <div class="control-group">
+											    
+                                                <div class="control-group hidden">
                                                             <label class="control-label">Thông số kỹ thuật</label>
 													      <div class="controls">
 														    <div id="editors">

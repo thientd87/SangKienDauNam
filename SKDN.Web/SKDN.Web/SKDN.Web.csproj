@@ -126,6 +126,7 @@
     <Content Include="Images\LogoHeader.png" />
     <Content Include="Images\logoSKDN.jpg" />
     <Content Include="Pages\dang-ky-tham-gia.aspx" />
+    <Content Include="Pages\du-an.aspx" />
     <Content Include="Pages\gioi-thieu.aspx" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
@@ -184,6 +185,13 @@
     </Compile>
     <Compile Include="Pages\dang-ky-tham-gia.aspx.designer.cs">
       <DependentUpon>dang-ky-tham-gia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\du-an.aspx.cs">
+      <DependentUpon>du-an.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\du-an.aspx.designer.cs">
+      <DependentUpon>du-an.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\gioi-thieu.aspx.cs">
       <DependentUpon>gioi-thieu.aspx</DependentUpon>

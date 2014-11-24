@@ -46,19 +46,13 @@
                                     </ItemTemplate>
                                     <ItemStyle Height="80px" Width="180px" HorizontalAlign="Center"></ItemStyle>
                                 </asp:TemplateField>
-                                <asp:TemplateField HeaderText="Product Name">
+                                <asp:TemplateField HeaderText="Tên dự án">
                                     <HeaderStyle CssClass="sorting_disabled"></HeaderStyle>
                                     <ItemTemplate >
                                         <asp:Literal runat="server" ID="ltrColor"></asp:Literal>
                                         <%#Eval("ProductName").ToString() %>(Vi)
                                         <br/>
                                         <i><%#Eval("ProductName_En").ToString() %>(En)</i>
-                                    </ItemTemplate>
-                                </asp:TemplateField>
-                                 <asp:TemplateField HeaderText="Cost">
-                                    <HeaderStyle CssClass="sorting_disabled"></HeaderStyle>
-                                    <ItemTemplate >
-                                        <%#String.Format("{0:#,###0}", Eval("ProductCost"))%>
                                     </ItemTemplate>
                                 </asp:TemplateField>
                                 <asp:TemplateField HeaderText="Category">
