@@ -66,9 +66,10 @@ border-radius: 30px;
 #divSuMenh{background-color: #796041}
 
 .dang-ky-tham-gia-wrapper{ padding: 15px 30px;}
-.form-dang-ky{ width: 700px; float: left}
-.quy-dinh-tham-gia{ width: 460px; float: right}
-.content-quy-dinh-tham-gia{ width: 450px;height: 250px;font: normal 15px Segoe UI;color: #808285;margin-top: 20px; overflow: hidden}
+.form-dang-ky{ width: 520px; float: right}
+.quy-dinh-tham-gia{ width: 560px; float: left}
+.content-quy-dinh-tham-gia{ width: 550px;height: 250px;font: normal 15px Segoe UI;color: #808285;margin-top: 20px;overflow: hidden; line-height: 170%}
+.content-quy-dinh-tham-gia b {font-family:Segoe UI Bold }
 .scrollpanel .sp-scrollbar {
   width: 3px;
   background-color: #ccc;
@@ -162,3 +163,11 @@ input.checkbox:focus ~ label:before {
 }
 
 .btn-nopbai{ width: 130px;height: 30px;display: inline-block;margin-top: 2em;background-color: #bcbec0;color: #414042;font: normal 15px Segoe UI;text-transform: uppercase;text-align: center;line-height: 30px; float: right}
+.btn-download{ width: 170px;height: 30px;display: inline-block;margin-top: 2em;background-color: #bc0015;color: #fff;font: normal 15px Segoe UI Bold;text-transform: uppercase;text-align: center;line-height: 30px; float: right}
+.hidden{display: none}
+.control-group{ width: 100%;padding: 10px 0; float: left}
+.control-group .control-label{ width: 100px;float: left;color: #414042;font: normal 15px Segoe UI; line-height: 30px }
+.control-group .controls{ width: 410px;float: right; text-align: left}
+.control-group .controls input[type=text]{ border: solid 1px #999; -webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;width: 400px;height: 30px;font: normal 15px Segoe UI;line-height: 30px; padding: 0 3px}
+
+

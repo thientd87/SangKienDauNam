@@ -22,6 +22,15 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txt_Name;
         
         /// <summary>
+        /// txt_tags control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txt_tags;
+        
+        /// <summary>
         /// txt_Name_En control.
         /// </summary>
         /// <remarks>
@@ -65,15 +74,6 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox cb_IsActive;
-        
-        /// <summary>
-        /// txt_tags control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txt_tags;
         
         /// <summary>
         /// txt_Cost control.

@@ -11,10 +11,7 @@
         <img src="/Images/imgChungToi.jpg" style=" float: left"/>
         <div class="text-chung-toi">
             <div class="col1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum, nisl sit amet auctor dapibus, eros arcu aliquet diam, ac hendrerit magna augue eu turpis. Nunc rutrum nulla lacus, sit amet dapibus augue mollis vitae. Suspendisse a porta ante. Duis arcu dui, porta at semper id, commodo ut arcu. Proin consectetur bibendum orci, sed condimentum justo placerat ut. Donec blandit, turpis a porttitor finibus.
-                <br/>
-                <br/>
-            Donec ultricies vehicula porttitor. Maecenas at lorem vitae metus tincidunt fermentum. Etiam sagittis gravida lorem, eu scelerisque leo porta eleifend. Mauris at lectus eu neque egestas convallis. Ut vitae rutrum purus. Duis quis turpis ut lectus auctor vestibulum cursus quis justo. Donec rhoncus mi metus. Aliquam dictum odio id iaculis tristique. Nullam egestas vestibulum sem sollicitudin efficitur.     
+                <b style="font-family: Segoe UI Bold">Sáng Kiến Đầu Năm</b> là sự kiện quốc gia được thực hiện giữa sự hợp tác của Đài truyền hình Việt Nam và Tạp Chí Cộng Sản nhằm tìm kiếm ý tưởng từ người dân cả nước ở mọi lứa tuổi giúp thay đổi đất nước, xây dựng hình ảnh Việt Nam trở nên văn minh, hiện đại và thân thiện hơn về các lĩnh vực: Văn Hóa – Xã hội, Du lịch hay Giao Thông…
             </div>
             
         </div>

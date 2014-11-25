@@ -43,6 +43,12 @@
 													    <input runat="server" id="txt_Name" type="text"  class="m-wrap larger" />
 													</div>
 												</div>
+                                                <div class="control-group">
+													<label class="control-label">Tên nhóm</label>
+													<div class="controls">
+														<input type="text" runat="server" id="txt_tags" class="larger m-wrap"/>
+													</div>
+												</div>
 												<div class="control-group">
 													<label class="control-label">Mã dự án</label>
 													<div class="controls">
@@ -78,12 +84,7 @@
 														 <asp:CheckBox ID="cb_IsActive"  runat="server" Checked="true" />
 													</div>
 												</div>
-                                                <div class="control-group hidden">
-													<label class="control-label">Tags</label>
-													<div class="controls">
-														<input type="text" runat="server" id="txt_tags" class="large m-wrap"/>
-													</div>
-												</div>
+                                              
                                                 <div class="control-group hidden">
 													<label class="control-label">Giá sản phẩm</label>
                                                     <div class="controls">
