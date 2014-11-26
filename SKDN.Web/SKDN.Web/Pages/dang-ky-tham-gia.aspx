@@ -4,10 +4,11 @@
     <script src="/Scripts/jscroll/jquery.scrollpanel-0.5.0.js"></script>
     <div class="dang-ky-tham-gia-wrapper">
         <div class="form-dang-ky">
-            <img src="/Images/btnDangKyThamGia.png"/>
-           
+            <img src="/Images/btnDangKyThamGia.png" style="float: left"/>
+            <a href="/Form_Dang_Ky.docx" class="btn-download">Tải bản đăng ký</a>
             <br/>
             <br/>
+             <br/>
             <div class="control-group">
 				<div class="control-label">Tên dự án</div>
 				<div class="controls">
@@ -35,26 +36,29 @@
              <div class="control-group">
 				<div class="control-label">File đính kèm</div>
 				<div class="controls">
-					<input runat="server" id="txtFile" type="file"  />
+					<input runat="server" id="txtFile" type="file"  /><span style="font-size: 10px"><i>(Dung lượng không quá 20MB)</i></span>
 				</div>
 			</div>
-              <a href="javascript:void(0);" onclick="alert('ok')" class="btn-nopbai">Nộp bài</a>
+            <div class="control-group">
+                <a href="javascript:void(0);" runat="server" id="btnNopBai" onclick="alert('ok')" class="btn-nopbai">Nộp bài</a>
+            </div>
+            <span style="font-size: 11px">Lưu ý: Mỗi dự án tham gia phải bao gồm "Bản đăng kí tham gia" (bắt buộc) theo mẫu của chương trình và các tài liệu bổ sung, minh họa của nhóm (Nếu có)</span>
         </div>
         <div class="quy-dinh-tham-gia">
             <img src="/Images/btnQuyDinhThamGia.png" style="margin-left: 30px"/>
             <div class="content-quy-dinh-tham-gia scrollpanel no4">
-                <b>1.&emsp;	Tên chương trình: “Sáng kiến đầu năm”<br/></b>
+                <b>1.&emsp; Tên chương trình: “Sáng kiến đầu năm”<br/></b>
                 <b>2.&emsp;	Đơn vị tổ chức: Đài Truyền Hình Việt Nam (VTV) và Tạp Chí Cộng sản<br/></b>
                 <b>3.&emsp;	Đối tượng tham gia:<br/></b>
                 &emsp;&emsp;-&emsp;Là công dân Việt Nam hoặc người ngoại quốc đang sinh sống tại Việt Nam. Không giới hạn độ tuổi.<br/>
                 <b>4.&emsp;	Tiêu chí lựa chọn dự án:<br/></b>
-                &emsp;&emsp;-&emsp;	Ý tưởng đơn giản, khả thi, sáng tạo nhằm giải quyết một hoặc nhiều vấn đề cụ thể đang tồn tại trong xã hội. Dự án mục tiêu mang lại lợi ích chung cho cả cộng đồng.<br/>
-                &emsp;&emsp;-&emsp;	Chấp nhận các dự án đã hoặc đang triển khai quy mô nhỏ để áp dụng quy mô toàn quốc.<br/>
+                &emsp;&emsp;-&emsp; Ý tưởng đơn giản, khả thi, sáng tạo nhằm giải quyết một hoặc nhiều vấn đề cụ thể đang tồn tại trong xã hội và  mang lại lợi ích chung cho cả cộng đồng.<br/>
+                &emsp;&emsp;-&emsp;Chấp nhận các dự án đã hoặc đang triển khai quy mô nhỏ để áp dụng quy mô toàn quốc.<br/>
                 <b>5.&emsp;	Thời gian đăng ký tham gia:<br/></b>
                 &emsp;&emsp;-&emsp;	Từ 00:00 ngày 01/12/2014 đến hết 23:59 ngày 31/12/2014<br/>
                 <b>6.&emsp;	Các giai đoạn cuộc thi<br/></b>
                 &emsp;&emsp;-&emsp;	Vòng 1 (01/12/2014 – 31/12/2014): Gửi dự án tham gia<br/>
-                &emsp;&emsp;Từ 01/12/2014 đến 31/12/2014: Các thí sinh và các nhóm dự thi gửi đề xuất ý tưởng của mình lên website sangkiendaunam.vn/dangkithamgia. Sau khi gui dự án tham gia, tất cả dự án sẽ được cập nhật lên website và kết quả sau vòng một sẽ được thông báo đến các nhóm dự thi.
+                &emsp;&emsp;Từ 01/12/2014 đến 31/12/2014: Các thí sinh và các nhóm dự thi gửi đề xuất ý tưởng của mình lên website sangkiendaunam.vn/dangkithamgia. Sau khi gửi dự án tham gia, tất cả dự án sẽ được cập nhật lên website và kết quả sau vòng một sẽ được thông báo đến các nhóm dự thi.
                 <br/>
                &emsp;&emsp; Bài dự thi phải bao gồm phần <b><u>đơn đăng ký bắt buộc</u></b> (tải về từ trang web của chương trình) và các sản phẩm khác: hình ảnh minh họa, video thuyết trình… của các nhóm (nếu có)<br/>
                &emsp;&emsp; -&emsp;	Vòng 2 (01/01/2015 – 10/01/2015): Vòng sơ loại<br/>
@@ -77,7 +81,7 @@
             </div>
             <input type="checkbox"  id="checkbox1" class="checkbox" />
             <label for="checkbox1">Tôi đã đọc và đồng ý</label> 
-            <a href="/Form_Dang_Ky.docx" class="btn-download hidden">Tải đơn đăng ký</a>
+            
           
         </div>
         <div class="clearfix"></div>
@@ -88,9 +92,9 @@
             $('.content-quy-dinh-tham-gia').scrollpanel({
                
             });
-            $('#checkbox1').click(function () {
-                $(".btn-download").toggle(this.checked);
-            });
+            //$('#checkbox1').click(function () {
+            //    $(".btn-download").toggle(this.checked);
+            //});
         });
         
     </script>

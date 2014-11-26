@@ -41,7 +41,7 @@ textarea:focus, input:focus{
     font-weight: bold;
 }
 .wrapper{ width: 1368px;overflow: hidden;margin: 0 auto;background: url(/images/bgTopSKDN.png) no-repeat top center;text-align: left; min-height: 400px}
-header{ padding: 90px 65px 30px; height: 65px}
+header{ padding: 50px 65px 30px; height: 65px}
 .main-menu{ float: left;width: 600px; margin-left: 10px}
 .main-menu a{ font: normal 15px/15px Segoe UI;color: #231f20;display: inline-block;padding: 0 25px;}
 .main-menu a.active,.main-menu a:hover{font-family:Segoe UI Bold}
@@ -162,8 +162,8 @@ input.checkbox:focus ~ label:before {
 	box-shadow: 0 0 0 3px #999;
 }
 
-.btn-nopbai{ width: 130px;height: 30px;display: inline-block;margin-top: 2em;background-color: #bcbec0;color: #414042;font: normal 15px Segoe UI;text-transform: uppercase;text-align: center;line-height: 30px; float: right}
-.btn-download{ width: 170px;height: 30px;display: inline-block;margin-top: 2em;background-color: #bc0015;color: #fff;font: normal 15px Segoe UI Bold;text-transform: uppercase;text-align: center;line-height: 30px; float: right}
+.btn-nopbai{ width: 130px;height: 30px;display: inline-block;background-color: #bcbec0;color: #414042;font: normal 15px Segoe UI;text-transform: uppercase;text-align: center;line-height: 30px; float: right}
+.btn-download{ width: 170px;height: 36px;display: inline-block;background-color: #bc0015;color: #fff;font: normal 15px Segoe UI Bold;text-transform: uppercase;text-align: center;line-height: 36px;float: right; margin-right: 40px}
 .hidden{display: none}
 .control-group{ width: 100%;padding: 10px 0; float: left}
 .control-group .control-label{ width: 100px;float: left;color: #414042;font: normal 15px Segoe UI; line-height: 30px }
