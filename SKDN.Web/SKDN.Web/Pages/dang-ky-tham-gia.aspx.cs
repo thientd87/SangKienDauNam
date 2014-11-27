@@ -14,45 +14,56 @@ namespace SKDN.Web.Pages
 {
     public partial class dang_ky_tham_gia : PageBase
     {
+
+        private static string userName = System.Configuration.ConfigurationManager.AppSettings["MailUserName"];
+        private static string password = System.Configuration.ConfigurationManager.AppSettings["MailPassword"];
+        private static string smtp = System.Configuration.ConfigurationManager.AppSettings["MailSmtp"];
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-        public static void SendMail(string recipient, string subject, string body, string attachmentFilename)
+        public static void SendMail(string recipient, string subject, string body, HttpPostedFile attachmentFilename)
         {
             SmtpClient smtpClient = new SmtpClient();
-            NetworkCredential basicCredential = new NetworkCredential("Username", "Password");
+            NetworkCredential basicCredential = new NetworkCredential(userName, password);
             MailMessage message = new MailMessage();
-            MailAddress fromAddress = new MailAddress("Username");
+            MailAddress fromAddress = new MailAddress(userName);
 
             // setup up the host, increase the timeout to 5 minutes
-            smtpClient.Host = "SmtpServer";
-            smtpClient.UseDefaultCredentials = false;
+            smtpClient.Host = smtp;
+            smtpClient.UseDefaultCredentials = true;
+            smtpClient.Port = 465;
             smtpClient.Credentials = basicCredential;
             smtpClient.Timeout = (60 * 5 * 1000);
 
             message.From = fromAddress;
             message.Subject = subject;
-            message.IsBodyHtml = false;
+            message.IsBodyHtml = true;
             message.Body = body;
             message.To.Add(recipient);
 
-            //if (attachmentFilename != null)
-            //    message.Attachments.Add(new Attachment(attachmentFilename));
             if (attachmentFilename != null)
             {
-                Attachment attachment = new Attachment(attachmentFilename, MediaTypeNames.Application.Octet);
-                ContentDisposition disposition = attachment.ContentDisposition;
-                disposition.CreationDate = File.GetCreationTime(attachmentFilename);
-                disposition.ModificationDate = File.GetLastWriteTime(attachmentFilename);
-                disposition.ReadDate = File.GetLastAccessTime(attachmentFilename);
-                disposition.FileName = Path.GetFileName(attachmentFilename);
-                disposition.Size = new FileInfo(attachmentFilename).Length;
-                disposition.DispositionType = DispositionTypeNames.Attachment;
+                Attachment attachment = new Attachment(attachmentFilename.InputStream, attachmentFilename.FileName);
+                //ContentDisposition disposition = attachment.ContentDisposition;
+                //disposition.CreationDate = File.GetCreationTime(attachmentFilename);
+                //disposition.ModificationDate = File.GetLastWriteTime(attachmentFilename);
+                //disposition.ReadDate = File.GetLastAccessTime(attachmentFilename);
+                //disposition.FileName = Path.GetFileName(attachmentFilename);
+                //disposition.Size = new FileInfo(attachmentFilename).Length;
+                //disposition.DispositionType = DispositionTypeNames.Attachment;
                 message.Attachments.Add(attachment);
             }
 
             smtpClient.Send(message);
+        }
+
+        protected void btnNopBai_Click(object sender, EventArgs e)
+        {
+            string subject = txt_group.Value + ":" + txt_Name.Value;
+            string body = "Bài dự thi Sáng Kiến Đầu Năm của nhóm <b>"+txt_group.Value + ":" + txt_Name.Value+"</b>" +
+                          "<br/> Email:" + txtEmail.Value +"<br/> Tel:"+ txtTel.Value;
+            SendMail(userName, subject, body,txtFile.PostedFile);
         }
     }
 }

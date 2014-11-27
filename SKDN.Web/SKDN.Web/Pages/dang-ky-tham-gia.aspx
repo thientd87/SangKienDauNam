@@ -40,7 +40,7 @@
 				</div>
 			</div>
             <div class="control-group">
-                <a href="javascript:void(0);" runat="server" id="btnNopBai" onclick="alert('ok')" class="btn-nopbai">Nộp bài</a>
+                <asp:Button runat="server" runat="server" ID="btnNopBai" CssClass="btn-nopbai" Text="Nộp Bài" OnClick="btnNopBai_Click"/>
             </div>
             <span style="font-size: 11px">Lưu ý: Mỗi dự án tham gia phải bao gồm "Bản đăng kí tham gia" (bắt buộc) theo mẫu của chương trình và các tài liệu bổ sung, minh họa của nhóm (Nếu có)</span>
         </div>
