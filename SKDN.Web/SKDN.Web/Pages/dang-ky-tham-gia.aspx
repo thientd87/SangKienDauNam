@@ -45,7 +45,7 @@
             <span style="font-size: 11px">Lưu ý: Mỗi dự án tham gia phải bao gồm "Bản đăng kí tham gia" (bắt buộc) theo mẫu của chương trình và các tài liệu bổ sung, minh họa của nhóm (Nếu có)</span>
         </div>
         <div class="quy-dinh-tham-gia">
-            <img src="/Images/btnQuyDinhThamGia.png" style="margin-left: 30px"/>
+            <img src="/Images/btnQuyDinhThamGia.png"/>
             <div class="content-quy-dinh-tham-gia scrollpanel no4">
                 <b>1.&emsp; Tên chương trình: “Sáng kiến đầu năm”<br/></b>
                 <b>2.&emsp;	Đơn vị tổ chức: Đài Truyền Hình Việt Nam (VTV) và Tạp Chí Cộng sản<br/></b>
@@ -92,9 +92,7 @@
             $('.content-quy-dinh-tham-gia').scrollpanel({
                
             });
-            //$('#checkbox1').click(function () {
-            //    $(".btn-download").toggle(this.checked);
-            //});
+           
         });
         
     </script>

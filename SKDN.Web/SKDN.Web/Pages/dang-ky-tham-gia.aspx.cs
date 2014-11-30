@@ -32,7 +32,8 @@ namespace SKDN.Web.Pages
             // setup up the host, increase the timeout to 5 minutes
             smtpClient.Host = smtp;
             smtpClient.UseDefaultCredentials = true;
-            smtpClient.Port = 465;
+            smtpClient.Port = 587;
+            smtpClient.EnableSsl = true;
             smtpClient.Credentials = basicCredential;
             smtpClient.Timeout = (60 * 5 * 1000);
 

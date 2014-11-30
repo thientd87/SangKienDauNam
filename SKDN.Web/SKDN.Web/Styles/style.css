@@ -163,7 +163,7 @@ input.checkbox:focus ~ label:before {
 }
 
 .btn-nopbai{ width: 130px;height: 30px;display: inline-block;background-color: #bcbec0;color: #414042;font: normal 15px Segoe UI;text-transform: uppercase;text-align: center;line-height: 30px;float: right; border: none}
-.btn-download{ width: 170px;height: 36px;display: inline-block;background-color: #bc0015;color: #fff;font: normal 15px Segoe UI Bold;text-transform: uppercase;text-align: center;line-height: 36px;float: right; margin-right: 40px}
+.btn-download{ width: 170px;height: 36px;display: inline-block;background-color: #bc0015;color: #fff;font: normal 15px Segoe UI Bold;text-transform: uppercase;text-align: center;line-height: 36px;float: right;}
 .hidden{display: none}
 .control-group{ width: 100%;padding: 10px 0; float: left}
 .control-group .control-label{ width: 100px;float: left;color: #414042;font: normal 15px Segoe UI; line-height: 30px }
