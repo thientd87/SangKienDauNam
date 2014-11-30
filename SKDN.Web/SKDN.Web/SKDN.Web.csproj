@@ -120,6 +120,7 @@
     <Content Include="Images\btnQuyDinhThamGia.png" />
     <Content Include="Images\footer.jpg" />
     <Content Include="Images\gradientFooter.jpg" />
+    <Content Include="Images\iconDuAnTieuBieu.png" />
     <Content Include="Images\iconMail.jpg" />
     <Content Include="Images\iconTeo.jpg" />
     <Content Include="Images\imgChungToi.jpg" />
