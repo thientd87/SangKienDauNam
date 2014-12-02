@@ -89,7 +89,7 @@
 													<label class="control-label">Giá sản phẩm</label>
                                                     <div class="controls">
                                                         <div class="input-prepend">
-													    <span class="add-on">VND</span><input runat="server" id="txt_Cost" type="text" class="m-wrap medium" />
+													    <span class="add-on">VND</span><input runat="server" id="txt_Cost" type="text" value="0" class="m-wrap medium" />
 													</div>
                                                     </div>
 													

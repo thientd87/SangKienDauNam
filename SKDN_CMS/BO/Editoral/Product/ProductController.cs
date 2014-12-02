@@ -32,5 +32,10 @@ namespace DFISYS.BO.Editoral.Product
         {
             return ObjectHelper.FillObject<Product>(new ProductsDAL().proc_ProductSelect(ID));
         }
+
+        public void DelteProduct(int ID)
+        {
+            new ProductsDAL().proc_ProductDelete(ID);
+        }
     }
 }

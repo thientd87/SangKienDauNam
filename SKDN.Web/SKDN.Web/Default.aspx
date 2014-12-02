@@ -8,8 +8,8 @@
                         <a href="#"><img src="/Images/iconTeo.jpg"/></a>&nbsp;<br/>
                         <br/>
                         <b>Facebook fanpage:</b> Sangkienđaunam<br/>
-                        <b>Email:</b> sangkiendaunam@fatmanco.com<br/>
-                        <b>Hotline:</b> 0912.xxx.xxx
+                        <b>Email:</b> sangkiendaunam@gmail.com<br/>
+                        <b>Hotline:</b> 0936.247.999
                     </div>
 </asp:Content>
 

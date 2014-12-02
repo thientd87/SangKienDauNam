@@ -22,41 +22,44 @@ namespace SKDN.Web.Pages
         {
 
         }
-        public static void SendMail(string recipient, string subject, string body, HttpPostedFile attachmentFilename)
+        public static bool SendMail(string recipient, string subject, string body, HttpPostedFile attachmentFilename)
         {
-            SmtpClient smtpClient = new SmtpClient();
-            NetworkCredential basicCredential = new NetworkCredential(userName, password);
-            MailMessage message = new MailMessage();
-            MailAddress fromAddress = new MailAddress(userName);
-
-            // setup up the host, increase the timeout to 5 minutes
-            smtpClient.Host = smtp;
-            smtpClient.UseDefaultCredentials = true;
-            smtpClient.Port = 587;
-            smtpClient.EnableSsl = true;
-            smtpClient.Credentials = basicCredential;
-            smtpClient.Timeout = (60 * 5 * 1000);
-
-            message.From = fromAddress;
-            message.Subject = subject;
-            message.IsBodyHtml = true;
-            message.Body = body;
-            message.To.Add(recipient);
-
-            if (attachmentFilename != null)
+            try
             {
-                Attachment attachment = new Attachment(attachmentFilename.InputStream, attachmentFilename.FileName);
-                //ContentDisposition disposition = attachment.ContentDisposition;
-                //disposition.CreationDate = File.GetCreationTime(attachmentFilename);
-                //disposition.ModificationDate = File.GetLastWriteTime(attachmentFilename);
-                //disposition.ReadDate = File.GetLastAccessTime(attachmentFilename);
-                //disposition.FileName = Path.GetFileName(attachmentFilename);
-                //disposition.Size = new FileInfo(attachmentFilename).Length;
-                //disposition.DispositionType = DispositionTypeNames.Attachment;
-                message.Attachments.Add(attachment);
-            }
+                SmtpClient smtpClient = new SmtpClient();
+                NetworkCredential basicCredential = new NetworkCredential(userName, password);
+                MailMessage message = new MailMessage();
+                MailAddress fromAddress = new MailAddress(userName);
 
-            smtpClient.Send(message);
+                // setup up the host, increase the timeout to 5 minutes
+                smtpClient.Host = smtp;
+                smtpClient.UseDefaultCredentials = true;
+                smtpClient.Port = 587;
+                smtpClient.EnableSsl = true;
+                smtpClient.Credentials = basicCredential;
+                smtpClient.Timeout = (60 * 5 * 1000);
+
+                message.From = fromAddress;
+                message.Subject = subject;
+                message.IsBodyHtml = true;
+                message.Body = body;
+                message.To.Add(recipient);
+
+                if (attachmentFilename != null)
+                {
+                    Attachment attachment = new Attachment(attachmentFilename.InputStream, attachmentFilename.FileName);
+                    message.Attachments.Add(attachment);
+                }
+
+                smtpClient.Send(message);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return false;
+            
         }
 
         protected void btnNopBai_Click(object sender, EventArgs e)
@@ -64,7 +67,16 @@ namespace SKDN.Web.Pages
             string subject = txt_group.Value + ":" + txt_Name.Value;
             string body = "Bài dự thi Sáng Kiến Đầu Năm của nhóm <b>"+txt_group.Value + ":" + txt_Name.Value+"</b>" +
                           "<br/> Email:" + txtEmail.Value +"<br/> Tel:"+ txtTel.Value;
-            SendMail(userName, subject, body,txtFile.PostedFile);
+            if (SendMail(userName, subject, body, txtFile.PostedFile))
+            {
+                this.Page.RegisterClientScriptBlock("alert",
+                    "<script>alert(\"Bạn đã gửi dự án thành công\"); window.location.href='/'</script>");
+            }
+            else
+            {
+                this.Page.RegisterClientScriptBlock("alert",
+                    "<script>alert(\"Có lỗi xảy ra, bạn vui lòng thử lại sau\"); window.location.href='/'</script>");
+            }
         }
     }
 }

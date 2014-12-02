@@ -46,6 +46,15 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager
                 BindData();
             }
         }
+
+        protected void grvCategories_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            GridViewRow editRow = grvProduct.Rows[e.RowIndex];
+            pcc.DelteProduct(Convert.ToInt32((editRow.FindControl("hiddenColorID") as HiddenField).Value));
+            BindData();
+
+
+        }
         protected void grvProduct_DataBound(object sender, EventArgs e)
         {
 

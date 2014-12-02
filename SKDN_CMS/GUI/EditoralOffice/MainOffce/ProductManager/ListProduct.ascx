@@ -28,7 +28,7 @@
                 <div class="portlet-body">
                     <div class="dataTables_wrapper form-inline" role="grid">
                         <asp:GridView ID="grvProduct" CssClass="table table-striped table-hover table-bordered dataTable" DataKeyNames="ID" runat="server"
-                        OnRowDataBound="GrdListNewsRowDataBound" 
+                        OnRowDataBound="GrdListNewsRowDataBound" OnRowDeleting="grvCategories_RowDeleting"
                        OnPageIndexChanging="grvProduct_PageIndexChanging"
                         AllowPaging="true" PageSize="20" AutoGenerateColumns="false" Width="100%" ShowHeaderWhenEmpty="True" RowStyle-CssClass="odd" AlternatingRowStyle-CssClass="even" ShowFooter="False" >
                              <Columns>
@@ -80,9 +80,10 @@
                                 <asp:TemplateField HeaderText="Edit">
                                     <HeaderStyle CssClass="sorting_disabled"></HeaderStyle>
                                     <ItemTemplate >
-                                        <a href="/office/addproduct.aspx?pid=<%#Eval("ID")%>"  class="btn mini purple">Edit</a>
+                                        <a href="/office/addproduct.aspx?pid=<%#Eval("ID")%>"  class="btn mini purple">Edit</a> &nbsp;
+                                        <asp:LinkButton ID="lbtnDel" runat="server" CommandName="Delete"  OnClientClick="return confirm('Do you want delete this item!');"  CommandArgument='<%# Eval("ID") %>' CssClass="btn mini black"><i class="icon-trash"></i> Delete</asp:LinkButton>
                                     </ItemTemplate>
-                                    <ItemStyle Width="50px"></ItemStyle>
+                                    <ItemStyle Width="150px"></ItemStyle>
                                 </asp:TemplateField>
                              </Columns>
                              <%--<PagerTemplate>

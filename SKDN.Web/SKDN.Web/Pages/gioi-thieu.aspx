@@ -24,33 +24,22 @@
          <div class="arrowRight">
             <img src="/Images/arrowRight.png" onclick="$.fancybox.close()"/>
         </div>
-        <img src="/Images/imgChungToi.jpg" style=" float: left"/>
+        <%--<img src="/Images/imgChungToi.jpg" style=" float: left"/>--%>
         <div class="text-chung-toi">
-            <div class="col1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum, nisl sit amet auctor dapibus, eros arcu aliquet diam, ac hendrerit magna augue eu turpis. Nunc rutrum nulla lacus, sit amet dapibus augue mollis vitae. Suspendisse a porta ante. Duis arcu dui, porta at semper id, commodo ut arcu. Proin consectetur bibendum orci, sed condimentum justo placerat ut. Donec blandit, turpis a porttitor finibus.
-                <br/>
-                <br/>
-            Donec ultricies vehicula porttitor. Maecenas at lorem vitae metus tincidunt fermentum. Etiam sagittis gravida lorem, eu scelerisque leo porta eleifend. Mauris at lectus eu neque egestas convallis. Ut vitae rutrum purus. Duis quis turpis ut lectus auctor vestibulum cursus quis justo. Donec rhoncus mi metus. Aliquam dictum odio id iaculis tristique. Nullam egestas vestibulum sem sollicitudin efficitur.     
-            </div>
-            
+            Đang cập nhật
         </div>
         <div class="arrowLeft">
             <img src="/Images/arrowLeft.png" onclick="$.fancybox.close()"/>
         </div>
         <div class="clearfix"></div>
-    </div>
+1    </div>
      <div id="divSuMenh">
          <div class="arrowRight">
             <img src="/Images/arrowRight.png" onclick="$.fancybox.close()"/>
         </div>
-        <img src="/Images/imgChungToi.jpg" style=" float: left"/>
+        <%--<img src="/Images/imgChungToi.jpg" style=" float: left"/>--%>
         <div class="text-chung-toi">
-            <div class="col1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum, nisl sit amet auctor dapibus, eros arcu aliquet diam, ac hendrerit magna augue eu turpis. Nunc rutrum nulla lacus, sit amet dapibus augue mollis vitae. Suspendisse a porta ante. Duis arcu dui, porta at semper id, commodo ut arcu. Proin consectetur bibendum orci, sed condimentum justo placerat ut. Donec blandit, turpis a porttitor finibus.
-                <br/>
-                <br/>
-            Donec ultricies vehicula porttitor. Maecenas at lorem vitae metus tincidunt fermentum. Etiam sagittis gravida lorem, eu scelerisque leo porta eleifend. Mauris at lectus eu neque egestas convallis. Ut vitae rutrum purus. Duis quis turpis ut lectus auctor vestibulum cursus quis justo. Donec rhoncus mi metus. Aliquam dictum odio id iaculis tristique. Nullam egestas vestibulum sem sollicitudin efficitur.     
-            </div>
+           Đang cập nhật
             
         </div>
         
@@ -76,6 +65,6 @@
         });
 </script>
     <style>
-        .fancybox-wrap{top:155px !important}
+        .fancybox-wrap{top:140px !important}
     </style>
 </asp:Content>

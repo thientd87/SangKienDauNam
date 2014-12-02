@@ -106,7 +106,9 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Config\RewriteRules.config" />
+    <Content Include="Config\RewriteRules.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Images\arrowLeft.png" />
     <Content Include="Images\arrowRight.png" />
