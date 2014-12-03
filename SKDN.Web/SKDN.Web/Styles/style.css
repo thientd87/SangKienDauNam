@@ -42,7 +42,7 @@ textarea:focus, input:focus{
 }
 .wrapper{ width: 1368px;overflow: hidden;margin: 0 auto;background: url(/images/bgTopSKDN.png) no-repeat top center;text-align: left; min-height: 400px}
 header{ padding: 50px 65px 30px; height: 65px}
-.main-menu{ float: left;width: 600px; margin-left: 10px}
+.main-menu{ float: left;width: 650px; margin-left: 10px}
 .main-menu a{ font: normal 15px/15px Segoe UI;color: #231f20;display: inline-block;padding: 0 25px;}
 .main-menu a.active,.main-menu a:hover{font-family:Segoe UI Bold}
 .logo-header{ float: right;width: 220px; margin-right: 35px}
@@ -259,6 +259,7 @@ input.checkbox:focus ~ label:before {
 .wrapper-dropdown-2.active .dropdown {
     opacity: 1;
     pointer-events: auto;
+    z-index: 1000
 }
 
 /* No CSS3 support */
@@ -282,3 +283,12 @@ input.checkbox:focus ~ label:before {
 ::-moz-selection {
     background: transparent; 
 }
+
+.projectContent{ width: 100%;padding-top: 10px; min-height: 250px}
+.col-Content{ width: 670px;float: left;padding-left: 20px;vertical-align: top;font: normal 14px/16px Segoe UI;color: #414042;}
+.col-Comment{ width: 520px;float: right; padding-right: 10px}
+.avatarDuAn{ width: 300px;margin-right: 20px; float: left}
+.content-project{ height: 230px;}
+.comment-wrapper{ width: 520px;height: 230px;background-color: #e7e8e9; webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px; padding-top: 10px}

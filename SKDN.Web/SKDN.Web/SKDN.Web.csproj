@@ -126,6 +126,7 @@
     <Content Include="Images\iconMail.jpg" />
     <Content Include="Images\iconTeo.jpg" />
     <Content Include="Images\imgChungToi.jpg" />
+    <Content Include="Images\imgeDuAnAvatar.jpg" />
     <Content Include="Images\LogoHeader.png" />
     <Content Include="Images\logoSKDN.jpg" />
     <Content Include="Pages\dang-ky-tham-gia.aspx" />

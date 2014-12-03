@@ -1,6 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SKDN.Web.SiteMaster" %>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns:fb="http://ogp.me/ns/fb#">
 <head id="Head1" runat="server">
     <title id="title" runat="server"></title>
     <link rel="shortcut icon" href="" type="image/x-icon" />
@@ -19,11 +19,19 @@
 </head>
 <body>
     <form runat="server">
+    <div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1528142057440204&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
         <div style="width: 100%; text-align: center">
             <div class="wrapper">
                 <header>
                     <div class="main-menu">
-                        <a style="width: 72px;" href="/">Trang chủ</a>   |   <a style="width: 70px;" href="/gioi-thieu.htm">Giới thiệu</a>  |   <a style="width: 125px;" href="/dang-ky-tham-gia.htm">Đăng ký tham gia</a>
+                        <a style="width: 72px;" href="/">Trang chủ</a>   |   <a style="width: 70px;" href="/gioi-thieu.htm">Giới thiệu</a>  |   <a style="width: 125px;" href="/dang-ky-tham-gia.htm">Đăng ký tham gia</a>  |   <a style="width: 135px;" href="/du-an.htm">Dự án đã tham gia</a>
                     </div>
                     
                     <div class="logo-header">
