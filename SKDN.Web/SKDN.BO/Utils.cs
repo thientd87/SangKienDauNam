@@ -1130,7 +1130,7 @@ namespace BO
         }
         public static string CatLink(string catId, string catParentId, string CatDisplayURL,string Channel_ID)
         {
-            string channelName = Channel_ID == "1" ? "/news" : Channel_ID == "2" ? "/products" : "";
+            string channelName = Channel_ID == "1" ? "/news" : Channel_ID == "2" ? "/projects" : "";
             return String.Format(channelName + "/{2}-p{1}c{0}.htm", catId, catParentId, CatDisplayURL);
         }
         public static string NewsDetailLinkV2(string news_title, string catId, string catParentId, string newsId, string Channel_ID)
@@ -1157,7 +1157,17 @@ namespace BO
             img = img.Replace(ImagesStorageUrl, "").TrimStart('/');
             return String.Format("<a title=\"{3}\" href=\"{2}\"><img src=\"{0}/{1}\" alt=\"{3}\" border=\"0\"/></a>", ImagesStorageUrl, img, url, HttpUtility.HtmlEncode(title));
         }
+        public static string GetImageLink(string title, string url, string img,string cssClass)
+        {
+            if (img == null || String.IsNullOrEmpty(img) || img.IndexOf(".") == -1) return String.Empty;
+            if (img.IndexOf("http:") != -1 || img.IndexOf("https:") != -1)
+            {
+                return String.Format("<a title=\"{2}\" href=\"{1}\"><img src=\"{0}\" alt=\"{2}\" border=\"0\"/></a>", img, url, HttpUtility.HtmlEncode(title));
+            }
 
+            img = img.Replace(ImagesStorageUrl, "").TrimStart('/');
+            return String.Format("<a title=\"{3}\" href=\"{2}\"><img src=\"{0}/{1}\" alt=\"{3}\" border=\"0\" class=\"{4}\"/></a>", ImagesStorageUrl, img, url, HttpUtility.HtmlEncode(title), cssClass);
+        }
         public static string GetThumbNail(string title, string url, string img, int width,bool targetBlank = false)
         {
             if (img == null || String.IsNullOrEmpty(img) || img.IndexOf(".") == -1) return String.Empty;

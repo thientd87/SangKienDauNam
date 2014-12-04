@@ -1,38 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="du-an.aspx.cs" Inherits="SKDN.Web.Pages.du_an" %>
+
+<%@ Register Src="~/UserControls/FilterBar.ascx" TagPrefix="uc1" TagName="FilterBar" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
      <script src="/Scripts/jscroll/jquery.mousewheel-3.1.3.js"></script>
     <script src="/Scripts/jscroll/jquery.scrollpanel-0.5.0.js"></script>
+    <link href="/Scripts/fancybox/jquery.fancybox.css" rel="stylesheet" />
+    <script src="/Scripts/fancybox/jquery.fancybox.js"></script>
     <div class="row">
-        <div class="filterbar">
-            <div class="iconDuAnTieuBieu"><img src="/Images/iconDuAnTieuBieu.png"/></div>
-            <div id="ddSubject" class="wrapper-dropdown-2" tabindex="1">Chọn chủ đề----------
-			    <ul class="dropdown">
-				    <li><a href="#">Twitter</a></li>
-				    <li><a href="#">Github</a></li>
-				    <li><a href="#">Facebook</a></li>
-			    </ul>
-		    </div>
-            <div id="ddTimeOrder" class="wrapper-dropdown-2" tabindex="1">Thời gian----------
-			    <ul class="dropdown">
-				    <li><a href="#">Mới nhất</a></li>
-				    <li><a href="#">Cũ nhất</a></li>
-				    
-			    </ul>
-		    </div>
-            <div class="clearfix"></div>
-        </div>
+        <uc1:FilterBar runat="server" id="FilterBar" />
         <div class="projectContent">
             <div class="col-Content">
-                <img src="/Images/imgeDuAnAvatar.jpg" class="avatarDuAn"/>
+                <asp:Literal runat="server" ID="ltrImage"></asp:Literal>
                 <div class="content-project  scrollpanel no4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum, nisl sit amet auctor dapibus, eros arcu aliquet diam, ac hendrerit magna augue eu turpis. Nunc rutrum nulla lacus, sit amet dapibus augue mollis vitae.                    <br/>Donec ultricies vehicula porttitor. Maecenas at lorem vitae metus tincidunt fermentum. Etiam sagittis gravida lorem, eu scelerisque leo porta eleifend. Mauris at lectus eu neque egestas convallis.
-                    <br/>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum, nisl sit amet auctor dapibus, eros arcu aliquet diam, ac hendrerit magna augue eu turpis. Nunc rutrum nulla lacus, sit amet dapibus augue mollis vitae.                    <br/>Donec ultricies vehicula porttitor. Maecenas at lorem vitae metus tincidunt fermentum. Etiam sagittis gravida lorem, eu scelerisque leo porta eleifend. Mauris at lectus eu neque egestas convallis.
-                    <br/>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum, nisl sit amet auctor dapibus, eros arcu aliquet diam, ac hendrerit magna augue eu turpis. Nunc rutrum nulla lacus, sit amet dapibus augue mollis vitae.                    <br/>Donec ultricies vehicula porttitor. Maecenas at lorem vitae metus tincidunt fermentum. Etiam sagittis gravida lorem, eu scelerisque leo porta eleifend. Mauris at lectus eu neque egestas convallis.
-                    <br/>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum, nisl sit amet auctor dapibus, eros arcu aliquet diam, ac hendrerit magna augue eu turpis. Nunc rutrum nulla lacus, sit amet dapibus augue mollis vitae.                    <br/>Donec ultricies vehicula porttitor. Maecenas at lorem vitae metus tincidunt fermentum. Etiam sagittis gravida lorem, eu scelerisque leo porta eleifend. Mauris at lectus eu neque egestas convallis.
-                    <br/>
+                    <asp:Literal runat="server" ID="ltrContentProject"></asp:Literal>
                 </div>
             </div>
             <div class="col-Comment">
@@ -43,6 +24,22 @@
             <div class="clearfix"></div>
         </div>
     </div>
+    
+    <div class="list-project">
+        <asp:Repeater runat="server" ID="rptListProject">
+            <ItemTemplate>
+                <div class="project-item">
+                    <%#Eval("Image") %>
+                    <a href="/ProjectDetailAjax.aspx?News_ID=<%#Eval("Id") %>" onclick="return  false" class="project-item-title fancybox" ><%#Eval("ProductName") %></a>
+                </div>
+            </ItemTemplate>
+            <FooterTemplate>
+                <div class="clearfix"></div>
+            </FooterTemplate>
+        </asp:Repeater>
+       
+    </div>
+
     <script type="text/javascript">
 
         function DropDown(el) {
@@ -77,9 +74,29 @@
             $('.content-project').scrollpanel({
 
             });
+            
+            $(".project-item  > a").fancybox({
+                type: 'ajax',
+                ajax: {
+                    type: "GET",
+                    success: function() {
+                        $('body').ajaxComplete(function () { FB.XFBML.parse(document.body) });
+                    }
 
+                }
+            });
         });
 
     </script>
+     <style>
+         .fancybox-skin{background: transparent !important}
+         .fancybox-inner{ width: 1300px !important; height: 450px !important}
+          .fancybox-inner .col-Content{ color: #fff;height: 380px;width: 730px; font: normal 15px/20px Segoe UI}
+          
+          .fancybox-inner .projectContent{height: 400px}
+          .fancybox-inner .comment-wrapper{height: 380px}
+          .fancybox-overlay{background:rgba(0,0,0,0.9);}
+     </style>
 </asp:Content>
+
 

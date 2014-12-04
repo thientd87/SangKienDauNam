@@ -69,10 +69,10 @@
                                                         
 													</div>
 												</div>
-                                                <div class="control-group hidden">
+                                                <div class="control-group">
 													<label class="control-label">Loại dự án</label>
 													<div class="controls">
-														<asp:RadioButtonList Width="100%" CssClass="radioProductType"  ID="productType" runat="server" RepeatDirection="Horizontal" RepeatColumns="3">
+														<asp:RadioButtonList Width="300px" CssClass="radioProductType"  ID="productType" runat="server" RepeatDirection="Horizontal" RepeatColumns="3">
 														    <asp:ListItem Value="0" Selected="True">Thông thường</asp:ListItem>
                                                             <asp:ListItem Value="1">Tiêu biểu</asp:ListItem>
 														</asp:RadioButtonList>

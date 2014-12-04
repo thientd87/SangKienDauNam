@@ -54,7 +54,7 @@
     <Compile Include="UrlRewrite\RewriteModule.cs" />
     <Compile Include="UrlRewrite\RewriteRules.cs" />
     <Compile Include="Utils.cs" />
-    <Compile Include="XPCHelper.cs" />
+    <Compile Include="SKDNHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SKDN.DAL\SKDN.DAL.csproj">

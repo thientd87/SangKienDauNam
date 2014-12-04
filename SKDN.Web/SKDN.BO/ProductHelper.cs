@@ -101,6 +101,36 @@ namespace BO
             return dt;
 
         }
+
+
+        [DataObjectMethod(DataObjectMethodType.Select)]
+        public static DataTable SelectProductByProductTypePaged(int PageSize, int PageNum, int ProductType)
+        {
+            DataTable dt;
+            using (MainDB db = new MainDB())
+            {
+                dt = db.StoredProcedures.proc_ProductsSelectByProductType(PageSize, PageNum, ProductType);
+            }
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                if (!dt.Columns.Contains("CurrencyValue")) dt.Columns.Add("CurrencyValue");
+                if (!dt.Columns.Contains("URL")) dt.Columns.Add("URL");
+                if (!dt.Columns.Contains("AjaxURL")) dt.Columns.Add("AjaxURL");
+                
+                if (!dt.Columns.Contains("Image")) dt.Columns.Add("Image");
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    dt.Rows[i]["CurrencyValue"] = String.Format(Const.CurrentcyFormat, Convert.ToInt64(dt.Rows[i]["ProductCost"]));
+                    dt.Rows[i]["URL"] = Utility.NewsDetailLinkV2(dt.Rows[i]["ProductName"].ToString(), dt.Rows[i]["ProductCategory"].ToString(), dt.Rows[i]["Product_Category_CatParent_ID"].ToString(), dt.Rows[i]["Id"].ToString(), "2");
+                    dt.Rows[i]["AjaxURL"] = "/ProjectDetailAjax.aspx?News_ID=" + dt.Rows[i]["Id"];
+                    dt.Rows[i]["Image"] = dt.Rows[i]["ProductAvatar"] != null ? Utility.GetImageLink(dt.Rows[i]["ProductName"].ToString(), dt.Rows[i]["AjaxURL"].ToString(), dt.Rows[i]["ProductAvatar"].ToString(), "avatarDuAn") : String.Empty;
+                }
+                dt.AcceptChanges();
+            }
+            return dt;
+        }
+        
+
         /// <summary>
         /// Created By DungTT
         /// </summary>
@@ -357,7 +387,7 @@ namespace BO
         /// </summary>
         /// <param name="P_ID"></param>
         /// <returns></returns>
-        public DataTable GetProductByID(int P_ID)
+        public static DataTable GetProductByID(int P_ID)
         {
             DataTable dt;
             using(MainDB db = new MainDB())
@@ -373,7 +403,7 @@ namespace BO
                 {
                     dt.Rows[i]["CurrencyValue"] = String.Format(Const.CurrentcyFormat, Convert.ToInt64(dt.Rows[i]["ProductCost"]));
                     dt.Rows[i]["URL"] = Utility.NewsDetailLinkV2(dt.Rows[i]["ProductName"].ToString(), dt.Rows[i]["ProductCategory"].ToString(), dt.Rows[i]["Product_Category_CatParent_ID"].ToString(), dt.Rows[i]["Id"].ToString(), "2");
-                    dt.Rows[i]["Image"] = dt.Rows[i]["ProductAvatar"] != null ? Utility.GetImageLink(dt.Rows[i]["ProductName"].ToString(), dt.Rows[i]["URL"].ToString(), dt.Rows[i]["ProductAvatar"].ToString()) : String.Empty;
+                    dt.Rows[i]["Image"] = dt.Rows[i]["ProductAvatar"] != null ? Utility.GetImageLink(dt.Rows[i]["ProductName"].ToString(), dt.Rows[i]["URL"].ToString(), dt.Rows[i]["ProductAvatar"].ToString(),"avatarDuAn") : String.Empty;
                 }
                 dt.AcceptChanges();
             }
@@ -426,3 +456,4 @@ namespace BO
         }
     }
 }
+

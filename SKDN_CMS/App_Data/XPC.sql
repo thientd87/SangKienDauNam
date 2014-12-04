@@ -472,3 +472,23 @@ INSERT INTO [dangky]
            ,@gift
           )
 GO
+
+
+Create PROCEDURE [dbo].[proc_ProductsSelectByProductType]
+	@ProductType int,
+	@pageIndex int,
+	@pageSize int
+AS
+
+SET NOCOUNT ON
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED
+	
+SELECT *
+	FROM
+	( 
+		SELECT	p.*,C.Product_Category_Name,C.Product_Category_Name_En,C.Product_Category_CatParent_ID ,ROW_NUMBER() OVER (ORDER BY P.[Id] DESC ) Row									
+		FROM [Products] AS P INNER JOIN Product_Category AS C ON P.ProductCategory = C.ID
+		WHERE	P.ProductType = @ProductType
+		and P.IsActive= 1
+	) Product
+	WHERE   ROW Between (@PageIndex -1)*@PageSize + 1 AND @PageSize*@PageIndex			

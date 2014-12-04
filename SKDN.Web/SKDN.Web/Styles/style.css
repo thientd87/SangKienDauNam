@@ -287,8 +287,13 @@ input.checkbox:focus ~ label:before {
 .projectContent{ width: 100%;padding-top: 10px; min-height: 250px}
 .col-Content{ width: 670px;float: left;padding-left: 20px;vertical-align: top;font: normal 14px/16px Segoe UI;color: #414042;}
 .col-Comment{ width: 520px;float: right; padding-right: 10px}
-.avatarDuAn{ width: 300px;margin-right: 20px; float: left}
+.avatarDuAn,.col-Content > a > img { width: 300px;margin-right: 20px; float: left}
 .content-project{ height: 230px;}
 .comment-wrapper{ width: 520px;height: 230px;background-color: #e7e8e9; webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px; padding-top: 10px}
+
+.list-project{ width: 100%;padding: 20px 0 20px 20px ;}
+.project-item{ width: 385px;float: left; padding-right: 25px}
+.project-item img.avatarDuAn{ width: 385px;height: 215px; background: #e7e8e9}
+.project-item-title{ font: bold 16px/20px Segoe UI Bold;color: #333;height: 40px; display: block}

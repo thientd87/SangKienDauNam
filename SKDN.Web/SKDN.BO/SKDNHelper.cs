@@ -6,7 +6,7 @@ using DAL;
 
 namespace BO
 {
-    public class XpcHelper
+    public class SKDNHelper
     {
         public static DataTable GetAllAlbum(int imgWitdth)
         {

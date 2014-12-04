@@ -718,6 +718,17 @@ namespace DAL
             DataTable dataTable = CreateDataTable(cmd);
             return dataTable;
         }
+
+
+        public DataTable proc_ProductsSelectByProductType(Int32 PageSize, Int32 PageNum, int ProductType)
+        {
+            IDbCommand cmd = _db.CreateCommand("proc_ProductsSelectByProductType", true);
+            _db.AddParameter(cmd, "pageSize", DbType.Int32, PageSize);
+            _db.AddParameter(cmd, "pageIndex", DbType.Int32, PageNum);
+            _db.AddParameter(cmd, "ProductType", DbType.Int32, ProductType);
+            DataTable dataTable = CreateDataTable(cmd);
+            return dataTable;
+        }
         /// <summary>
         /// Created By DungTT
         /// </summary>
