@@ -78,11 +78,11 @@
             $(".project-item  > a").fancybox({
                 type: 'ajax',
                 ajax: {
-                    type: "GET",
-                    success: function() {
-                        $('body').ajaxComplete(function () { FB.XFBML.parse(document.body) });
-                    }
-
+                    type: "GET"
+                },
+                afterShow: function() {
+                   
+                     FB.XFBML.parse(document.body);
                 }
             });
         });
