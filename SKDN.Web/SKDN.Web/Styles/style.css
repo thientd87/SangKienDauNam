@@ -289,6 +289,9 @@ input.checkbox:focus ~ label:before {
 .col-Comment{ width: 520px;float: right; padding-right: 10px}
 .avatarDuAn,.col-Content > a > img { width: 300px;margin-right: 20px; float: left}
 .content-project{ height: 230px;}
+.content-project strong {
+    font-family: Segoe UI Bold
+}
 .comment-wrapper{ width: 520px;height: 230px;background-color: #e7e8e9; webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px; padding-top: 10px}
@@ -296,4 +299,11 @@ border-radius: 10px; padding-top: 10px}
 .list-project{ width: 100%;padding: 20px 0 20px 20px ;}
 .project-item{ width: 385px;float: left; padding-right: 25px}
 .project-item img.avatarDuAn{ width: 385px;height: 215px; background: #e7e8e9}
-.project-item-title{ font: bold 16px/20px Segoe UI Bold;color: #333;height: 40px; display: block}
+.project-item-title{ font: bold 16px/20px Segoe UI Bold;color: #333;height: 40px; display: inline-block}
+.search-box{ width: 200px;float: left;height: 20px;border:none;margin-top: 15px;background:#9b9b9b;margin-left: 26px;padding-left: 5px; webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px; }
+.search-box .txtSearch{margin: 0;padding: 0;width: 180px;height: 20px;border: none;float: left;background: #9b9b9b;color: #6d6e71; font-size: 11px}
+.search-box .btnSearch{ background: url('/images/iconSearch.jpg') no-repeat center center;float: right;margin: 0;padding: 0;width: 20px;height: 20px; border: none}
+
+

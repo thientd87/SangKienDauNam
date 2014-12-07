@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="FilterBar.ascx.cs" Inherits="SKDN.Web.UserControls.FilterBar" %>
 <div class="filterbar">
-    <div class="iconDuAnTieuBieu"><img src="/Images/iconDuAnTieuBieu.png"/></div>
+    <div class="iconDuAnTieuBieu"><a href="/du-an.htm"><img src="/Images/iconDuAnTieuBieu.png"/></a></div>
     <div id="ddSubject" class="wrapper-dropdown-2" tabindex="1">Chọn chủ đề----------
 	    <asp:Repeater runat="server" ID="rptSubject">
 	        <HeaderTemplate>

@@ -2152,6 +2152,15 @@ namespace BO
                     return Lib.Object2Integer(HttpContext.Current.Request.QueryString["Cat_ID"]);
                 }
             }
+            public static string OrderType
+            {
+                get
+                {
+                    if (string.IsNullOrEmpty(HttpContext.Current.Request.QueryString["OrderType"])) return "";
+
+                    return HttpContext.Current.Request.QueryString["OrderType"];
+                }
+            }
             public static int ColorID
             {
                 get

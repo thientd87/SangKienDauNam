@@ -10,7 +10,7 @@
 namespace SKDN.Web.Pages {
     
     
-    public partial class ListProjects {
+    public partial class ListProjectByTime {
         
         /// <summary>
         /// FilterBar control.

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ListProjects.aspx.cs" Inherits="SKDN.Web.Pages.ListProjects" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SearchResult.aspx.cs" Inherits="SKDN.Web.Pages.SearchResult" %>
 
 <%@ Register Src="~/UserControls/FilterBar.ascx" TagPrefix="uc1" TagName="FilterBar" %>
 
@@ -84,4 +84,3 @@
           .fancybox-overlay{background:rgba(0,0,0,0.9);}
      </style>
 </asp:Content>
-

@@ -9,15 +9,15 @@ using BO;
 
 namespace SKDN.Web.Pages
 {
-    public partial class ListProjects : System.Web.UI.Page
+    public partial class ListProjectByTime : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                int CatID = Lib.QueryString.CategoryID;
-                ProductHelper ph = new ProductHelper();
-                DataTable dt = ph.GetProductByCatID_Paged(99, 1, CatID);
+                string OrderType = Lib.QueryString.OrderType;
+                
+                DataTable dt = ProductHelper.GetProductByTime(99, 1, OrderType);
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     rptListProject.DataSource = dt;

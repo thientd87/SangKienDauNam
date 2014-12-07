@@ -15,7 +15,7 @@
     <meta http-equiv="content-language" content="vi" />
     <link href="/Styles/style.css" rel="stylesheet" />
     <script src="/Scripts/jquery-1.8.2.js"></script>
-    
+    <script src="/Scripts/common.js"></script>
 </head>
 <body>
     <form runat="server">
@@ -32,6 +32,12 @@
                 <header>
                     <div class="main-menu">
                         <a style="width: 72px;" href="/">Trang chủ</a>   |   <a style="width: 70px;" href="/gioi-thieu.htm">Giới thiệu</a>  |   <a style="width: 125px;" href="/dang-ky-tham-gia.htm">Đăng ký tham gia</a>  |   <a style="width: 135px;" href="/du-an.htm">Dự án đã tham gia</a>
+                        
+                           <div class="search-box">
+                                <input type="text" class="txtSearch" id="txtSearchBox" onkeypress="return TDTEnterPressSearch(event);" value="Tìm kiếm" onfocus="if(this.value=='Tìm kiếm') this.value='';"
+                                                                                    onblur=" if(this.value=='') this.value='Tìm kiếm';" />
+                                <input type="button" id="btnSearch" class="btnSearch" onclick="ValidateSearch();" />
+                            </div>
                     </div>
                     
                     <div class="logo-header">

@@ -1,5 +1,5 @@
-E:\MyProjects\GitHub\SangKienDauNam\SKDN.Web\SKDN.DAL\obj\Debug\SKDN.DAL.csprojResolveAssemblyReference.cache
 E:\MyProjects\GitHub\SangKienDauNam\SKDN.Web\SKDN.DAL\bin\Debug\SKDN.DAL.dll
 E:\MyProjects\GitHub\SangKienDauNam\SKDN.Web\SKDN.DAL\bin\Debug\SKDN.DAL.pdb
 E:\MyProjects\GitHub\SangKienDauNam\SKDN.Web\SKDN.DAL\obj\Debug\SKDN.DAL.dll
 E:\MyProjects\GitHub\SangKienDauNam\SKDN.Web\SKDN.DAL\obj\Debug\SKDN.DAL.pdb
+E:\MyProjects\GitHub\SangKienDauNam\SKDN.Web\SKDN.DAL\obj\Debug\SKDN.DAL.csprojResolveAssemblyReference.cache

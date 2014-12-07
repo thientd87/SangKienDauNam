@@ -124,6 +124,7 @@
     <Content Include="Images\gradientFooter.jpg" />
     <Content Include="Images\iconDuAnTieuBieu.png" />
     <Content Include="Images\iconMail.jpg" />
+    <Content Include="Images\iconSearch.jpg" />
     <Content Include="Images\iconTeo.jpg" />
     <Content Include="Images\imgChungToi.jpg" />
     <Content Include="Images\imgeDuAnAvatar.jpg" />
@@ -132,8 +133,11 @@
     <Content Include="Pages\dang-ky-tham-gia.aspx" />
     <Content Include="Pages\du-an.aspx" />
     <Content Include="Pages\gioi-thieu.aspx" />
+    <Content Include="Pages\ListProjectByTime.aspx" />
     <Content Include="Pages\ListProjects.aspx" />
+    <Content Include="Pages\SearchResult.aspx" />
     <Content Include="ProjectDetailAjax.aspx" />
+    <Content Include="Scripts\common.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
     <Content Include="Scripts\fancybox\blank.gif" />
@@ -207,12 +211,26 @@
     <Compile Include="Pages\gioi-thieu.aspx.designer.cs">
       <DependentUpon>gioi-thieu.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ListProjectByTime.aspx.cs">
+      <DependentUpon>ListProjectByTime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ListProjectByTime.aspx.designer.cs">
+      <DependentUpon>ListProjectByTime.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ListProjects.aspx.cs">
       <DependentUpon>ListProjects.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\ListProjects.aspx.designer.cs">
       <DependentUpon>ListProjects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SearchResult.aspx.cs">
+      <DependentUpon>SearchResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SearchResult.aspx.designer.cs">
+      <DependentUpon>SearchResult.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProjectDetailAjax.aspx.cs">
       <DependentUpon>ProjectDetailAjax.aspx</DependentUpon>
