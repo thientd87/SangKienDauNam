@@ -20,17 +20,19 @@ namespace SKDN.Web.Pages
                 {
                     ltrImage.Text = dtHotSubject.Rows[0]["Image"] != null && !string.IsNullOrEmpty(dtHotSubject.Rows[0]["Image"].ToString()) ? dtHotSubject.Rows[0]["Image"].ToString() : string.Empty;
                     ltrContentProject.Text = dtHotSubject.Rows[0]["ProductDescription"].ToString();
-
-                    DataTable dtData = ProductHelper.GetProductByTime(18, 1, "DESC");
-                    for (int i = 1; i < dtHotSubject.Rows.Count; i++)
-                    {
-                        dtData.ImportRow(dtHotSubject.Rows[i]);
-                    }
-
-                    rptListProject.DataSource = dtData;
-                    rptListProject.DataBind();
-                
                 }
+                else
+                {
+                    divHotProduct.Visible = false;
+                }
+                DataTable dtData = ProductHelper.GetProductByTime(18, 1, "DESC");
+                for (int i = 1; i < dtHotSubject.Rows.Count; i++)
+                {
+                    dtData.ImportRow(dtHotSubject.Rows[i]);
+                }
+
+                rptListProject.DataSource = dtData;
+                rptListProject.DataBind();
             }
         }
     }

@@ -9,7 +9,7 @@
     <script src="/Scripts/fancybox/jquery.fancybox.js"></script>
     <div class="row">
         <uc1:FilterBar runat="server" id="FilterBar" />
-        <div class="projectContent">
+        <div class="projectContent" runat="server" id="divHotProduct">
             <div class="col-Content">
                 <asp:Literal runat="server" ID="ltrImage"></asp:Literal>
                 <div class="content-project  scrollpanel no4">
