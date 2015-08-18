@@ -11,7 +11,7 @@
     <meta name="GENERATOR" content="Achilles_vn - thientd87@gmail.com" />
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta http-equiv="Content-Script-Type" content="text/javascript" />
-    <meta name="author" content="thientd87@gmail.com" />
+    <meta name="author" content="sangkienvicongdongvn@gmail.com" />
     <meta http-equiv="content-language" content="vi" />
     <link href="/Styles/style.css" rel="stylesheet" />
     <script src="/Scripts/jquery-1.8.2.js"></script>
@@ -31,7 +31,7 @@
             <div class="wrapper">
                 <header>
                     <div class="main-menu">
-                        <a style="width: 72px;" href="/">Trang chủ</a>   |   <a style="width: 70px;" href="/gioi-thieu.htm">Giới thiệu</a>  |   <a style="width: 125px;" href="/dang-ky-tham-gia.htm">Đăng ký tham gia</a>  |   <a style="width: 135px;" href="/du-an.htm">Dự án đã tham gia</a>
+                        <a style="width: 72px;" href="/">Trang chủ</a>   |   <a style="width: 70px;" href="/gioi-thieu.htm">Giới thiệu</a>  |   <a style="width: 125px;" href="/dang-ky-tham-gia.htm">Đăng ký tham gia</a><%--  |   <a style="width: 135px;" href="/du-an.htm">Dự án đã tham gia</a>--%>
                         
                            <div class="search-box">
                                 <input type="text" class="txtSearch" id="txtSearchBox" onkeypress="return TDTEnterPressSearch(event);" value="Tìm kiếm" onfocus="if(this.value=='Tìm kiếm') this.value='';"
@@ -50,6 +50,7 @@
                 </div>
                 <footer>
                     <img src="/Images/gradientFooter.jpg"/>
+                    <img src="/Images/bannerSponsor.png" style="margin: 10px 0"/>
                     <img src="/Images/footer.jpg"/>
                 </footer>
             </div>

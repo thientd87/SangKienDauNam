@@ -42,9 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdvHelper.cs" />
-    <Compile Include="ControlBase.cs" />
+    <Compile Include="ControlBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="OrderHelper.cs" />
-    <Compile Include="PageBase.cs" />
+    <Compile Include="PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="ProductCategory.cs" />
     <Compile Include="ProductHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

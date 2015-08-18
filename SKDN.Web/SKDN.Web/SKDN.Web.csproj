@@ -114,6 +114,8 @@
     <Content Include="Images\arrowRight.png" />
     <Content Include="Images\bannerChungToi.jpg" />
     <Content Include="Images\bannerNhaTaiTro.jpg" />
+    <Content Include="Images\bannerSponsor.jpg" />
+    <Content Include="Images\bannerSponsor.png" />
     <Content Include="Images\bannerSuMenh.jpg" />
     <Content Include="Images\bgTopSKDN.png" />
     <Content Include="Images\btFB.png" />

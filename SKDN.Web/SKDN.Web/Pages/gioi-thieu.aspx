@@ -8,12 +8,12 @@
         <a class="fancybox" href="#divSuMenh"><img style="padding-left: 6px" src="/Images/bannerSuMenh.jpg"/></a>
     </div>
     <div id="divChungToi">
-        <img src="/Images/imgChungToi.jpg" style=" float: left"/>
+        <%--<img src="/Images/imgChungToi.jpg" style=" float: left"/>--%>
         <div class="text-chung-toi">
-            <div class="col1">
+           <%-- <div class="col1">
                 <b style="font-family: Segoe UI Bold">Sáng Kiến Đầu Năm</b> là sự kiện quốc gia được thực hiện giữa sự hợp tác của Đài truyền hình Việt Nam và Tạp Chí Cộng Sản nhằm tìm kiếm ý tưởng từ người dân cả nước ở mọi lứa tuổi giúp thay đổi đất nước, xây dựng hình ảnh Việt Nam trở nên văn minh, hiện đại và thân thiện hơn về các lĩnh vực: Văn Hóa – Xã hội, Du lịch hay Giao Thông…
-            </div>
-            
+            </div>--%>
+            Đang cập nhật
         </div>
         <div class="arrowLeft">
             <img src="/Images/arrowLeft.png" onclick="$.fancybox.close()"/>

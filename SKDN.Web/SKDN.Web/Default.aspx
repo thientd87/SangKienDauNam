@@ -7,9 +7,9 @@
                         <a href="#"><img src="/Images/iconMail.jpg"/></a>&nbsp;
                         <a href="#"><img src="/Images/iconTeo.jpg"/></a>&nbsp;<br/>
                         <br/>
-                        <b>Facebook fanpage:</b> Sangkienđaunam<br/>
-                        <b>Email:</b> sangkiendaunam@gmail.com<br/>
-                        <b>Hotline:</b> 0936.247.999
+                        <b>Facebook fanpage:</b> sangkienvicongdongvn<br/>
+                        <b>Email:</b> sangkienvicongdongvn@gmail.com<br/>
+                        <b>Hotline:</b> 0966.023.557
                     </div>
 </asp:Content>
 

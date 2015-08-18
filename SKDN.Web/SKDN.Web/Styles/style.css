@@ -45,7 +45,7 @@ header{ padding: 50px 65px 30px; height: 65px}
 .main-menu{ float: left;width: 650px; margin-left: 10px}
 .main-menu a{ font: normal 15px/15px Segoe UI;color: #231f20;display: inline-block;padding: 0 25px;}
 .main-menu a.active,.main-menu a:hover{font-family:Segoe UI Bold}
-.logo-header{ float: right;width: 220px; margin-right: 35px}
+.logo-header{ float: right;}
 
 .main-content {
     width: 1236px;background-color:rgba(255,255,255,0.5);margin: 0 auto;position: relative;-webkit-border-radius: 30px;
@@ -64,7 +64,7 @@ border-radius: 30px;
 
 #divNhaTaiTro{background-color: #155c95}
 #divSuMenh{background-color: #796041}
-
+footer{text-align: center}
 .dang-ky-tham-gia-wrapper{ padding: 15px 30px;}
 .form-dang-ky{ width: 520px; float: right}
 .quy-dinh-tham-gia{ width: 560px; float: left}
