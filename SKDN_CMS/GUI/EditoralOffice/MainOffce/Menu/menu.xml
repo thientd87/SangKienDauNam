@@ -51,6 +51,13 @@
       </row>-->
       <row>
         <Permission_ID>14</Permission_ID>
+        <MenuName>Thông tin giới thiệu</MenuName>
+        <Cpmode>aboutus</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/AboutUs/AboutUs.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>14</Permission_ID>
         <MenuName>Thông tin website</MenuName>
         <Cpmode>siteinformation</Cpmode>
         <IsCount>False</IsCount>

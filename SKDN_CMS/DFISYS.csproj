@@ -288,6 +288,9 @@
     <Compile Include="Ajax\WebLinks\EditWebLink.aspx.designer.cs">
       <DependentUpon>EditWebLink.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BO\AboutUs\AboutUsController.cs" />
+    <Compile Include="BO\AboutUs\AboutUsDAL.cs" />
+    <Compile Include="BO\AboutUs\AboutUsObject.cs" />
     <Compile Include="BO\ChannelUsers.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -409,6 +412,13 @@
     <Compile Include="BO\Editoral\SupportOnline\SupportOnline_Helper.cs" />
     <Compile Include="BO\UnicodeUtility.cs">
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GUI\EditoralOffice\MainOffce\AboutUs\AboutUs.ascx.cs">
+      <DependentUpon>AboutUs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\EditoralOffice\MainOffce\AboutUs\AboutUs.ascx.designer.cs">
+      <DependentUpon>AboutUs.ascx</DependentUpon>
     </Compile>
     <Compile Include="GUI\EditoralOffice\MainOffce\Advertisment\AddBanner.ascx.cs">
       <DependentUpon>AddBanner.ascx</DependentUpon>
@@ -1276,6 +1286,7 @@
     <Content Include="Filemanager\styles\ie8.css" />
     <Content Include="Filemanager\styles\ie9.css" />
     <Content Include="Filemanager\styles\reset.css" />
+    <Content Include="GUI\EditoralOffice\MainOffce\AboutUs\AboutUs.ascx" />
     <Content Include="GUI\EditoralOffice\MainOffce\Advertisment\AddBanner.ascx" />
     <Content Include="GUI\EditoralOffice\MainOffce\Advertisment\ListAll.ascx" />
     <Content Include="GUI\EditoralOffice\MainOffce\BanTinVang\ListBanTinVang.ascx" />
