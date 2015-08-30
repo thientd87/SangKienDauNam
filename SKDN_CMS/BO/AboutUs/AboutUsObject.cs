@@ -16,6 +16,7 @@ namespace DFISYS.BO.AboutUs
         private string _mission;
         private bool _isActive;
         private DateTime _createdDate;
+        private string _huongDanDangKy;
 
         public int Id
         {
@@ -69,6 +70,12 @@ namespace DFISYS.BO.AboutUs
         {
             get { return _createdDate; }
             set { _createdDate = value; }
+        }
+
+        public string HuongDanDangKy
+        {
+            get { return _huongDanDangKy; }
+            set { _huongDanDangKy = value; }
         }
     }
 }

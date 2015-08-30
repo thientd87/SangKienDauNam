@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -20,7 +21,14 @@ namespace SKDN.Web.Pages
         private static string smtp = System.Configuration.ConfigurationManager.AppSettings["MailSmtp"];
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Page.IsPostBack)
+            {
+                DataTable dtAboutUs = SKDNHelper.GetAboutUsPage(1);
+                if (dtAboutUs != null && dtAboutUs.Rows.Count > 0)
+                {
+                    ltrHuongDanDangKy.Text = dtAboutUs.Rows[0]["HuongDanDangKy"].ToString();
+                }
+            }
         }
         public static bool SendMail(string recipient, string subject, string body, HttpPostedFile attachmentFilename)
         {

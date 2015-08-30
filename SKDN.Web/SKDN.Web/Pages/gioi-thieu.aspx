@@ -9,11 +9,9 @@
     </div>
     <div id="divChungToi">
         <%--<img src="/Images/imgChungToi.jpg" style=" float: left"/>--%>
+        <asp:Literal runat="server" ID="ltrImageAboutUs"></asp:Literal>
         <div class="text-chung-toi">
-           <%-- <div class="col1">
-                <b style="font-family: Segoe UI Bold">Sáng Kiến Đầu Năm</b> là sự kiện quốc gia được thực hiện giữa sự hợp tác của Đài truyền hình Việt Nam và Tạp Chí Cộng Sản nhằm tìm kiếm ý tưởng từ người dân cả nước ở mọi lứa tuổi giúp thay đổi đất nước, xây dựng hình ảnh Việt Nam trở nên văn minh, hiện đại và thân thiện hơn về các lĩnh vực: Văn Hóa – Xã hội, Du lịch hay Giao Thông…
-            </div>--%>
-            Đang cập nhật
+            <asp:Literal runat="server" ID="ltrAboutUs"></asp:Literal>
         </div>
         <div class="arrowLeft">
             <img src="/Images/arrowLeft.png" onclick="$.fancybox.close()"/>
@@ -24,9 +22,9 @@
          <div class="arrowRight">
             <img src="/Images/arrowRight.png" onclick="$.fancybox.close()"/>
         </div>
-        <%--<img src="/Images/imgChungToi.jpg" style=" float: left"/>--%>
+        <asp:Literal runat="server" ID="ltrSponsorImage"></asp:Literal>
         <div class="text-chung-toi">
-            Đang cập nhật
+            <asp:Literal runat="server" ID="ltrSponsor"></asp:Literal>
         </div>
         <div class="arrowLeft">
             <img src="/Images/arrowLeft.png" onclick="$.fancybox.close()"/>
@@ -37,10 +35,9 @@
          <div class="arrowRight">
             <img src="/Images/arrowRight.png" onclick="$.fancybox.close()"/>
         </div>
-        <%--<img src="/Images/imgChungToi.jpg" style=" float: left"/>--%>
+        <asp:Literal runat="server" ID="ltrMissionImage"></asp:Literal>
         <div class="text-chung-toi">
-           Đang cập nhật
-            
+           <asp:Literal runat="server" ID="ltrMission"></asp:Literal>
         </div>
         
         <div class="clearfix"></div>

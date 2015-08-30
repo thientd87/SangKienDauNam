@@ -22,6 +22,7 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.AboutUs
                 txtAboutUsImage.Text = site.AboutUsImage;
                 txtMissionImage.Text = site.MissionImage;
                 txtSponsorImage.Text = site.SponsorImage;
+                txtHuongDanDangKy.Text = site.HuongDanDangKy;
 
             }
         }
@@ -37,6 +38,7 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.AboutUs
             site.MissionImage = txtMissionImage.Text;
             site.SponsorImage = txtSponsorImage.Text;
             site.IsActive = true;
+            site.HuongDanDangKy = txtHuongDanDangKy.Text;
                  
             AboutUsController.InsertUpdateAboutUs(site);
             this.Page.RegisterClientScriptBlock("successfull", "<script>alert(\"Cập nhật thành công!\")</script>");

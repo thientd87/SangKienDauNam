@@ -8,6 +8,17 @@ namespace BO
 {
     public class SKDNHelper
     {
+
+        public static DataTable GetAboutUsPage(int Id)
+        {
+            DataTable dtAlbum = new DataTable();
+            using (MainDB objDb = new MainDB())
+            {
+                dtAlbum = objDb.StoredProcedures.proc_AboutUsSelect(Id);
+            }
+            return dtAlbum;
+        }
+
         public static DataTable GetAllAlbum(int imgWitdth)
         {
             DataTable dtAlbum = new DataTable();

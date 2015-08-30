@@ -23,7 +23,7 @@ namespace DFISYS.BO.AboutUs
 
         public void proc_AboutUsInsertUpdate(AboutUsObject obj)
         {
-            SqlHelper.ExecuteNonQuery(_conn, "proc_AboutUsInsertUpdate", obj.Id, obj.AboutUsImage, obj.AboutUs, obj.SponsorImage, obj.Sponsor, obj.MissionImage, obj.Mission,obj.IsActive);
+            SqlHelper.ExecuteNonQuery(_conn, "proc_AboutUsInsertUpdate", obj.Id, obj.AboutUsImage, obj.AboutUs, obj.SponsorImage, obj.Sponsor, obj.MissionImage, obj.Mission,obj.IsActive,obj.HuongDanDangKy);
         }
     }
 }

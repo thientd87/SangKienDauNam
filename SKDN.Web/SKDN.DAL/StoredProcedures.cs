@@ -21,6 +21,13 @@ namespace DAL
             get { return _db; }
         }
 
+        public DataTable proc_AboutUsSelect(int ID)
+        {
+            IDbCommand cmd = _db.CreateCommand("proc_AboutUsSelect", true);
+            _db.AddParameter(cmd, "Id", DbType.Int32, ID);
+            DataTable table = _db.CreateDataTable(cmd);
+            return table;
+        }
         public DataTable Web_SelectSiteInformation(int ID)
         {
             IDbCommand cmd = _db.CreateCommand("proc_SiteInformationSelect", true);

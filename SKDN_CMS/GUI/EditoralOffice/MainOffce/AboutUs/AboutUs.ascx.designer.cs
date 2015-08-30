@@ -67,6 +67,15 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.AboutUs {
         protected global::System.Web.UI.WebControls.TextBox txtMissionImage;
         
         /// <summary>
+        /// txtHuongDanDangKy control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::CKEditor.NET.CKEditorControl txtHuongDanDangKy;
+        
+        /// <summary>
         /// btnSave control.
         /// </summary>
         /// <remarks>

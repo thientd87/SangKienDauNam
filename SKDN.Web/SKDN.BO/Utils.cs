@@ -1146,6 +1146,18 @@ namespace BO
         public static string ImagesThumbUrl = System.Configuration.ConfigurationSettings.AppSettings["ImageUrl"].ToString().TrimEnd('/');
         public static string ImagesStorageUrl = System.Configuration.ConfigurationSettings.AppSettings["ImagesStorageUrl"].ToString().TrimEnd('/');
 
+        public static string GetImageLink(string img)
+        {
+            if (img == null || String.IsNullOrEmpty(img) || img.IndexOf(".") == -1) return String.Empty;
+            if (img.IndexOf("http:") != -1 || img.IndexOf("https:") != -1)
+            {
+                return img;
+            }
+
+            img = img.Replace(ImagesStorageUrl, "").TrimStart('/');
+            return String.Format("{0}/{1}", ImagesStorageUrl, img);
+        }
+
         public static string GetImageLink(string title, string url, string img)
         {
             if (img == null || String.IsNullOrEmpty(img) || img.IndexOf(".") == -1) return String.Empty;
