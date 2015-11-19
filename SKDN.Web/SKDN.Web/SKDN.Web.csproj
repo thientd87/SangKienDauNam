@@ -110,6 +110,7 @@
       <SubType>Designer</SubType>
     </Content>
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="GUI\Adv.ascx" />
     <Content Include="Images\arrowLeft.png" />
     <Content Include="Images\arrowRight.png" />
     <Content Include="Images\bannerChungToi.jpg" />
@@ -191,6 +192,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Adv.ascx.cs">
+      <DependentUpon>Adv.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Adv.ascx.designer.cs">
+      <DependentUpon>Adv.ascx</DependentUpon>
     </Compile>
     <Compile Include="Pages\dang-ky-tham-gia.aspx.cs">
       <DependentUpon>dang-ky-tham-gia.aspx</DependentUpon>

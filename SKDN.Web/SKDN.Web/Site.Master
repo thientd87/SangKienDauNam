@@ -50,7 +50,10 @@
                 </div>
                 <footer>
                     <img src="/Images/gradientFooter.jpg"/>
-                    <img src="/Images/bannerSponsor.png" style="margin: 10px 0"/>
+                    <div class="">
+                        <img src="/Images/bannerSponsor.png" style="margin: 10px 0"/>    
+                    </div>
+                    
                     <img src="/Images/footer.jpg"/>
                 </footer>
             </div>
