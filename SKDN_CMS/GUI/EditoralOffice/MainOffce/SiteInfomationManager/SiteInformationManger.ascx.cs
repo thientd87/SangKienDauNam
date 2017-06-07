@@ -16,12 +16,14 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.SiteInfomationManager
             if (!IsPostBack)
             {
                 site = SiteInformationController.SelectSiteInformation(1);
-                txt_name.Text = site.SiteName;
-                txt_description.Text = site.SiteDescription;
-                txt_keyword.Text = site.SiteKeyword;
-                txt_Footer.Text = site.SiteFooter;
-                txt_address.Text = site.SiteAddress;
-
+                if (site != null)
+                {
+                    txt_name.Text = site.SiteName;
+                    txt_description.Text = site.SiteDescription;
+                    txt_keyword.Text = site.SiteKeyword;
+                    txt_Footer.Text = site.SiteFooter;
+                    txt_address.Text = site.SiteAddress;
+                }
             }
         }
 
